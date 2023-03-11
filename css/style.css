@@ -700,7 +700,7 @@ button {
 
 .jewelry__button-like {
   opacity: 0;
-  background-image: url(../../images/button-like.svg);
+  background-image: url(../images/button-like.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -714,7 +714,7 @@ button {
 }
 
 .jewelry__button-like:hover {
-  background-image: url(../../images/button-like-active.svg);
+  background-image: url(../images/button-like-active.svg);
 }
 
 .jewelry__cell {
@@ -757,7 +757,7 @@ button {
 .jewelry__img {
   width: 27px;
   height: 24px;
-  background-image: url(../../images/stone.svg);
+  background-image: url(../images/stone.svg);
   background-repeat: no-repeat;
   background-position: center;
   grid-row-start: 1;
@@ -788,7 +788,7 @@ button {
 .jewelry__size-icon {
   width: 26px;
   height: 7px;
-  background-image: url(../../images/Arrow\ 2.svg);
+  background-image: url(../images/Arrow\ 2.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -812,7 +812,7 @@ button {
 .jewelry__arrow {
   padding: 10px 0 26px;
   width: 100%;
-  background-image: url(../../images/Arrow3.svg);
+  background-image: url(../images/Arrow3.svg);
   background-repeat: no-repeat;
   background-position: center;
   justify-self: center;
@@ -1226,7 +1226,7 @@ button {
 }
 
 .mobile-menu__search-icon {
-  background-image: url(../../images/loupe.svg);
+  background-image: url(../images/loupe.svg);
   width: 20px;
   height: 20px;
   background-size: contain;
@@ -1266,7 +1266,7 @@ button {
 .mobile-menu__arrow {
   width: 20px;
   height: 20px;
-  background-image: url(../../images/mobile-menu-arrow.svg);
+  background-image: url(../images/mobile-menu-arrow.svg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1299,7 +1299,7 @@ button {
   cursor: pointer;
   width: 25px;
   height: 25px;
-  background-image: url(../../images/account-mobile-menu.svg);
+  background-image: url(../images/account-mobile-menu.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1949,7 +1949,7 @@ button {
 
   .jewelry__size-icon {
     width: 17px;
-    background-image: url(../../images/Arrow\ 2-mobile.svg);
+    background-image: url(../images/Arrow\ 2-mobile.svg);
   }
 
   .jewelry__bottom-container {
