@@ -1913,6 +1913,7 @@ button {
   .jewelry__image {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 25px;
+    height: 100%;
   }
 
   .jewelry__button-like {
