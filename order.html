@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliksov</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container header__container_top">
+          <nav class="container">
+            <ul class="header__nav">
+              <li class="header__nav-item"><a href="#">наши услуги</a></li>
+              <li class="header__nav-item"><a href="#">доставка и оплата</a></li>
+              <li class="header__nav-item"><a href="#">контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__container header__container_center">
+          <div class="container">
+            <div class="header__nav">
+              <button class="header__button header__button_loupe"></button>
+              <button class="header__button header__button_burger"></button>
+              <picture>
+                <source media="(max-width:1200px)" srcset="../../images/logo-tablet.svg">
+                <img src="./images/logo.png" alt="Лого">
+              </picture>
+      
+              <div class="header__buttons">
+                <button class="header__button header__button_account"></button>
+                <button class="header__button header__button_favorites"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__container header__container_bottom">
+          <nav class="container">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="#">о бренде</a></li>
+              <li class="header__menu-item"><a href="#">бутик</a></li>
+              <li class="header__menu-item"><a href="#">свадебные украшения</a></li>
+              <li class="header__menu-item"><a href="#">индивидуальный заказ</a></li>
+              <li class="header__menu-item"><a href="#">подарочные сертификаты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container container_order">
+            <form class="form-order">
+              <h1 class="form-order__title">заказать украшение по своему уникальному дизайну</h1>
+              <p class="form-order__subtitle">Для создания украшение своей мечты заполните форму ниже или позвоните нашему менеджеру по телефону <a href="tel:+78002223232">8 800 222 32 32</a></p>
+              <div class="form-order__container">
+                <label class="form-order__label">
+                  <input class="form-order__input" type="text" required="1"/>
+                  <div class="form-order__placeholder">Ваше имя<span>*</span></div>
+                </label>
+                <label class="form-order__label">
+                  <input class="form-order__input" type="number" required="1"/>
+                  <div class="form-order__placeholder">Телефон<span>*</span></div>
+                </label>
+                <label class="form-order__label">
+                  <input class="form-order__input" type="text" required="1"/>
+                  <div class="form-order__placeholder">Email</div>
+                </label>
+                <label class="form-order__label">
+                  Комментарий (опишите какое изделие Вы бы хотели)
+                  <textarea></textarea>
+                  <p class="form-order__required">Формы, обязательные к заполнению</p>
+                </label>
+            
+                <div class="form-order__add-file" style="">
+                  <label class="form-order__label-add-file" for="myfile">
+                    <p class="form-order__paragraph-add-file">Файл эскиза</p>
+                    <div class="form-order__button-add-file" type="button"></div>
+                  </label>
+                  <input class="form-order__input-add-file" type="file" id="myfile" name="myfile" multiple/>
+                  <p class="form-order__file-comment">Если есть эскиз, фотография похожего изделия прикрепите файл в jpg, pdf, png или doc формате до 5 мБ</p>
+                </div>
+            
+                <label class="form-order__label">
+                  <input class="form-order__input" type="text" required="1"/>
+                  <div class="form-order__placeholder">ФИО Если заполняется продавцом</div>
+                </label>
+                <div class="form-order__agreement">
+                  <label class="form-order__checkbox">
+                    <input class="form-order__checkbox-invisible" type="checkbox"/>
+                    <span class="form-order__checkbox-visible"/>
+                  </label>
+                  <p>Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
+                </div>
+                <button class="form-order__button">Оставить  заявку</button>
+              </div>
+            </form>
+            <div class="order-slider">
+              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+            </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__photos">
+          <li>
+            <img src="./images/content/RGR647C_RGR647_model_2.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Classic_Graff_Grid.png" alt="Фото украшений"/>
+          </li>
+            <li>
+            <img src="./images/content/EngagementBridal_3.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Icon_Collections_PLP.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/LGSCollections_LandingPage_4v2.png" alt="Фото украшений"/>
+          </li>
+        </ul>
+        <div class="footer__main-info">
+          <div class="container footer__container">
+            <img class="footer__logo" src="./images/logo-white.png"/>
+            <ul class="footer__social-networks">
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/whatsapp.svg" alt="WhatsApp"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/telegram.svg" alt="Telegram"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/vk.svg" alt="VK"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/mail.svg" alt="Mail"/></a>
+              </li>
+            </ul>
+            <div class="footer__addresses">
+              <p class="footer__address">Москва: ТЦ Коламбус, малый, Галерея обуви, улица Красного Маяка 2Б, 3 этаж</p>
+              <p class="footer__address">Санкт-Петербург: Невский 88</p>
+            </div>
+            <h3 class="footer__nav-title footer__nav-title_order">Индивидуальный заказ</h3>
+            <nav class="footer__nav footer__nav_catalog">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Браслеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Колье</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Кольца</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Подвески</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Пусеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Серьги</a>
+                </li>
+              </ul>
+            </nav>
+            <h3 class="footer__nav-title footer__nav-title_services">Наши услуги </h3>
+            <nav class="footer__nav footer__nav_services">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Гарантийное обслуживание изделий</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Подбор подарка</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Персонализация украшений</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+            </nav>
+            <h3 class="footer__nav-title footer__nav-title_sertificates">Подарочные сертификаты</h3>
+            <nav class="footer__nav footer__nav_about">
+              <ul class="footer__list">
+                <li class="footer__list-item footer__list-item_catalog footer__list-item_size_big">
+                  <a href="#">Каталог</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="#">О бренде</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="footer__copyright">Ювелирное Ателье Feliksov Diamonds © 2022 - 2023</p>
+            <button class="footer__privacy-policy">Политика конфиденциальности</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
