@@ -22,6 +22,14 @@
   src: url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/open-sans-light.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -67,10 +75,6 @@ li {
 img {
   max-width: 100%;
   display: block;
-}
-
-button {
-  font-family: "Cormorant";
 }
 
 input,
@@ -241,6 +245,7 @@ body {
 .container_order {
   padding: 84px 0 180px;
   display: flex;
+  align-items: flex-start;
   gap: 60px;
 }
 
@@ -252,6 +257,7 @@ body {
 
 button {
   cursor: pointer;
+  font-family: "Cormorant";
 }
 
 .header__container_top {
@@ -968,12 +974,17 @@ button {
   color: #595959;
 }
 
+.form-order {
+  font-family: "Tenor Sans";
+}
+
 .form-order__title {
   margin-bottom: 26px;
-  font-style: normal;
+  font-family: "Cormorant";
+  text-transform: uppercase;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 46px;
+  line-height: 56px;
   color: #000000;
 }
 
@@ -982,6 +993,7 @@ button {
   line-height: 22px;
   color: #555555;
   max-width: 579px;
+  color: #555555;
 }
 
 .form-order__subtitle a {
@@ -1003,7 +1015,7 @@ button {
   display: flex;
   flex-direction: column;
   color: #757575;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
 }
 
@@ -1139,6 +1151,13 @@ button {
   height: 24px;
   border: 1px solid #7B7B7B;
   border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3px;
+}
+
+.form-order__checkbox-invisible:checked + .form-order__checkbox-visible {
+  background-image: url(../images/tick.svg);
 }
 
 .form-order__button {
@@ -1151,9 +1170,32 @@ button {
 }
 
 .order-slider {
-  width: 100% !important;
+  width: calc(50vw - 60px);
   max-width: 780px !important;
   margin: 0 auto !important;
+}
+
+.order-slider__title {
+  margin-bottom: 10px;
+  padding: 0 16px;
+  display: none;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.order-slider__subtitle {
+  margin-bottom: 24px;
+  padding: 0 16px;
+  display: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .order-slider .slick-dots {
@@ -1161,6 +1203,8 @@ button {
   gap: 38px;
   justify-content: center;
   margin-top: 58px;
+  font-size: 0;
+  line-height: 0;
 }
 
 .order-slider .slick-dots li button {
@@ -1341,6 +1385,10 @@ button {
     padding: 0 30px;
   }
 
+  .container_order {
+    padding: 84px 30px 180px;
+  }
+
   .main-slider .slick-dots {
     margin-top: 20px;
   }
@@ -1381,6 +1429,11 @@ button {
 }
 
 @media (max-width: 1200px) {
+  .container_order {
+    padding: 32px 30px 60px;
+    flex-direction: column-reverse;
+  }
+
   .header_fixed {
     position: fixed;
     z-index: 2;
@@ -1693,6 +1746,28 @@ button {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+
+  .form-order__title {
+    text-align: center;
+  }
+
+  .form-order__subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .form-order__container {
+    max-width: none;
+  }
+
+  .form-order__button {
+    align-self: center;
+    padding: 10px 90px;
+  }
+
+  .order-slider {
+    width: calc(100vw - 60px);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1712,6 +1787,55 @@ button {
   .jewelery__table {
     padding: 0 30px !important;
   }
+
+  .form-order__title {
+    text-align: left;
+  }
+
+  .form-order__subtitle {
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    font-family: "Cormorant";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .form-order__subtitle a {
+    border-bottom: none;
+  }
+
+  .form-order__agreement {
+    gap: 20px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container_order {
+    padding: 32px 0 60px;
+  }
+
+  .form-order {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .order-slider {
+    width: 100vw;
+  }
+
+  .order-slider .slick-prev {
+    left: 30px;
+  }
+
+  .order-slider .slick-next {
+    right: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1729,6 +1853,11 @@ button {
 @media (max-width: 680px) {
   .container {
     padding: 0 16px;
+  }
+
+  .container_order {
+    padding: 24px 0 100px;
+    gap: 26px;
   }
 
   .header__container_center {
@@ -2015,6 +2144,58 @@ button {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .form-order {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .form-order__title {
+    display: none;
+  }
+
+  .form-order__subtitle {
+    margin-bottom: 24px;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .form-order__subtitle a {
+    border-bottom: 0.5px solid #555555;
+  }
+
+  .form-order__container {
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .form-order__label_seller {
+    display: none;
+  }
+
+  .form-order__add-file {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-order__label-add-file {
+    width: auto;
+  }
+
+  .form-order__button {
+    align-self: stretch;
+  }
+
+  .order-slider__title {
+    display: block;
+  }
+
+  .order-slider__subtitle {
+    display: block;
   }
 
   .mobile-menu__wrapper {

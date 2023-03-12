@@ -48,6 +48,79 @@
           </nav>
         </div>
       </header>
+      <div class="mobile-menu mobile-menu_invisible">
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__search">
+            <span class="mobile-menu__search-icon"></span>
+            <input class="mobile-menu__input" placeholder="Я ищу..." type="text"/>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__nav-item">
+                <a class="link">
+                  <p>Бутик</p>
+                  <span class="mobile-menu__arrow"></span>
+                </a>
+                <ul class="mobile-menu__submenu">
+                  <li class="mobile-menu__submenu-item">
+                    <a>Браслеты</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Колье</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Кольца</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Подвески</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Пусеты </a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Серьги</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a  class="link">
+                  <p>Свадебные укаршения</p>
+                  <span class="mobile-menu__arrow"></span>
+                </a>
+                 <ul class="mobile-menu__submenu">
+                  <li class="mobile-menu__submenu-item">
+                    <a>Браслеты</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Колье</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Кольца</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Подвески</a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Пусеты </a>
+                  </li>
+                  <li class="mobile-menu__submenu-item">
+                    <a>Серьги</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu__nav-item">Индивидуальный заказ</li>
+              <li class="mobile-menu__nav-item">Подарочные сертификаты</li>
+              <li class="mobile-menu__nav-tem">О бренде</li>
+              <li class="mobile-menu__nav-item">Наши услуги</li>
+              <li class="mobile-menu__nav-item">Контакты</li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__account">
+            <span class="mobile-menu__account-icon"></span>
+            <p class="mobile-menu__account-text">Войти</p>
+          </div>
+        </div>
+      </div>
       <main class="main">
         <div class="container container_order">
             <form class="form-order">
@@ -81,26 +154,30 @@
                   <p class="form-order__file-comment">Если есть эскиз, фотография похожего изделия прикрепите файл в jpg, pdf, png или doc формате до 5 мБ</p>
                 </div>
             
-                <label class="form-order__label">
+                <label class="form-order__label form-order__label_seller">
                   <input class="form-order__input" type="text" required="1"/>
                   <div class="form-order__placeholder">ФИО Если заполняется продавцом</div>
                 </label>
                 <div class="form-order__agreement">
                   <label class="form-order__checkbox">
                     <input class="form-order__checkbox-invisible" type="checkbox"/>
-                    <span class="form-order__checkbox-visible"/>
+                    <div class="form-order__checkbox-visible"></div>
                   </label>
                   <p>Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
                 </div>
                 <button class="form-order__button">Оставить  заявку</button>
               </div>
             </form>
-            <div class="order-slider">
-              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
-              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
-              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
-              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
-              <img class="order-slider__item" src="../../images/content/slider-item.png"/>
+            <div>
+              <h1 class="order-slider__title">заказ украшения</h1>
+              <p class="order-slider__subtitle">по своему уникальному дизайну</p>
+              <div class="order-slider">
+                <img class="order-slider__item" src="./images/content/slider-item.png"/>
+                <img class="order-slider__item" src="./images/content/slider-item.png"/>
+                <img class="order-slider__item" src="./images/content/slider-item.png"/>
+                <img class="order-slider__item" src="./images/content/slider-item.png"/>
+                <img class="order-slider__item" src="./images/content/slider-item.png"/>
+              </div>
             </div>
         </div>
       </main>
