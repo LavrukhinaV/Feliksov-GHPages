@@ -1359,6 +1359,129 @@ button {
   background-position: center;
 }
 
+.about {
+  margin: 40px auto 330px;
+  font-family: "Tenor Sans";
+  color: #2C2C2C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__paragraph {
+  margin-bottom: 80px;
+  max-width: 879px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.16em;
+}
+
+.about__container {
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  max-width: 377px;
+  font-family: "Cormorant";
+  text-transform: uppercase;
+}
+
+.about__subtitle {
+  position: absolute;
+  top: 47%;
+  left: 5%;
+  font-size: 18px;
+  line-height: 21px;
+  max-width: 452px;
+}
+
+.about__order-button {
+  padding: 23.5px 72.5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #1B1919;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 3px;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #1B1919;
+}
+
+.about__table {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 0.16em;
+  color: #000000;
+}
+
+.about__table-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__table-text {
+  margin-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.about__image-container {
+  margin-bottom: 40px;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.about__table-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about__table-button {
+  align-self: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 90%;
+  text-transform: uppercase;
+  color: #C39947;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #C39947;
+}
+
+.about__table-advantages {
+  margin-top: 57px;
+}
+
+.about__table-advantage {
+  list-style: disc;
+  list-style-position: inside;
+}
+
 @media (min-width: 681px) {
   .jewelry:hover {
     border: none;
@@ -1405,6 +1528,14 @@ button {
   .jewelery {
     padding: 0 50px;
   }
+
+  .about {
+    padding: 0 30px;
+  }
+
+  .about__order-button {
+    padding: 23.5px 32.5px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -1434,6 +1565,17 @@ button {
 
   .get-sertificate__button {
     padding: 23.5px 30px;
+  }
+
+  .about__subtitle {
+    max-width: 240px;
+  }
+
+  .about__order-button {
+    position: static;
+    align-self: center;
+    padding: 15.5px 98px;
+    margin-top: 20px;
   }
 }
 
@@ -1475,8 +1617,8 @@ button {
     background-image: url(../images/button-burger.svg);
   }
 
-  .footer__photos li:nth-child(4),
-  .footer__photos li:nth-child(5) {
+  .footer__photos li:nth-child(1),
+  .footer__photos li:nth-child(2) {
     display: none;
   }
 
@@ -1781,6 +1923,22 @@ button {
   .order-slider_slider {
     width: calc(100vw - 60px);
   }
+
+  .about__logo {
+    margin-bottom: 29px;
+    width: 231px;
+  }
+
+  .about__container {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 275px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1825,6 +1983,46 @@ button {
     gap: 20px;
     font-size: 10px;
     line-height: 14px;
+  }
+
+  .about {
+    margin: 35px 0 90px;
+  }
+
+  .about__paragraph {
+    margin-bottom: 50px;
+    max-width: 416px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 189px;
+  }
+
+  .about__order-button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .about__table {
+    margin-top: 50px;
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .about__table-text {
+    margin-bottom: 86px;
+  }
+
+  .about__image-container {
+    margin-bottom: 20px;
+  }
+
+  .about__table-button {
+    width: 100%;
   }
 }
 
@@ -1877,8 +2075,13 @@ button {
     padding: 0;
   }
 
-  .footer__photos li:nth-child(2),
-  .footer__photos li:nth-child(3) {
+  .footer__photos li:nth-child(2) {
+    display: block;
+  }
+
+  .footer__photos li:nth-child(3),
+  .footer__photos li:nth-child(4),
+  .footer__photos li:nth-child(5) {
     display: none;
   }
 
@@ -2226,5 +2429,115 @@ button {
 
   .mobile-menu__account {
     padding: 20px 16px;
+  }
+
+  .about {
+    margin: 26px 0 60px;
+    padding: 0;
+  }
+
+  .about__logo {
+    margin-bottom: 14px;
+  }
+
+  .about__paragraph {
+    padding: 0 16px;
+    margin-bottom: 72px;
+    max-width: none;
+  }
+
+  .about__container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about__image img {
+    width: 100%;
+  }
+
+  .about__title {
+    position: static;
+    max-width: none;
+    align-self: center;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about__subtitle {
+    padding-left: 16px;
+    padding-right: 16px;
+    position: static;
+    max-width: none;
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__order-button {
+    padding: 13px 0;
+    align-self: stretch;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about__table {
+    margin-top: 120px;
+    grid-template-columns: 1fr;
+    font-size: 14px;
+    line-height: 19px;
+    gap: 120px;
+  }
+
+  .about__table-item {
+    display: grid;
+    grid-template-areas: "image" "text" "button";
+    justify-items: center;
+  }
+
+  .about__table-text {
+    padding: 0 16px;
+    margin-bottom: 32px;
+    text-align: center;
+    grid-area: text;
+    gap: 2em;
+  }
+
+  .about__image-container {
+    margin-bottom: 32px;
+    grid-area: image;
+  }
+
+  .about__table-button {
+    width: calc(100% - 32px);
+    grid-area: button;
+  }
+
+  .about__table-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .about__image-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .about__table-button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .about__table-advantages {
+    margin: 0 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__table-advantage {
+    text-align: center;
   }
 }
