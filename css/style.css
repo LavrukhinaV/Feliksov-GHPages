@@ -321,7 +321,7 @@ button {
 }
 
 .header__button_favorites {
-  background-image: url(../images/favorites.png);
+  background-image: url(../images/favorites.svg);
 }
 
 .header__menu {
@@ -1482,6 +1482,79 @@ button {
   list-style-position: inside;
 }
 
+.services {
+  margin: 35px auto 227px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1620px;
+}
+
+.services__title {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 80px;
+}
+
+.services__list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services__list-container {
+  padding-top: 30%;
+  padding-left: 18%;
+  border: 0.5px solid #CFCFCF;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.services__list-title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.services__list-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #2C2C2C;
+  max-width: 452px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.services__list-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #1B1919;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #1B1919;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 3px;
+  max-width: 400px;
+}
+
 @media (min-width: 681px) {
   .jewelry:hover {
     border: none;
@@ -1535,6 +1608,10 @@ button {
 
   .about__order-button {
     padding: 23.5px 32.5px;
+  }
+
+  .services {
+    padding: 0 30px;
   }
 }
 
@@ -1615,6 +1692,14 @@ button {
   .header__button_burger {
     display: block;
     background-image: url(../images/button-burger.svg);
+  }
+
+  .header__button_account {
+    background-image: url(../images/account-mobile.svg);
+  }
+
+  .header__button_favorites {
+    background-image: url(../images/favorites-mobile.svg);
   }
 
   .footer__photos li:nth-child(1),
@@ -1939,6 +2024,33 @@ button {
     line-height: 37px;
     max-width: 275px;
   }
+
+  .services__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .services__list {
+    gap: 50px;
+  }
+
+  .services__list-container {
+    padding: 61px 22px;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .services__list-text {
+    text-align: center;
+  }
+
+  .services__list-button {
+    padding: 15.5px 0;
+    max-width: none;
+    align-self: stretch;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2024,6 +2136,16 @@ button {
   .about__table-button {
     width: 100%;
   }
+
+  .services__list-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .services__list-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -2058,6 +2180,33 @@ button {
     justify-content: space-between;
     font-size: 8px;
     line-height: 9px;
+  }
+
+  .services {
+    padding: 0;
+  }
+
+  .services__title {
+    padding: 0 16px;
+  }
+
+  .services__list {
+    gap: 97px;
+  }
+
+  .services__list-item {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+
+  .services__list-container {
+    padding: 0 16px;
+    border: none;
+  }
+
+  .services__list-text {
+    gap: 1em;
   }
 }
 
@@ -2539,5 +2688,10 @@ button {
 
   .about__table-advantage {
     text-align: center;
+  }
+
+  .services__list-title {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
