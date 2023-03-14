@@ -229,7 +229,6 @@ body {
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -240,6 +239,9 @@ body {
 
 .main {
   flex: 1 1;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .container {
@@ -263,6 +265,35 @@ body {
 button {
   cursor: pointer;
   font-family: "Cormorant";
+}
+
+.checkbox-filter {
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+
+.checkbox-filter__invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox-filter__visible {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #7B7B7B;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3px;
+}
+
+.checkbox-filter__invisible:checked + .checkbox-filter__visible {
+  background-image: url(../images/tick.svg);
 }
 
 .header__container_top {
@@ -1138,34 +1169,6 @@ button {
   color: #7B7B7B;
 }
 
-.form-order__checkbox {
-  position: relative;
-  display: flex;
-}
-
-.form-order__checkbox-invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.form-order__checkbox-visible {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #7B7B7B;
-  border-radius: 5px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3px;
-}
-
-.form-order__checkbox-invisible:checked + .form-order__checkbox-visible {
-  background-image: url(../images/tick.svg);
-}
-
 .form-order__button {
   padding: 14.5px 0;
   color: #C39947;
@@ -1289,6 +1292,7 @@ button {
 }
 
 .mobile-menu__input {
+  font-family: "Cormorant";
   font-size: 16px;
   line-height: 20px;
   color: #555555;
@@ -1382,6 +1386,10 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.about__image img {
+  width: 100%;
 }
 
 .about__title {
@@ -1488,7 +1496,6 @@ button {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  max-width: 1620px;
 }
 
 .services__title {
@@ -1555,6 +1562,245 @@ button {
   max-width: 400px;
 }
 
+.catalog {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.catalog__promo {
+  padding: 80px 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/catalog-backgraund.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: stretch;
+}
+
+.catalog__title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.catalog__subtitle {
+  max-width: 452px;
+  font-family: "Tenor Sans";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.catalog__form {
+  margin: 44px auto 60px;
+  max-width: 1620px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__button-reset {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.catalog__open-filter {
+  padding-bottom: 6px;
+  display: none;
+  border-bottom: 0.5px solid rgba(85, 85, 85, 0.4);
+  font-size: 20px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.catalog__open-filter span {
+  background-image: url(../images/button-open-filter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.catalog__filters {
+  display: flex;
+  gap: 60px;
+}
+
+.catalog__filter {
+  position: relative;
+}
+
+.catalog__filter-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+}
+
+.catalog__filter-button_open {
+  color: #C39947;
+}
+
+.catalog__filter-arrow {
+  width: 6px;
+  height: 10px;
+  background-image: url(../images/arrow-filter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog__filter-arrow_open {
+  background-image: url(../images/arrow-filter-open.svg);
+}
+
+.catalog__filter-options {
+  padding: 30px 20px !important;
+  position: absolute;
+  margin-top: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.catalog__filter-options_visible {
+  display: flex;
+}
+
+.catalog__filter-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.catalog__elements {
+  margin: 0 auto 444px;
+  max-width: 1620px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 180px 20px;
+}
+
+.jewelry__cell_catalog {
+  display: grid;
+  opacity: 1;
+  bottom: -70px;
+  border: none;
+  transition: opacity 0.5s;
+}
+
+.jewelry__cell_catalog .jewelry__definition {
+  color: #C39947;
+}
+
+.jewelry:hover .jewelry__cell_catalog {
+  display: none;
+}
+
+.mobile-filters {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 3;
+  transition: left 0.5s;
+}
+
+.mobile-filters_invisible {
+  left: -100%;
+}
+
+.mobile-filters__wrapper {
+  left: 0;
+  width: 90%;
+  min-height: 100vh;
+  background: #FFFAF4;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+}
+
+.mobile-filters__title {
+  padding: 30px 30px;
+  font-weight: 400;
+}
+
+.mobile-filters__form {
+  padding: 30px 30px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.mobile-filters__filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-filters__filter-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-filters__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.mobile-filters__arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/mobile-menu-arrow.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mobile-filters__arrow_menu-open {
+  transform: rotate(90deg);
+}
+
+.mobile-filters__submenu {
+  display: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-filters__submenu_visible {
+  display: flex;
+}
+
+.mobile-filters__account {
+  padding: 30px 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mobile-filters__account-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/account-mobile-menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 681px) {
   .jewelry:hover {
     border: none;
@@ -1611,6 +1857,14 @@ button {
   }
 
   .services {
+    padding: 0 30px;
+  }
+
+  .catalog__form {
+    padding: 0 30px;
+  }
+
+  .catalog__elements {
     padding: 0 30px;
   }
 }
@@ -2050,6 +2304,50 @@ button {
     align-self: stretch;
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .catalog__promo {
+    padding: 80px 0 70px;
+  }
+
+  .catalog__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .catalog__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 253px;
+  }
+
+  .catalog__form {
+    margin: 40px 0 30px;
+  }
+
+  .catalog__button-reset {
+    display: none;
+  }
+
+  .catalog__open-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .catalog__filters {
+    display: none;
+  }
+
+  .catalog__elements {
+    margin-bottom: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 20px;
+  }
+
+  .jewelry__cell_catalog {
+    padding: 0;
   }
 }
 
@@ -2600,10 +2898,6 @@ button {
     margin-left: 0;
   }
 
-  .about__image img {
-    width: 100%;
-  }
-
   .about__title {
     position: static;
     max-width: none;
@@ -2693,5 +2987,62 @@ button {
   .services__list-title {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .catalog__promo {
+    padding: 30px 0;
+  }
+
+  .catalog__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .catalog__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .catalog__form {
+    padding: 0 16px;
+    margin: 15px 0;
+  }
+
+  .catalog__open-filter span {
+    width: 12px;
+    height: 12px;
+  }
+
+  .catalog__open-filter {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .catalog__elements {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .jewelry__cell_catalog {
+    display: none;
+  }
+
+  .mobile-filters__wrapper {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .mobile-filters__title {
+    padding: 30px 16px 18px;
+  }
+
+  .mobile-filters__form {
+    padding: 16px 16px 20px;
+  }
+
+  .mobile-filters__account {
+    padding: 20px 16px;
   }
 }
