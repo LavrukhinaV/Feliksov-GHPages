@@ -368,6 +368,12 @@ button {
   color: #2C2C2C;
 }
 
+.logo-img {
+  background-image: url(../../images/logo-tablet.svg);
+  width: 90px;
+  height: 67.5px;
+}
+
 .footer {
   font-family: "Tenor Sans";
 }
@@ -1859,6 +1865,7 @@ button {
   position: absolute;
   top: 20px;
   right: 20px;
+  transition: 0.5s;
 }
 
 .product-card__photos-like:hover {
@@ -2203,6 +2210,8 @@ button {
   margin-top: 5px;
   border-radius: 3px;
   display: none;
+  background: #FFFFFF;
+  z-index: 1;
 }
 
 .select__list--show {
@@ -3091,6 +3100,10 @@ button {
     line-height: 19px;
   }
 
+  .product-card__description-button:hover {
+    padding: 9.5px 0;
+  }
+
   .product-card__form-title {
     margin-bottom: 20px;
     font-size: 24px;
@@ -3759,6 +3772,10 @@ button {
     font-size: 18px;
     line-height: 22px;
     padding: 14px 0;
+  }
+
+  .product-card__description-button:hover {
+    padding: 13px 0;
   }
 
   .product-card__form {
