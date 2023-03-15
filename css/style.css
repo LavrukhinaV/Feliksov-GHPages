@@ -368,12 +368,6 @@ button {
   color: #2C2C2C;
 }
 
-.logo-img {
-  background-image: url(../../images/logo-tablet.svg);
-  width: 90px;
-  height: 67.5px;
-}
-
 .footer {
   font-family: "Tenor Sans";
 }
