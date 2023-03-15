@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliksov</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container header__container_top">
+          <nav class="container">
+            <ul class="header__nav">
+              <li class="header__nav-item"><a href="#">наши услуги</a></li>
+              <li class="header__nav-item"><a href="#">доставка и оплата</a></li>
+              <li class="header__nav-item"><a href="#">контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__container header__container_center">
+          <div class="container">
+            <div class="header__nav">
+              <button class="header__button header__button_loupe"></button>
+              <button class="header__button header__button_burger"></button>
+              <picture>
+                <source media="(max-width:1200px)" srcset="./images/logo-tablet.svg">
+                <img src="./images/logo.png" alt="Лого">
+              </picture>
+      
+              <div class="header__buttons">
+                <button class="header__button header__button_account"></button>
+                <button class="header__button header__button_favorites"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__container header__container_bottom">
+          <nav class="container">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="#">о бренде</a></li>
+              <li class="header__menu-item"><a href="#">бутик</a></li>
+              <li class="header__menu-item"><a href="#">свадебные украшения</a></li>
+              <li class="header__menu-item"><a href="#">индивидуальный заказ</a></li>
+              <li class="header__menu-item"><a href="#">подарочные сертификаты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+          <div class="product-card">
+            <h1 class="product-card__title">Красивое кольцо с какими-то 111</h1>
+            <section class="product-card__photos">
+              <ul class="product-card__photos-slider">
+                <li>
+                  <img src="./images/content/product-image1.png" alt="Изображение товара"/>
+                </li>
+                <li>
+                  <img src="./images/content/product-image2.png" alt="Изображение товара"/>
+                </li>
+                <li>
+                  <img src="./images/content/product-image3.png" alt="Изображение товара"/>
+                </li>
+              </ul>
+              <button class="product-card__photos-like"></button>
+            </section>
+            <section class="product-card__description">
+              <div class="product-card__description-wrapper">
+                <h2 class="product-card__description-title">Браслет с бриллиантами</h2>
+                <button class="product-card__description-like"></button>
+              </div>
+              <h3 class="product-card__description-subtitle">Описание изделия</h3>
+              <p class="product-card__description-text">Данное торговое предложение не является публичной офертой</p>
+              <ul class="product-card__description-table">
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Цвет золота</h3>
+                  <p class="product-card__description-table-value">Белое золото, 750 пробы </p>
+                </li>
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Вес</h3>
+                  <p class="product-card__description-table-value">6,31</p>
+                </li>
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Камень</h3>
+                  <p class="product-card__description-table-value">Бриллианты</p>
+                </li>
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Количество камней</h3>
+                  <p class="product-card__description-table-value">54</p>
+                </li>
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Размер</h3>
+                  <p class="product-card__description-table-value">14,15,16,17,18,19,20,21,22</p>
+                </li>
+                <li class="product-card__description-table-item">
+                  <h3 class="product-card__description-table-title">Артикул</h3>
+                  <p class="product-card__description-table-value">БР 10002</p>
+                </li>
+              </ul>
+              <ul class="product-card__description-list">
+                <li class="product-card__description-list-item">Белое золото 750 пробы 25</li>
+                <li class="product-card__description-list-item">25 бриллиантов ф 2,5 мм общим весом 1,500 ct;</li>
+                <li class="product-card__description-list-item">29 бриллиантов ф 2,5 мм общим весом 1,740 ct;</li>
+              </ul>
+              <button class="product-card__description-button">Оставить заявку</button>
+            </section>
+            <form class="product-card__form">
+              <h2 class="product-card__form-title">Персональная консультация </h2>
+              <p class="product-card__form-subtitle">Наши специалисты свяжутся с Вами по вопросам характеристик и приобретения, ответят на Ваши вопросы, а также запишут на примерку на удобное время.</p>
+              <input class="product-card__form-input" placeholder="Ваше имя" type="text"></input>
+              <input class="product-card__form-input" placeholder="Телефон" type="number"></input>
+              <div class="select">
+                <input class="select__input" type="hidden" name="naumber" value="Санкт-Петербург"></input>
+                <button class="select__current" type="button">Санкт-Петербург</button>
+                <div class="select__list">
+                  <button class="select__item" data-value="Санкт-Петербург" type="button">Санкт-Петербург</button>
+                  <button class="select__item" data-value="Москва" type="button">Москва</button>
+                  <button class="select__item" data-value="Екатеринбург" type="button">Екатеринбург</button>
+                  <button class="select__item" data-value="Сочи" type="button">Сочи</button>
+                  <button class="select__item" data-value="Нижний Новогород" type="button">Нижний Новогород</button>
+                </div>
+              </div>
+              <div class="product-card__form-container">
+                <div class="product-card__form-radio-filter">
+                  <h3 class="product-card__form-radio-title">Где с вами связаться?</h3>
+                  <div class="product-card__form-radio-container">
+                    <label class="product-card__form-radio-label">
+                      <input class="product-card__form-radio-invisible" name="communication method" type="radio" value="WhatsApp" checked></input>
+                      <p class="product-card__form-radio-visible">WhatsApp</p>
+                    </label>
+                    <label class="product-card__form-radio-label">
+                      <input class="product-card__form-radio-invisible" name="communication method" type="radio" value="Telegram"></input>
+                      <p class="product-card__form-radio-visible">Telegram</p>
+                    </label>
+                    <label class="product-card__form-radio-label">
+                      <input class="product-card__form-radio-invisible" name="communication method" type="radio" value="SMS"></input>
+                      <p class="product-card__form-radio-visible">SMS</p>
+                    </label>
+                  </div>
+                </div>
+                <button class="product-card__form-button">Свяжитесь со мной</button>
+              </div>
+            </form>
+            <div class="product-card__delivery">
+              <div class="product-card__delivery-wrapper">
+                <span class="product-card__delivery-icon"></span>
+                <h2 class="product-card__delivery-title">Безопасная доставка</h2>
+              </div>
+              <p class="product-card__delivery-text">Мы работаем исключительно с проверенными транспортными компаниями высокого уровня безопасности. Поэтому можете быть уверены, что ваше драгоценное изделие будет доставлено до вас.</p>
+            </div>
+            <section class="product-card__recommended-products">
+              <h2 class="product-card__recommended-products-title">Также может быть интересно</h2>
+              <ul class="product-card__recommended-products-list">
+          
+                <li class="jewelry">
+                  <button class="jewelry__button-like"></button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </li>
+          
+                <li class="jewelry">
+                  <button class="jewelry__button-like"></button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </li>
+          
+                <li class="jewelry">
+                  <button class="jewelry__button-like"></button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </li>
+          
+                <li class="jewelry">
+                  <button class="jewelry__button-like"></button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__photos">
+          <li>
+            <img src="./images/content/RGR647C_RGR647_model_2.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Classic_Graff_Grid.png" alt="Фото украшений"/>
+          </li>
+            <li>
+            <img src="./images/content/EngagementBridal_3.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Icon_Collections_PLP.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/LGSCollections_LandingPage_4v2.png" alt="Фото украшений"/>
+          </li>
+        </ul>
+        <div class="footer__main-info">
+          <div class="container footer__container">
+            <img class="footer__logo" src="./images/logo-white.png"/>
+            <ul class="footer__social-networks">
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/whatsapp.svg" alt="WhatsApp"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/telegram.svg" alt="Telegram"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/vk.svg" alt="VK"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/mail.svg" alt="Mail"/></a>
+              </li>
+            </ul>
+            <div class="footer__addresses">
+              <p class="footer__address">Москва: ТЦ Коламбус, малый, Галерея обуви, улица Красного Маяка 2Б, 3 этаж</p>
+              <p class="footer__address">Санкт-Петербург: Невский 88</p>
+            </div>
+            <h3 class="footer__nav-title footer__nav-title_order">Индивидуальный заказ</h3>
+            <nav class="footer__nav footer__nav_catalog">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Браслеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Колье</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Кольца</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Подвески</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Пусеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Серьги</a>
+                </li>
+              </ul>
+            </nav>
+            <h3 class="footer__nav-title footer__nav-title_services">Наши услуги </h3>
+            <nav class="footer__nav footer__nav_services">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Гарантийное обслуживание изделий</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Подбор подарка</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Персонализация украшений</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+            </nav>
+            <h3 class="footer__nav-title footer__nav-title_sertificates">Подарочные сертификаты</h3>
+            <nav class="footer__nav footer__nav_about">
+              <ul class="footer__list">
+                <li class="footer__list-item footer__list-item_catalog footer__list-item_size_big">
+                  <a href="#">Каталог</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="#">О бренде</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="footer__copyright">Ювелирное Ателье Feliksov Diamonds © 2022 - 2023</p>
+            <button class="footer__privacy-policy">Политика конфиденциальности</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="mobile-menu mobile-menu_invisible">
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__search">
+          <span class="mobile-menu__search-icon"></span>
+          <input class="mobile-menu__input" placeholder="Я ищу..." type="text"/>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__nav-item">
+              <a class="link">
+                <p>Бутик</p>
+                <span class="mobile-menu__arrow"></span>
+              </a>
+              <ul class="mobile-menu__submenu">
+                <li class="mobile-menu__submenu-item">
+                  <a>Браслеты</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Колье</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Кольца</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Подвески</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Пусеты </a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Серьги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a  class="link">
+                <p>Свадебные укаршения</p>
+                <span class="mobile-menu__arrow"></span>
+              </a>
+               <ul class="mobile-menu__submenu">
+                <li class="mobile-menu__submenu-item">
+                  <a>Браслеты</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Колье</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Кольца</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Подвески</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Пусеты </a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a>Серьги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__nav-item">Индивидуальный заказ</li>
+            <li class="mobile-menu__nav-item">Подарочные сертификаты</li>
+            <li class="mobile-menu__nav-tem">О бренде</li>
+            <li class="mobile-menu__nav-item">Наши услуги</li>
+            <li class="mobile-menu__nav-item">Контакты</li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__account">
+          <span class="mobile-menu__account-icon"></span>
+          <p class="mobile-menu__account-text">Войти</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
