@@ -321,6 +321,30 @@ button {
   border-color: rgba(226, 226, 226, 0.7);
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header__logo svg {
+  max-width: 49px;
+  max-height: 28px;
+}
+
+.header__logo-title {
+  font-family: "Costigue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.135em;
+  color: #2C2C2C;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: flex;
+  gap: 14px;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -2613,11 +2637,34 @@ button {
   }
 
   .header__container_center {
-    padding: 6px 0;
+    padding: 15px 0;
   }
 
   .header__container_bottom {
     display: none;
+  }
+
+  .header__logo {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .header__logo svg {
+    max-width: 26px;
+    max-height: 20px;
+  }
+
+  .header__logo-title :last-child {
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  .header__logo-title {
+    font-size: 14px;
+    line-height: 19px;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
   }
 
   .header__button {
@@ -3532,7 +3579,7 @@ button {
   }
 
   .header__container_center {
-    padding: 0;
+    padding: 10px 0;
   }
 
   .footer__photos li:nth-child(2) {
