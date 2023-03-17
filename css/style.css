@@ -616,6 +616,7 @@ button {
   color: #1B1919;
   border: 1px solid #1B1919;
   border-radius: 3px;
+  text-align: center;
 }
 
 .go-to-catalog {
@@ -666,6 +667,7 @@ button {
   position: absolute;
   bottom: 7%;
   right: 7.8%;
+  text-align: center;
 }
 
 .main-slider {
@@ -1003,6 +1005,7 @@ button {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   border-radius: 3px;
+  text-align: center;
 }
 
 .our-services {
@@ -2578,6 +2581,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  color: #2C2C2C;
 }
 
 .contacts__address-subtitle_big {
