@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliksov</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container header__container_top">
+          <nav class="container">
+            <ul class="header__nav">
+              <li class="header__nav-item"><a href="services.html">наши услуги</a></li>
+              <li class="header__nav-item"><a href="contacts.html">доставка и оплата</a></li>
+              <li class="header__nav-item"><a href="contacts.html">контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__container header__container_center">
+          <div class="container">
+            <div class="header__nav">
+              <button class="header__button header__button_loupe"></button>
+              <button class="header__button header__button_burger"></button>
+              <a class="header__logo" href="index.html">
+                <svg width="100%" height="100%" viewBox="0 0 563 463" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M304.865 0C123.744 0 -1.09825 176.82 0.00728394 320.146C49.2157 229.615 92.749 192.264 193.9 145.405C208.895 138.458 216.484 133.561 227.064 116.069L252.575 62.4986C258.953 48.4683 275.535 58.6722 271.709 68.876L247.465 124.997C411.553 89.2947 472.947 61.244 539.568 0H304.865Z" fill="#2C2C2C"/>
+                  <path d="M197.726 170.915C107.162 197.7 -15.2917 336.727 2.56603 433.664C18.1568 518.295 112.264 403.052 197.726 170.915Z" fill="#2C2C2C"/>
+                  <path d="M274.26 147.956C437.048 113.217 507.687 75.2534 561.26 17.8567C565.087 141.579 565.398 197.7 531.922 275.504C484.727 385.196 357.171 463 246.197 463H80.375C98.8033 443.438 108.437 431.951 121.193 405.603C141.624 363.401 153.106 347.058 173.491 329.074C209.403 301.347 245.156 290.774 320.18 275.504C368.831 266.807 394.514 254.548 438.807 225.76C447.735 219.383 434.523 205.834 428.602 209.179C388.337 231.929 366.1 242.799 317.629 251.27C239.943 264.846 208.384 274.837 173.491 297.187C204.994 208.727 236.952 155.917 274.26 147.956Z" fill="#2C2C2C"/>
+                </svg>
+                <div class="header__logo-title">
+                  <p>FELIKSOV</p>
+                  <p>Diamonds</p>
+                </div>
+              </a>
+              <div class="header__buttons">
+                <button class="header__button header__button_account"></button>
+                <button class="header__button header__button_favorites"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__container header__container_bottom">
+          <nav class="container">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="about.html">о бренде</a></li>
+              <li class="header__menu-item"><a href="catalog.html">бутик</a></li>
+              <li class="header__menu-item"><a href="weddingRings.html">свадебные украшения</a></li>
+              <li class="header__menu-item"><a href="order.html">индивидуальный заказ</a></li>
+              <li class="header__menu-item"><a href="certificate.html">подарочные сертификаты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+          <div class="catalog">
+            <div class="catalog__promo">
+              <h1 class="catalog__title">Обручальные колца</h1>
+              <p class="catalog__subtitle">Красивый текст про обручальные колца от ювелирной мастерской</p>
+            </div>
+            <form class="catalog__form">
+              <ul class="catalog__filters">
+          
+                <li class="catalog__filter">
+                  <button class="catalog__filter-button" type="button">
+                    <p class="catalog__filter-title">Камень</p>
+                    <span class="catalog__filter-arrow"/></button>
+                  <ul class="catalog__filter-options">
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Жёлтый бриллиант</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Бриллиант</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Изумруд</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Топаз</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Рубин</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Другие</p>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+          
+                <li class="catalog__filter">
+                  <button class="catalog__filter-button" type="button">
+                    <p>Огранка</p>
+                    <span class="catalog__filter-arrow"/></button>
+                  <ul class="catalog__filter-options">
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Круглая</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Груша</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Овал</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Маркиз</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Принцесса</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Античная</p>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+          
+                <li class="catalog__filter">
+                  <button class="catalog__filter-button" type="button">
+                    <p>Каратность</p>
+                    <span class="catalog__filter-arrow"/></button>
+                  <ul class="catalog__filter-options">
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">1-2</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">2-4</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">4-6</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">6-8</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">8 и более</p>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+          
+                <li class="catalog__filter">
+                  <button class="catalog__filter-button" type="button">
+                    <p>Металл</p>
+                    <span class="catalog__filter-arrow"/></button>
+                  <ul class="catalog__filter-options">
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Белое золото</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Розовое золото</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Серебро</p>
+                      </label>
+                    </li>
+                    <li class="catalog__filter-option">
+                      <label class="checkbox-filter">
+                        <input class="checkbox-filter__invisible" type="checkbox"/>
+                        <div class="checkbox-filter__visible"></div>
+                        <p class="catalog__filter-option-value">Платина</p>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+          
+              </ul>
+              <button class="catalog__button-reset" type="button">очистить все</button>
+              <button class="catalog__open-filter" type="button">
+                <p>Фильтры</p>
+                <span />
+              </button>
+            </form>
+          
+            <section class="catalog__elements">
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+                <a class="jewelry" href="product.html">
+                  <button class="jewelry__button-like">
+                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                    </svg>
+                  </button>
+                  <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                  <div class="jewelry-slider">
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 108.png"/>
+                    <img class="jewelry-slider__item" src="./images/content/image 107.png"/>
+                  </div>
+                  <div class="jewelry__cell">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                    <div class="jewelry__green-container">
+                      <div class="jewelry__size">
+                        <span class="jewelry__size-icon"></span>
+                        <p class="jewelry__size-value">16.5</p>
+                      </div>
+                      <p class="jewelry__metal">Белое золото</p>
+                    </div>
+                    <div class="jewelry__bottom-container">
+                      <p class="jewelry__note">exclusive</p>
+                      <button class="jewelry__arrow"></button>
+                    </div>
+                  </div>
+                  <div class="jewelry__cell jewelry__cell_catalog">
+                    <p class="jewelry__definition">Красивое кольцо</p>
+                    <div class="jewelry__description">
+                      <span class="jewelry__img"></span>
+                      <p class="jewelry__stone">Камень</p>
+                      <p class="jewelry__specification">ст 11.97</p>
+                    </div>
+                  </div>
+                </a>
+          
+            </section>
+          </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__photos">
+          <li>
+            <img src="./images/content/RGR647C_RGR647_model_2.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Classic_Graff_Grid.png" alt="Фото украшений"/>
+          </li>
+            <li>
+            <img src="./images/content/EngagementBridal_3.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/Icon_Collections_PLP.png" alt="Фото украшений"/>
+          </li>
+          <li>
+            <img src="./images/content/LGSCollections_LandingPage_4v2.png" alt="Фото украшений"/>
+          </li>
+        </ul>
+        <div class="footer__main-info">
+          <div class="container footer__container">
+            <a class="footer__logo" href="index.html">
+              <svg width="100%" height="100%" viewBox="0 0 563 463" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M304.865 0C123.744 0 -1.09825 176.82 0.00728394 320.146C49.2157 229.615 92.749 192.264 193.9 145.405C208.895 138.458 216.484 133.561 227.064 116.069L252.575 62.4986C258.953 48.4683 275.535 58.6722 271.709 68.876L247.465 124.997C411.553 89.2947 472.947 61.244 539.568 0H304.865Z" fill="#D9D9D9"/>
+                <path d="M197.726 170.915C107.162 197.7 -15.2917 336.727 2.56603 433.664C18.1568 518.295 112.264 403.052 197.726 170.915Z" fill="#D9D9D9"/>
+                <path d="M274.26 147.956C437.048 113.217 507.687 75.2534 561.26 17.8567C565.087 141.579 565.398 197.7 531.922 275.504C484.727 385.196 357.171 463 246.197 463H80.375C98.8033 443.438 108.437 431.951 121.193 405.603C141.624 363.401 153.106 347.058 173.491 329.074C209.403 301.347 245.156 290.774 320.18 275.504C368.831 266.807 394.514 254.548 438.807 225.76C447.735 219.383 434.523 205.834 428.602 209.179C388.337 231.929 366.1 242.799 317.629 251.27C239.943 264.846 208.384 274.837 173.491 297.187C204.994 208.727 236.952 155.917 274.26 147.956Z" fill="#D9D9D9"/>
+              </svg>
+              <h3 class="footer__logo-title">FELIKSOV DIAMONDS</h3>
+            </a>
+            <ul class="footer__social-networks">
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/whatsapp.svg" alt="WhatsApp"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/telegram.svg" alt="Telegram"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/vk.svg" alt="VK"/></a>
+              </li>
+              <li class="footer__social-network">
+                <a href="#"><img src="./images/mail.svg" alt="Mail"/></a>
+              </li>
+            </ul>
+            <div class="footer__addresses">
+              <p class="footer__address">Москва: ТЦ Коламбус, малый, Галерея обуви, улица Красного Маяка 2Б, 3 этаж</p>
+              <p class="footer__address">Санкт-Петербург: Невский 88</p>
+            </div>
+            <a class="footer__nav-title footer__nav-title_order" href="order.html">Индивидуальный заказ</a>
+            <nav class="footer__nav footer__nav_catalog">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="bracelets.html">Браслеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="necklaces.html">Колье</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="rings.html">Кольца</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="pendants.html">Подвески</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="studs.html">Пусеты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="earrings.html">Серьги</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="footer__nav-title footer__nav-title_services" href="services.html">Наши услуги </a>
+            <nav class="footer__nav footer__nav_services">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Гарантийное обслуживание изделий</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Подбор подарка</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="order.html">Персонализация украшений</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="footer__nav-title footer__nav-title_sertificates" href="certificate.html">Подарочные сертификаты</a>
+            <nav class="footer__nav footer__nav_about">
+              <ul class="footer__list">
+                <li class="footer__list-item footer__list-item_catalog footer__list-item_size_big">
+                  <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="about.html">О бренде</a>
+                </li>
+                <li class="footer__list-item footer__list-item_size_big">
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="footer__copyright">Ювелирное Ателье Feliksov Diamonds © 2022 - 2023</p>
+            <button class="footer__privacy-policy">Политика конфиденциальности</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="mobile-menu mobile-menu_invisible">
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__search">
+          <span class="mobile-menu__search-icon"></span>
+          <input class="mobile-menu__input" placeholder="Я ищу..." type="text"/>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__nav-item">
+              <a class="link">
+                <p>Бутик</p>
+                <span class="mobile-menu__arrow"></span>
+              </a>
+              <ul class="mobile-menu__submenu">
+                <li class="mobile-menu__submenu-item">
+                  <a href="bracelets.html">Браслеты</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="necklaces.html">Колье</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="rings.html">Кольца</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="pendants.html">Подвески</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="studs.html">Пусеты </a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="earrings.html">Серьги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="link">
+                <p>Свадебные укаршения</p>
+                <span class="mobile-menu__arrow"></span>
+              </a>
+               <ul class="mobile-menu__submenu">
+                <li class="mobile-menu__submenu-item">
+                  <a href="engagementRings.html">Помолвочные кольца</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="weddingRings.html">Обручальные колца</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="earrings.html">Серьги</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="necklaces.html">Колье</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="bracelets.html">Браслеты</a>
+                </li>
+                <li class="mobile-menu__submenu-item">
+                  <a href="pendants.html">Кулоны </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__nav-item"><a href="order.html">Индивидуальный заказ</a></li>
+            <li class="mobile-menu__nav-item"><a href="certificate.html">Подарочные сертификаты</a></li>
+            <li class="mobile-menu__nav-item"><a href="about.html">О бренде</a></li>
+            <li class="mobile-menu__nav-item"><a href="services.html">Наши услуги</a></li>
+            <li class="mobile-menu__nav-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__account">
+          <span class="mobile-menu__account-icon"></span>
+          <p class="mobile-menu__account-text">Войти</p>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-filters mobile-filters_invisible">
+      <div class="mobile-filters__wrapper">
+        <h3 class="mobile-filters__title">Фильтры </h3>
+        <form class="mobile-filters__form">
+          <ul class="mobile-filters__list">
+            <li class="mobile-filters__filter">
+              <div class="mobile-filters__filter-title">
+                <p>Камень</p>
+                <span class="mobile-filters__arrow"></span>
+              </div>
+              <ul class="mobile-filters__submenu">
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Жёлтый бриллиант</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Бриллиант</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Изумруд</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Топаз</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Рубин</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Другие</p>
+                  </label>
+                </li>
+              </ul>
+            </li>
+    
+            <li class="mobile-filters__filter">
+              <div  class="mobile-filters__filter-title">
+                <p>Огранка</p>
+                <span class="mobile-filters__arrow"></span>
+              </div>
+               <ul class="mobile-filters__submenu">
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Круглая</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Груша</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Овал</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Маркиз</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Принцесса</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Античная</p>
+                  </label>
+                </li>
+              </ul>
+            </li>
+    
+            <li class="mobile-filters__filter">
+              <div class="mobile-filters__filter-title">
+                <p>Каратность</p>
+                <span class="mobile-filters__arrow"></span>
+              </div>
+               <ul class="mobile-filters__submenu">
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">1-2</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">2-4</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">4-6</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">6-8</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">8 и более</p>
+                  </label>
+                </li>
+              </ul>
+            </li>
+    
+            <li class="mobile-filters__filter">
+              <div class="mobile-filters__filter-title">
+                <p>Металл</p>
+                <span class="mobile-filters__arrow"></span>
+              </div>
+              <ul class="mobile-filters__submenu">
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Белое золото</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Розовое золото</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Серебро</p>
+                  </label>
+                </li>
+                <li class="catalog__filter-option">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                    <p class="catalog__filter-option-value">Платина</p>
+                  </label>
+                </li>
+              </ul>
+            </li>
+    
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

@@ -48,7 +48,7 @@
             <ul class="header__menu">
               <li class="header__menu-item"><a href="about.html">о бренде</a></li>
               <li class="header__menu-item"><a href="catalog.html">бутик</a></li>
-              <li class="header__menu-item"><a href="catalog.html">свадебные украшения</a></li>
+              <li class="header__menu-item"><a href="weddingRings.html">свадебные украшения</a></li>
               <li class="header__menu-item"><a href="order.html">индивидуальный заказ</a></li>
               <li class="header__menu-item"><a href="certificate.html">подарочные сертификаты</a></li>
             </ul>
@@ -56,6 +56,89 @@
         </div>
       </header>
       <main class="main">
+          <section class="contacts">
+            <h1 class="contacts__title">Контакты</h1>
+            <p class="contacts__subtitle">Компания основана в Санкт- Петербурге Алексеем и Алиной Феликсовыми, соучредителями известного бренда «585-Золотой», подарившим радость миллионам своих клиентов за 20-ть лет успешной работы.</p>
+            <img class="contacts__image" src="./images/content/contacts.png"/>
+            <div class="contacts__container">
+              <ul class="contacts__addresses">
+                <li class="contacts__address">
+                  <h2 class="contacts__address-title">Москва</h2>
+                  <p class="contacts__address-subtitle contacts__address-subtitle_big">ТЦ Коламбус, малый, Галерея обуви, улица Красного Маяка 2Б, 3 этаж</p>
+                </li>
+                <li class="contacts__address contacts__address_legal-address">
+                  <h2 class="contacts__address-title">Юридический адрес:</h2>
+                  <div class="contacts__address-subtitle">
+                    <p>ООО «Ювелирное ателье Феликсов»</p>
+                    <p>188640, ГОРОД МОСКВА ЛЕНИНГРАДСКАЯ ОБЛАСТЬ, М.Р-Н ВСЕВОЛОЖСКИЙ, Г.П. ВСЕВОЛОЖСКОЕ, Г. ВСЕВОЛОЖСК, УЛ. СОЦИАЛИСТИЧЕСКАЯ, Д. 104, ПОМЕЩ. 2.2</p>
+                    <p>ОГРН 1214700011646</p>
+                    <p>ИНН 4703184581</p>
+                    <p>КПП 470301001</p>
+                  </div>
+                </li>
+                <li class="contacts__address">
+                  <h2 class="contacts__address-title">Санкт-Петербург</h2>
+                  <div class="contacts__address-subtitle">
+                    <p>ООО «Феликсов Даймондс»</p>
+                    <p>191025, ГОРОД САНКТ-ПЕТЕРБУРГ ПРОСПЕКТ НЕВСКИЙ ДОМ 88 ЛИТЕР А ПОМЕЩЕНИЕ 32-Н</p>
+                    <p>ОГРН 1207800086130Дата присвоения ОГРН 16.07.2020</p>
+                    <p>ИНН 7841089698</p>
+                    <p>КПП 784101001</p>
+                  </div>
+                </li>
+              </ul>
+              <convas class="contacts__map" id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbc8cb91c9c650140e08a46f0b68e1e241100be7e68f8c85bc9295901ea296e3&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+              </convas>
+            </div>
+            <form class="contacts__form">
+              <h2 class="contacts__form-title">Обратная связь</h2>
+              <p class="contacts__form-subtitle">Наши специалисты свяжутся с Вами по вопросам характеристик и приобретения, ответят на Ваши вопросы, а также запишут на примерку на удобное время.</p>
+              <div class="contacts__form-container">
+                <label class="contacts__form-label">
+                  <input class="contacts__form-input" type="text" required="1"/>
+                  <div class="contacts__form-placeholder">Ваше имя<span>*</span></div>
+                </label>
+                <label class="contacts__form-label">
+                  <input class="contacts__form-input" type="number" required="1"/>
+                  <div class="contacts__form-placeholder">Телефон<span>*</span></div>
+                </label>
+                <label class="contacts__form-label">
+                  Комментарий
+                  <textarea></textarea>
+                  <p class="contacts__form-required">Формы, обязательные к заполнению</p>
+                </label>
+              </div>
+          
+              <div class="contacts__form-radio-filter">
+                <h3 class="contacts__form-radio-title">Где с вами связаться?</h3>
+                <div class="contacts__form-radio-container">
+                  <label class="contacts__form-radio-label">
+                    <input class="contacts__form-radio-invisible" name="communication method" type="radio" value="WhatsApp" checked></input>
+                    <p class="contacts__form-radio-visible">WhatsApp</p>
+                  </label>
+                  <label class="contacts__form-radio-label">
+                    <input class="contacts__form-radio-invisible" name="communication method" type="radio" value="Telegram"></input>
+                    <p class="contacts__form-radio-visible">Telegram</p>
+                  </label>
+                  <label class="contacts__form-radio-label">
+                    <input class="contacts__form-radio-invisible" name="communication method" type="radio" value="SMS"></input>
+                    <p class="contacts__form-radio-visible">SMS</p>
+                  </label>
+                </div>
+              </div>
+          
+              <div class="contacts__agreement">
+                <label class="checkbox-filter">
+                  <input class="checkbox-filter__invisible" type="checkbox"/>
+                  <div class="checkbox-filter__visible"></div>
+                </label>
+                <p>Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
+              </div>
+              <button class="contacts__form-button">Свяжитесь со мной</button>
+            </form>
+          </section>
+          
           
       </main>
       <footer class="footer">
@@ -108,22 +191,22 @@
             <nav class="footer__nav footer__nav_catalog">
               <ul class="footer__list">
                 <li class="footer__list-item">
-                  <a href="catalog.html">Браслеты</a>
+                  <a href="bracelets.html">Браслеты</a>
                 </li>
                 <li class="footer__list-item">
-                  <a href="catalog.html">Колье</a>
+                  <a href="necklaces.html">Колье</a>
                 </li>
                 <li class="footer__list-item">
-                  <a href="catalog.html">Кольца</a>
+                  <a href="rings.html">Кольца</a>
                 </li>
                 <li class="footer__list-item">
-                  <a href="catalog.html">Подвески</a>
+                  <a href="pendants.html">Подвески</a>
                 </li>
                 <li class="footer__list-item">
-                  <a href="catalog.html">Пусеты</a>
+                  <a href="studs.html">Пусеты</a>
                 </li>
                 <li class="footer__list-item">
-                  <a href="catalog.html">Серьги</a>
+                  <a href="earrings.html">Серьги</a>
                 </li>
               </ul>
             </nav>
@@ -179,22 +262,22 @@
               </a>
               <ul class="mobile-menu__submenu">
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Браслеты</a>
+                  <a href="bracelets.html">Браслеты</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Колье</a>
+                  <a href="necklaces.html">Колье</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Кольца</a>
+                  <a href="rings.html">Кольца</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Подвески</a>
+                  <a href="pendants.html">Подвески</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Пусеты </a>
+                  <a href="studs.html">Пусеты </a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Серьги</a>
+                  <a href="earrings.html">Серьги</a>
                 </li>
               </ul>
             </li>
@@ -205,22 +288,22 @@
               </a>
                <ul class="mobile-menu__submenu">
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Браслеты</a>
+                  <a href="engagementRings.html">Помолвочные кольца</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Колье</a>
+                  <a href="weddingRings.html">Обручальные колца</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Кольца</a>
+                  <a href="earrings.html">Серьги</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Подвески</a>
+                  <a href="necklaces.html">Колье</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Пусеты </a>
+                  <a href="bracelets.html">Браслеты</a>
                 </li>
                 <li class="mobile-menu__submenu-item">
-                  <a href="catalog.html">Серьги</a>
+                  <a href="pendants.html">Кулоны </a>
                 </li>
               </ul>
             </li>
@@ -238,5 +321,8 @@
       </div>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0761656f-8230-4c56-9666-1b7a995980ae&lang=ru_RU"></script>
+    <script src="js/contacts.js"></script>
+	</script>
   </body>
 </html>
