@@ -782,6 +782,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   cursor: pointer;
+  color: #22362D;
 }
 
 .jewelry__image {
@@ -1575,6 +1576,10 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
+.services__list-item img {
+  height: 100%;
+}
+
 .services__list-container {
   padding-top: 30%;
   padding-left: 18%;
@@ -2260,6 +2265,7 @@ button {
   line-height: 16px;
   font-family: "Tenor Sans";
   color: #555555;
+  text-align: start;
 }
 
 .select__item:hover,
@@ -3005,6 +3011,7 @@ button {
   }
 
   .form-order__title {
+    margin-top: 40px;
     text-align: center;
   }
 
