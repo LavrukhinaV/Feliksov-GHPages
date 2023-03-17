@@ -1574,10 +1574,7 @@ button {
 .services__list-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.services__list-item img {
-  height: 100%;
+  align-items: stretch;
 }
 
 .services__list-container {
@@ -2218,6 +2215,7 @@ button {
   line-height: 16px;
   font-family: "Tenor Sans";
   color: #555555;
+  text-align: start;
 }
 
 .select__current::after {
