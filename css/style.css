@@ -119,6 +119,7 @@ input[type=number] {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Slider */
@@ -436,6 +437,24 @@ button {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__logo svg {
+  max-width: 40px;
+  max-height: 35px;
+}
+
+.footer__logo-title {
+  font-family: "Costigue";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.075em;
+  color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .footer__addresses {
@@ -486,6 +505,7 @@ button {
   line-height: 21px;
   white-space: nowrap;
   align-self: center;
+  color: #FFFFFF;
 }
 
 .footer__nav-title_order {
@@ -1339,6 +1359,12 @@ button {
 .mobile-menu__nav-item a {
   display: flex;
   justify-content: space-between;
+  color: #555555;
+}
+
+.mobile-menu__nav-item a.text:active,
+.mobile-menu__nav-item a.text:hover {
+  color: #555555;
 }
 
 .mobile-menu__list {
@@ -1454,6 +1480,7 @@ button {
   line-height: 23px;
   text-transform: uppercase;
   color: #1B1919;
+  text-align: center;
 }
 
 .about__table {
@@ -1506,6 +1533,7 @@ button {
   font-size: 16px;
   line-height: 18px;
   border: 1px solid #C39947;
+  text-align: center;
 }
 
 .about__table-advantages {
@@ -2704,8 +2732,14 @@ button {
     grid-template-areas: "logo order about" "networks services-title about" "networks sertificates about" "addresses addresses addresses" "coopyright policy policy";
   }
 
-  .footer__logo {
-    width: 260px;
+  .footer__logo svg {
+    max-width: 25px;
+    max-height: 20px;
+  }
+
+  .footer__logo-title {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .footer__addresses {
