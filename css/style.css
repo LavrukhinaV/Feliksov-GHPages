@@ -775,6 +775,10 @@ button {
   gap: 30px;
 }
 
+.jewelery__table li {
+  display: flex;
+}
+
 .jewelry {
   padding: 30px;
   display: flex;
