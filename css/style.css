@@ -716,6 +716,11 @@ button {
 }
 
 .open-catalog__button {
+  position: relative;
+  display: flex;
+}
+
+.open-catalog__button a {
   padding: 23px 100px;
   font-size: 20px;
   line-height: 24px;
@@ -724,6 +729,35 @@ button {
   border: 1px solid #1B1919;
   border-radius: 3px;
   text-align: center;
+  background: #FFFFFF;
+}
+
+.open-catalog__button:hover a {
+  border: 1px solid #D6C7B5;
+  color: #DFB583;
+}
+
+.open-catalog__hairpin {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 77px;
+  height: 16px;
+  background-image: url(../images/hairpin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.open-catalog__hairpin_left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.open-catalog__hairpin_right {
+  right: 0;
+  transform: rotate(180deg) translateY(50%);
 }
 
 .go-to-catalog {
@@ -769,12 +803,15 @@ button {
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.1);
   border: 3px solid #9F9180;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
   position: absolute;
   bottom: 7%;
   right: 7.8%;
   text-align: center;
+  transition: 0.5s;
+}
+
+.go-to-catalog__button:hover {
+  background: rgb(226, 201, 170);
 }
 
 .main-slider {
@@ -1071,7 +1108,6 @@ button {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  overflow: hidden;
 }
 
 .get-sertificate__image {
@@ -1106,6 +1142,11 @@ button {
 }
 
 .get-sertificate__button {
+  position: relative;
+  display: flex;
+}
+
+.get-sertificate__button a {
   padding: 23.5px 54.5px;
   font-size: 20px;
   line-height: 24px;
@@ -1113,10 +1154,37 @@ button {
   color: #1B1919;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #1B1919;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
   border-radius: 3px;
   text-align: center;
+  background: #FFFFFF;
+}
+
+.get-sertificate__button:hover a {
+  border: 1px solid #D6C7B5;
+  color: #DFB583;
+}
+
+.get-sertificate__hairpin {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 77px;
+  height: 16px;
+  background-image: url(../images/hairpin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.get-sertificate__hairpin_left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.get-sertificate__hairpin_right {
+  right: 0;
+  transform: rotate(180deg) translateY(50%);
 }
 
 .our-services {
@@ -1585,8 +1653,6 @@ button {
   padding: 23.5px 72.5px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #1B1919;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
   border-radius: 3px;
   position: absolute;
   top: 60%;
@@ -1727,8 +1793,6 @@ button {
   color: #1B1919;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #1B1919;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
   border-radius: 3px;
   max-width: 400px;
 }
@@ -2879,6 +2943,24 @@ button {
   z-index: 1;
 }
 
+@media (min-width: 680px) {
+  .open-catalog__button:hover .open-catalog__hairpin_left {
+    left: -97px;
+  }
+
+  .open-catalog__button:hover .open-catalog__hairpin_right {
+    right: -97px;
+  }
+
+  .get-sertificate__button:hover .get-sertificate__hairpin_left {
+    left: -97px;
+  }
+
+  .get-sertificate__button:hover .get-sertificate__hairpin_right {
+    right: -97px;
+  }
+}
+
 @media (min-width: 681px) {
   .jewelry:hover {
     border: none;
@@ -3001,7 +3083,7 @@ button {
     margin-bottom: 50px;
   }
 
-  .get-sertificate__button {
+  .get-sertificate__button a {
     padding: 23.5px 30px;
   }
 
@@ -3379,7 +3461,7 @@ button {
     max-width: 680px;
   }
 
-  .get-sertificate__button {
+  .get-sertificate__button a {
     padding: 23px 64x;
   }
 
@@ -4229,10 +4311,20 @@ button {
   }
 
   .open-catalog__button {
+    margin-top: 0;
+    align-self: stretch;
+  }
+
+  .open-catalog__button a {
     align-self: stretch;
     padding: 15.5px 0;
     font-size: 16px;
     line-height: 19px;
+    width: 100%;
+  }
+
+  .open-catalog__hairpin {
+    display: none;
   }
 
   .go-to-catalog {
@@ -4360,12 +4452,20 @@ button {
   }
 
   .get-sertificate__button {
+    align-self: stretch;
+    margin: 0 16px;
+  }
+
+  .get-sertificate__button a {
+    width: 100%;
     padding-top: 15.5px;
     padding-bottom: 15.5px;
     font-size: 16px;
     line-height: 19px;
-    margin: 0 16px;
-    align-self: stretch;
+  }
+
+  .get-sertificate__hairpin {
+    display: none;
   }
 
   .our-services {
