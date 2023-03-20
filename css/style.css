@@ -1441,6 +1441,27 @@ button {
   color: #000000;
 }
 
+.order-slider__background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/slider-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.order-slider__jewelery {
+  position: absolute;
+  top: -100%;
+  transition: 0.5s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .order-slider .slick-dots {
   display: flex;
   gap: 38px;
@@ -2988,6 +3009,16 @@ button {
   .jewelry:hover .jewelry-slider .slick-dots {
     opacity: 1;
     bottom: -20px;
+  }
+}
+
+@media (min-width: 781px) {
+  .order-slider .slick-active:hover .order-slider__background {
+    opacity: 1;
+  }
+
+  .order-slider .slick-active:hover .order-slider__jewelery {
+    top: 50%;
   }
 }
 
