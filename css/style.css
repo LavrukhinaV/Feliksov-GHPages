@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Cormorant-Medium.woff") format("woff");
+}
+
+@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -303,6 +311,77 @@ button {
 
 .checkbox-filter__invisible:checked + .checkbox-filter__visible {
   background-image: url(../images/tick.svg);
+}
+
+.select {
+  width: 100%;
+  position: relative;
+  -moz-text-align-last: left;
+  text-align-last: left;
+}
+
+.select__current {
+  width: 100%;
+  padding: 8px 0;
+  position: relative;
+  border-bottom: 1px solid #CACACA;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Tenor Sans";
+  color: #555555;
+  text-align: start;
+}
+
+.select__current::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotateX(180deg) translateY(25%);
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/arrow-filter-open.svg);
+}
+
+.select__current_open::after {
+  transform: rotateX(0deg) translateY(25%);
+}
+
+.select__list {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #CACACA;
+  margin-top: 5px;
+  border-radius: 3px;
+  display: none;
+  background: #FFFFFF;
+  z-index: 1;
+}
+
+.select__list--show {
+  display: block;
+  position: absolute;
+}
+
+.select__item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Tenor Sans";
+  color: #555555;
+  text-align: start;
+}
+
+.select__item:hover,
+.select__item:focus {
+  background-color: #e6e6e6;
 }
 
 .header__container_top {
@@ -2313,6 +2392,11 @@ button {
   cursor: pointer;
 }
 
+.product-card__select {
+  margin: 27px auto 0;
+  max-width: 300px;
+}
+
 .product-card__form-button {
   padding: 14.5px 0;
   font-size: 16px;
@@ -2395,80 +2479,6 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-}
-
-.select {
-  margin: 27px auto 0;
-  max-width: 300px;
-  width: 100%;
-  position: relative;
-  -moz-text-align-last: left;
-  text-align-last: left;
-}
-
-.select__current {
-  width: 100%;
-  padding: 8px 0;
-  position: relative;
-  border-bottom: 1px solid #CACACA;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Tenor Sans";
-  color: #555555;
-  text-align: start;
-}
-
-.select__current::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: rotateX(180deg) translateY(25%);
-  width: 10px;
-  height: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/arrow-filter-open.svg);
-}
-
-.select__current_open::after {
-  transform: rotateX(0deg) translateY(25%);
-}
-
-.select__list {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #CACACA;
-  margin-top: 5px;
-  border-radius: 3px;
-  display: none;
-  background: #FFFFFF;
-  z-index: 1;
-}
-
-.select__list--show {
-  display: block;
-  position: absolute;
-}
-
-.select__item {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  border: none;
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Tenor Sans";
-  color: #555555;
-  text-align: start;
-}
-
-.select__item:hover,
-.select__item:focus {
-  background-color: #e6e6e6;
 }
 
 .certificate {
@@ -2582,6 +2592,7 @@ button {
   border-radius: 3px;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .certificate__paragraphs {
@@ -3098,6 +3109,171 @@ button {
   font-size: 13px;
   line-height: 15px;
   color: #7B7B7B;
+}
+
+.order-certificate__date-picker {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 65px;
+}
+
+.order-certificate__date-picker-label {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  color: #757575;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.order-certificate__date-picker-input {
+  position: relative;
+}
+
+.order-certificate__date-picker-input::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotateX(180deg) translateY(25%);
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/arrow-filter-open.svg);
+}
+
+.order-certificate__date-picker-input_open::before {
+  transform: rotateX(0) translateY(0);
+}
+
+.order-certificate__date-picker-input input {
+  padding: 7px 0 10px;
+  border-bottom: 1px solid #CACACA;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: #555555;
+  width: 100%;
+  cursor: pointer;
+}
+
+.order-certificate__calendar {
+  position: absolute !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.order-certificate__calendar .air-datepicker--content {
+  padding: 0 20px 30px;
+}
+
+.order-certificate__calendar .air-datepicker--pointer {
+  display: none;
+}
+
+.order-certificate__calendar .air-datepicker-nav {
+  border-bottom: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.order-certificate__calendar .air-datepicker-nav--action svg {
+  width: 11px;
+  height: 11px;
+}
+
+.order-certificate__calendar .air-datepicker-nav--action svg path {
+  stroke: none;
+  fill: #464646;
+}
+
+.order-certificate__calendar .air-datepicker-nav--title {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #464646;
+}
+
+.order-certificate__calendar .air-datepicker-nav--title i {
+  margin-right: 25px;
+  font-family: "Cormorant";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  position: relative;
+}
+
+.order-certificate__calendar .air-datepicker-nav--title i::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 7px;
+  background-image: url(../images/select-month.svg);
+  background-repeat: no-repeat;
+  right: -13px;
+  top: 50%;
+  background-size: contain;
+}
+
+.order-certificate__calendar .air-datepicker-body--day-names {
+  border-bottom: 0.5px solid #CCCCCC;
+  padding-bottom: 6px;
+}
+
+.order-certificate__calendar .air-datepicker-body--day-name {
+  color: #000000;
+  font-family: "Cormorant";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.order-certificate__calendar .air-datepicker-cell {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.order-certificate__calendar .air-datepicker-cell.-current- {
+  color: #000000 !important;
+  position: relative;
+  border-radius: 0;
+}
+
+.order-certificate__calendar .air-datepicker-cell.-current-::after {
+  position: absolute;
+  content: "";
+  height: 0.5px;
+  background: #BBBBBB;
+  width: 80%;
+  bottom: 5px;
+}
+
+.order-certificate__calendar .air-datepicker-cell.-focus-,
+.order-certificate__calendar .air-datepicker-cell.-selected- {
+  background: #BBBBBB !important;
+}
+
+.order-certificate__select {
+  font-size: 15px;
+  line-height: 16px;
+  color: #757575;
+}
+
+.order-certificate__select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  justify-content: space-between;
 }
 
 .order-certificate__payment {
@@ -3965,6 +4141,10 @@ button {
     align-self: baseline;
   }
 
+  .product-card__select {
+    margin-left: 0;
+  }
+
   .product-card__form-button {
     align-self: center;
     padding: 14.5px 100px;
@@ -4011,10 +4191,6 @@ button {
   .product-card__recommended-products-title {
     font-size: 24px;
     line-height: 29px;
-  }
-
-  .select {
-    margin-left: 0;
   }
 
   .contacts {
@@ -4342,6 +4518,10 @@ button {
     gap: 20px;
     font-size: 10px;
     line-height: 14px;
+  }
+
+  .order-certificate__date-picker {
+    gap: 30px;
   }
 
   .order-certificate__payment {
@@ -5238,6 +5418,10 @@ button {
     align-self: center;
   }
 
+  .product-card__select {
+    margin: 38px auto 0;
+  }
+
   .product-card__form-button {
     padding: 15.5px 0;
     align-self: stretch;
@@ -5290,10 +5474,6 @@ button {
 
   .product-card__recommended-products-list li:nth-of-type(n+5) {
     display: none;
-  }
-
-  .select {
-    margin: 38px auto 0;
   }
 
   .certificate {
@@ -5515,6 +5695,11 @@ button {
   .order-certificate__checkbox-container {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .order-certificate__date-picker {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .order-certificate__button-payment {

@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliksov</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
   </head>
 
   <body>
@@ -49,7 +50,7 @@
               <li class="header__menu-item header__menu-item_open-boutique">бутик</li>
               <li class="header__menu-item header__menu-item_open-wedding-jewelery">свадебные украшения</li>
               <li class="header__menu-item"><a href="order.html">индивидуальный заказ</a></li>
-              <li class="header__menu-item"><a href="certificate.html">подарочные сертификаты</a></li>
+              <li class="header__menu-item"><a href="giftCertificates.html">подарочные сертификаты</a></li>
             </ul>
           </nav>
         </div>
@@ -170,7 +171,7 @@
                   <input class="order-certificate__input" type="number" required="1"/>
                   <div class="order-certificate__placeholder">Телефон получателя<span>*</span></div>
                 </label>
-                <label class="form-order__label">
+                <label class="order-certificate__label">
                   Ваше поздравление для получателя
                   <textarea></textarea>
                 </label>
@@ -183,6 +184,27 @@
                     <div class="checkbox-filter__visible"></div>
                   </label>
                   <p>Прямо сейчас</p>
+                </div>
+                <div class="order-certificate__date-picker">
+                  <label class="order-certificate__date-picker-label">
+                    Удобная дата
+                    <div class="order-certificate__date-picker-input">
+                      <input id="airdatepicker" readonly></input>
+                    </div>
+                  </label>
+                  <div class="select order-certificate__select">
+                    <div class="order-certificate__select-container">
+                      Удобное время
+                      <input class="select__input" type="hidden" name="naumber" value="11:00-14:00"></input>
+                      <button class="select__current" type="button">11:00-14:00</button>
+                    </div>
+                    <div class="select__list">
+                      <button class="select__item" data-value="11:00-14:00г" type="button">11:00-14:00</button>
+                      <button class="select__item" data-value="14:00-18:00" type="button">14:00-18:00</button>
+                      <button class="select__item" data-value="18:00-20:00" type="button">18:00-20:00</button>
+                      <button class="select__item" data-value="20:00-22:00" type="button">20:00-22:00</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>
@@ -307,7 +329,7 @@
                 </li>
               </ul>
             </nav>
-            <a class="footer__nav-title footer__nav-title_sertificates" href="certificate.html">Подарочные сертификаты</a>
+            <a class="footer__nav-title footer__nav-title_sertificates" href="giftCertificates.html">Подарочные сертификаты</a>
             <nav class="footer__nav footer__nav_about">
               <ul class="footer__list">
                 <li class="footer__list-item footer__list-item_catalog footer__list-item_size_big">
@@ -388,7 +410,7 @@
               </ul>
             </li>
             <li class="mobile-menu__nav-item"><a href="order.html">Индивидуальный заказ</a></li>
-            <li class="mobile-menu__nav-item"><a href="certificate.html">Подарочные сертификаты</a></li>
+            <li class="mobile-menu__nav-item"><a href="giftCertificates.html">Подарочные сертификаты</a></li>
             <li class="mobile-menu__nav-item"><a href="about.html">О бренде</a></li>
             <li class="mobile-menu__nav-item"><a href="services.html">Наши услуги</a></li>
             <li class="mobile-menu__nav-item"><a href="contacts.html">Контакты</a></li>
@@ -401,5 +423,6 @@
       </div>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="js/orderCertificate.js"></script>
   </body>
 </html>
