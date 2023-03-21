@@ -1368,6 +1368,7 @@ button {
   min-height: 98px;
   border: 1px solid #E4E4E4;
   resize: none;
+  color: #555555;
 }
 
 .form-order__add-file {
@@ -1401,6 +1402,7 @@ button {
   border-bottom: 1px solid #CACACA;
   padding-bottom: 9px;
   border-radius: 0;
+  color: #555555;
 }
 
 .form-order__input:invalid + .form-order__placeholder {
@@ -1408,7 +1410,7 @@ button {
 }
 
 .form-order__placeholder {
-  z-index: 2;
+  z-index: 1;
   left: 0;
   cursor: text;
   position: absolute;
@@ -1484,6 +1486,12 @@ button {
   font-size: 16px;
   line-height: 18px;
   border: 1px solid #C39947;
+  transition: 0.5s;
+}
+
+.form-order__button:hover {
+  background-color: #C39947;
+  color: #FFFFFF;
 }
 
 .order-slider {
@@ -2588,11 +2596,19 @@ button {
   padding: 23.5px 0;
   font-size: 20px;
   line-height: 23px;
-  background: #004C41;
+  background-color: #004C41;
   border-radius: 3px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
+  transition: background-color 0.5s;
+}
+
+.certificate__button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
 }
 
 .certificate__paragraphs {
@@ -2836,6 +2852,7 @@ button {
   min-height: 98px;
   border: 1px solid #E4E4E4;
   resize: none;
+  color: #555555;
 }
 
 .contacts__form-input {
@@ -2843,10 +2860,11 @@ button {
   border-bottom: 1px solid #CACACA;
   padding-bottom: 9px;
   border-radius: 0;
+  color: #555555;
 }
 
 .contacts__form-placeholder {
-  z-index: 2;
+  z-index: 1;
   left: 0;
   cursor: text;
   position: absolute;
@@ -3024,6 +3042,7 @@ button {
   min-height: 98px;
   border: 1px solid #E4E4E4;
   resize: none;
+  color: #555555;
 }
 
 .order-certificate__input {
@@ -3031,6 +3050,7 @@ button {
   border-bottom: 1px solid #CACACA;
   padding-bottom: 9px;
   border-radius: 0;
+  color: #555555;
 }
 
 .order-certificate__input:invalid + .order-certificate__placeholder {
@@ -3038,7 +3058,7 @@ button {
 }
 
 .order-certificate__placeholder {
-  z-index: 2;
+  z-index: 1;
   left: 0;
   cursor: text;
   position: absolute;
@@ -3088,6 +3108,12 @@ button {
   font-size: 16px;
   line-height: 18px;
   color: #C39947;
+  transition: 0.5s;
+}
+
+.order-certificate__button-login:hover {
+  background: #C39947;
+  color: #FFFFFF;
 }
 
 .order-certificate__contact-details {
@@ -3153,6 +3179,7 @@ button {
   border-bottom: 1px solid #CACACA;
   border-radius: 0;
   position: relative;
+  font-family: "Tenor Sans";
   font-size: 14px;
   line-height: 16px;
   color: #555555;
@@ -3287,13 +3314,20 @@ button {
 .order-certificate__button-payment {
   margin: 45px 0 58px;
   padding: 15.5px 0;
-  background: #E9EBEA;
+  background-color: #E9EBEA;
   border-radius: 3px;
   font-family: "Tenor Sans";
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #2C2C2C;
+  transition: background-color 0.5s;
+}
+
+.order-certificate__button-payment:hover {
+  padding: 14.5px 0;
+  background-color: transparent;
+  border: 0.5px solid #2C2C2C;
 }
 
 .order-certificate__payment-paragraph {
@@ -3383,8 +3417,13 @@ button {
 }
 
 .order-certificate__payment-sum input {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #757575;
   text-align: center;
-  color: #555555;
 }
 
 .order-certificate__payment-sum div {
@@ -4370,6 +4409,10 @@ button {
     line-height: 14px;
   }
 
+  .certificate__button:hover {
+    padding: 12px 0;
+  }
+
   .certificate__button {
     margin-bottom: 32px;
     padding: 13px 0;
@@ -4528,6 +4571,10 @@ button {
   .order-certificate__payment {
     padding: 0;
     border: none;
+  }
+
+  .order-certificate__button-payment:hover {
+    padding: 9.5px 0;
   }
 
   .order-certificate__button-payment {
@@ -4734,6 +4781,10 @@ button {
     padding: 4px 6px;
     font-size: 6px;
     line-height: 6px;
+  }
+
+  .certificate__button:hover {
+    padding: 9px 0;
   }
 
   .certificate__button {
@@ -5521,6 +5572,10 @@ button {
     gap: 18px;
   }
 
+  .certificate__button:hover {
+    padding: 12px 0;
+  }
+
   .certificate__button {
     margin-bottom: 32px;
     padding: 13px 0;
@@ -5701,6 +5756,10 @@ button {
   .order-certificate__date-picker {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .order-certificate__button-payment:hover {
+    padding: 14.5px 0;
   }
 
   .order-certificate__button-payment {
