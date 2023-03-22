@@ -1541,7 +1541,7 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../../images/slider-background.png);
+  background-image: url(../images/slider-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3500,6 +3500,2009 @@ button {
   z-index: 1;
 }
 
+.login {
+  margin: 84px auto 317px;
+  font-family: "Tenor Sans";
+  max-width: 1620px;
+}
+
+.login__mobile-image {
+  display: none;
+}
+
+.login__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.login__links {
+  margin: 41px 0 34px;
+  display: flex;
+  gap: 33px;
+  align-self: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.login__link {
+  color: #000000;
+}
+
+.login__link_active {
+  position: relative;
+}
+
+.login__link_active::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: #B7B7B7;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.login__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.login__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.login__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.login__form-placeholder span {
+  color: #FE0000;
+}
+
+.login__form-input:invalid + .login__form-placeholder {
+  display: inline;
+}
+
+.login__form-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+}
+
+.login__form-forgot-password {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.login__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.login__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.login__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.login__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.login__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.login__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.login__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login__mobile-buttons {
+  display: none;
+}
+
+.login__mobile-button {
+  padding: 10.5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+
+.login__mobile-button_signin {
+  color: #C39947;
+  border: 1px solid #C39947;
+}
+
+.login__mobile-button_signup {
+  color: #FFFFFF;
+  background: #004C41;
+}
+
+.login__mobile-buttons-text {
+  display: none;
+}
+
+.login-by-phone {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+}
+
+.login-by-phone__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login-by-phone__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-by-phone__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-by-phone__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.login-by-phone__links {
+  margin: 41px 0 34px;
+  display: flex;
+  gap: 33px;
+  align-self: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.login-by-phone__link {
+  color: #000000;
+}
+
+.login-by-phone__link_active {
+  position: relative;
+}
+
+.login-by-phone__link_active::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: #B7B7B7;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.login-by-phone__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-by-phone__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.login-by-phone__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.login-by-phone__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.login-by-phone__form-placeholder span {
+  color: #FE0000;
+}
+
+.login-by-phone__form-input:invalid + .login-by-phone__form-placeholder {
+  display: inline;
+}
+
+.login-by-phone__form-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-by-phone__checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+}
+
+.login-by-phone__form-forgot-password {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login-by-phone__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.login-by-phone__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.login-by-phone__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.login-by-phone__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.login-by-phone__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.login-by-phone__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.login-by-phone__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.login-by-phone__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login-by-email {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+}
+
+.login-by-email__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login-by-email__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-by-email__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-by-email__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.login-by-email__links {
+  margin: 41px 0 34px;
+  display: flex;
+  gap: 33px;
+  align-self: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.login-by-email__link {
+  color: #000000;
+}
+
+.login-by-email__link_active {
+  position: relative;
+}
+
+.login-by-email__link_active::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: #B7B7B7;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.login-by-email__form-label {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-by-email__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.login-by-email__form-label:last-of-type {
+  margin-bottom: 0;
+}
+
+.login-by-email__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.login-by-email__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.login-by-email__form-placeholder span {
+  color: #FE0000;
+}
+
+.login-by-email__form-input:invalid + .login-by-email__form-placeholder {
+  display: inline;
+}
+
+.login-by-email__form-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-by-email__checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+}
+
+.login-by-email__form-forgot-password {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login-by-email__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.login-by-email__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.login-by-email__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.login-by-email__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.login-by-email__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.login-by-email__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.login-by-email__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.login-by-email__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.login-by-sms {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+}
+
+.login-by-sms__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login-by-sms__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-by-sms__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-by-sms__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.login-by-sms__paragraph {
+  margin: 34px 0 40px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #518A70;
+  align-self: center;
+  position: relative;
+}
+
+.login-by-sms__paragraph::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #518A70;
+}
+
+.login-by-sms__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-by-sms__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.login-by-sms__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.login-by-sms__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.login-by-sms__form-placeholder span {
+  color: #FE0000;
+}
+
+.login-by-sms__form-input:invalid + .login-by-sms__form-placeholder {
+  display: inline;
+}
+
+.login-by-sms__form-required {
+  margin-top: 42px;
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.login-by-sms__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.login-by-sms__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.login-by-sms__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.login-by-sms__repeat-sms {
+  margin-top: 40px;
+  align-self: center;
+  font-size: 13px;
+  line-height: 15px;
+  color: #BBBBBB;
+  position: relative;
+}
+
+.login-by-sms__repeat-sms::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #BBBBBB;
+}
+
+.login-by-sms__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.login-by-sms__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.login-by-sms__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.login-by-sms__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.sign-up {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sign-up__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sign-up__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+
+.sign-up__form_passwords {
+  padding: 10px 0 0 131px;
+  border-left: 1px solid #BCBCBC;
+}
+
+.sign-up__subtitle {
+  margin-bottom: 40px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.sign-up__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sign-up__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.sign-up__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.sign-up__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.sign-up__form-placeholder span {
+  color: #FE0000;
+}
+
+.sign-up__form-input:invalid + .sign-up__form-placeholder {
+  display: inline;
+}
+
+.sign-up__form-password-note {
+  color: #757575;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.sign-up__checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  margin-top: 24px;
+  align-self: center;
+  max-width: 578px;
+}
+
+.sign-up__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+  margin-top: 10px;
+}
+
+.sign-up__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.sign-up__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+  padding: 14.5px 230px;
+  align-self: center;
+}
+
+.sign-up__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.sign-up-by-sms {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-by-sms__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sign-up-by-sms__sms-form {
+  display: flex;
+  flex-direction: column;
+  width: 578px;
+}
+
+.sign-up-by-sms__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.sign-up-by-sms__paragraph {
+  margin: 34px 0 40px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #518A70;
+  align-self: center;
+  position: relative;
+}
+
+.sign-up-by-sms__paragraph::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #518A70;
+}
+
+.sign-up-by-sms__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sign-up-by-sms__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.sign-up-by-sms__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.sign-up-by-sms__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.sign-up-by-sms__form-placeholder span {
+  color: #FE0000;
+}
+
+.sign-up-by-sms__form-input:invalid + .sign-up-by-sms__form-placeholder {
+  display: inline;
+}
+
+.sign-up-by-sms__form-required {
+  margin-top: 42px;
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.sign-up-by-sms__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.sign-up-by-sms__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.sign-up-by-sms__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.sign-up-by-sms__repeat-sms {
+  margin-top: 40px;
+  align-self: center;
+  font-size: 13px;
+  line-height: 15px;
+  color: #BBBBBB;
+  position: relative;
+}
+
+.sign-up-by-sms__repeat-sms::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #BBBBBB;
+}
+
+.recovery-password-by-email {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+}
+
+.recovery-password-by-email__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.recovery-password-by-email__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.recovery-password-by-email__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recovery-password-by-email__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.recovery-password-by-email__paragraph {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+
+.recovery-password-by-email__links {
+  margin: 41px 0 34px;
+  display: flex;
+  gap: 33px;
+  align-self: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.recovery-password-by-email__link {
+  color: #000000;
+}
+
+.recovery-password-by-email__link_active {
+  position: relative;
+}
+
+.recovery-password-by-email__link_active::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: #B7B7B7;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.recovery-password-by-email__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.recovery-password-by-email__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.recovery-password-by-email__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.recovery-password-by-email__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.recovery-password-by-email__form-placeholder span {
+  color: #FE0000;
+}
+
+.recovery-password-by-email__form-input:invalid + .recovery-password-by-email__form-placeholder {
+  display: inline;
+}
+
+.recovery-password-by-email__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+  margin-top: 30px;
+}
+
+.recovery-password-by-email__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.recovery-password-by-email__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.recovery-password-by-email__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.recovery-password-by-email__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.recovery-password-by-email__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.recovery-password-by-email__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.recovery-password-by-email__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.recovery-password-by-phone {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+}
+
+.recovery-password-by-phone__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.recovery-password-by-phone__table {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.recovery-password-by-phone__form {
+  padding-right: 131px;
+  padding-top: 10px;
+  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recovery-password-by-phone__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.recovery-password-by-phone__paragraph {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+
+.recovery-password-by-phone__links {
+  margin: 41px 0 34px;
+  display: flex;
+  gap: 33px;
+  align-self: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.recovery-password-by-phone__link {
+  color: #000000;
+}
+
+.recovery-password-by-phone__link_active {
+  position: relative;
+}
+
+.recovery-password-by-phone__link_active::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: #B7B7B7;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.recovery-password-by-phone__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.recovery-password-by-phone__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.recovery-password-by-phone__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.recovery-password-by-phone__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.recovery-password-by-phone__form-placeholder span {
+  color: #FE0000;
+}
+
+.recovery-password-by-phone__form-input:invalid + .recovery-password-by-phone__form-placeholder {
+  display: inline;
+}
+
+.recovery-password-by-phone__form-required {
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+  margin-top: 30px;
+}
+
+.recovery-password-by-phone__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.recovery-password-by-phone__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.recovery-password-by-phone__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.recovery-password-by-phone__sign-up {
+  padding-left: 133px;
+  padding-top: 80px;
+  border-left: 1px solid #BCBCBC;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.recovery-password-by-phone__sign-up-button {
+  padding: 23.5px 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #004C41;
+  border-radius: 3px;
+  transition: 0.5s background-color;
+}
+
+.recovery-password-by-phone__sign-up-button:hover {
+  padding: 22.5px 0;
+  color: #004C41;
+  border: 0.5px solid #004C41;
+  background-color: transparent;
+}
+
+.recovery-password-by-phone__sign-up-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.password-recovery-by-sms {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-recovery-by-sms__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.password-recovery-by-sms__sms-form {
+  display: flex;
+  flex-direction: column;
+  width: 578px;
+}
+
+.password-recovery-by-sms__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.password-recovery-by-sms__paragraph {
+  margin: 34px 0 40px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #518A70;
+  align-self: center;
+  position: relative;
+}
+
+.password-recovery-by-sms__paragraph::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #518A70;
+}
+
+.password-recovery-by-sms__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.password-recovery-by-sms__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.password-recovery-by-sms__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.password-recovery-by-sms__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.password-recovery-by-sms__form-placeholder span {
+  color: #FE0000;
+}
+
+.password-recovery-by-sms__form-input:invalid + .password-recovery-by-sms__form-placeholder {
+  display: inline;
+}
+
+.password-recovery-by-sms__form-required {
+  margin-top: 42px;
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.password-recovery-by-sms__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.password-recovery-by-sms__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.password-recovery-by-sms__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.password-recovery-by-sms__repeat-sms {
+  margin-top: 40px;
+  align-self: center;
+  font-size: 13px;
+  line-height: 15px;
+  color: #BBBBBB;
+  position: relative;
+}
+
+.password-recovery-by-sms__repeat-sms::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #BBBBBB;
+}
+
+.link-sent-successfully {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+}
+
+.link-sent-successfully__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.link-sent-successfully__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.link-sent-successfully__paragraph {
+  margin-top: 34px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #518A70;
+  align-self: center;
+  text-align: center;
+  max-width: 850px;
+}
+
+.link-sent-successfully__button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+  margin-top: 40px;
+  width: 750px;
+  align-self: center;
+}
+
+.link-sent-successfully__button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.password-changed-successfully {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+}
+
+.password-changed-successfully__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.password-changed-successfully__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.password-changed-successfully__paragraph {
+  margin-top: 34px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #518A70;
+  align-self: center;
+  text-align: center;
+}
+
+.password-changed-successfully__button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+  margin-top: 40px;
+  width: 750px;
+  align-self: center;
+}
+
+.password-changed-successfully__button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.change-password {
+  margin-top: 84px;
+  margin-bottom: 317px;
+  font-family: "Tenor Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change-password__title {
+  margin-bottom: 67px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.change-password__password-form {
+  display: flex;
+  flex-direction: column;
+  width: 578px;
+}
+
+.change-password__subtitle {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: center;
+  text-align: center;
+}
+
+.change-password__paragraph {
+  margin: 34px 0 40px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #518A70;
+  align-self: center;
+  position: relative;
+}
+
+.change-password__paragraph::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #518A70;
+}
+
+.change-password__label-container {
+  margin-bottom: 15px;
+}
+
+.change-password__form-label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.change-password__form-label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.change-password__form-input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.change-password__form-placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.change-password__form-placeholder span {
+  color: #FE0000;
+}
+
+.change-password__form-input:invalid + .change-password__form-placeholder {
+  display: inline;
+}
+
+.change-password__form-password-note {
+  color: #757575;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.change-password__form-required {
+  margin-top: 20px;
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.change-password__form-required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.change-password__form-button {
+  margin-top: 22px;
+  padding: 14.5px 0;
+  text-align: center;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  font-family: "Cormorant";
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  background-color: transparent;
+  transition: 0.5s;
+  margin-top: 42px;
+}
+
+.change-password__form-button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
 @media (min-width: 680px) {
   .open-catalog__button:hover .open-catalog__hairpin_left {
     left: -97px;
@@ -3615,6 +5618,10 @@ button {
   .pageNotFound {
     margin: 120px 30px;
   }
+
+  .login {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -3691,6 +5698,90 @@ button {
 
   .order-certificate__payment {
     padding: 33px 55px;
+  }
+
+  .login__table {
+    margin: 0;
+  }
+
+  .login__form {
+    padding-right: 60px;
+  }
+
+  .login__sign-up {
+    padding-left: 60px;
+  }
+
+  .login-by-phone__table {
+    margin: 0;
+  }
+
+  .login-by-phone__form {
+    padding-right: 60px;
+  }
+
+  .login-by-phone__sign-up {
+    padding-left: 60px;
+  }
+
+  .login-by-email__table {
+    margin: 0;
+  }
+
+  .login-by-email__form {
+    padding-right: 60px;
+  }
+
+  .login-by-email__sign-up {
+    padding-left: 60px;
+  }
+
+  .login-by-sms__table {
+    margin: 0;
+  }
+
+  .login-by-sms__form {
+    padding-right: 60px;
+  }
+
+  .login-by-sms__sign-up {
+    padding-left: 60px;
+  }
+
+  .sign-up__table {
+    margin: 0;
+  }
+
+  .sign-up__form {
+    padding-right: 60px;
+  }
+
+  .sign-up__form_passwords {
+    padding: 10px 0 0 60px;
+  }
+
+  .recovery-password-by-email__table {
+    margin: 0;
+  }
+
+  .recovery-password-by-email__form {
+    padding-right: 60px;
+  }
+
+  .recovery-password-by-email__sign-up {
+    padding-left: 60px;
+  }
+
+  .recovery-password-by-phone__table {
+    margin: 0;
+  }
+
+  .recovery-password-by-phone__form {
+    padding-right: 60px;
+  }
+
+  .recovery-password-by-phone__sign-up {
+    padding-left: 60px;
   }
 }
 
@@ -4730,14 +6821,458 @@ button {
   .pageNotFound__image_left {
     margin: 0;
     width: 100%;
+    height: 100%;
   }
 
   .pageNotFound__image_left img {
     width: 100%;
+    height: 100%;
   }
 
   .pageNotFound__image_right {
     display: none;
+  }
+
+  .login {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login__mobile-image {
+    margin-bottom: 60px;
+    align-self: center;
+    display: block;
+  }
+
+  .login__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .login__table {
+    grid-template-columns: 1fr;
+  }
+
+  .login__table {
+    display: none;
+  }
+
+  .login__form {
+    padding: 0;
+  }
+
+  .login__links {
+    margin: 32px 0 41px;
+    gap: 30px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login__form-container {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .login__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .login__sign-up {
+    display: none;
+  }
+
+  .login__mobile-buttons {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .login-by-phone {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .login-by-phone__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .login-by-phone__table {
+    grid-template-columns: 1fr;
+  }
+
+  .login-by-phone__form {
+    padding: 0;
+  }
+
+  .login-by-phone__links {
+    margin: 32px 0 41px;
+    gap: 30px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-by-phone__form-container {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .login-by-phone__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .login-by-phone__sign-up {
+    display: none;
+  }
+
+  .login-by-email {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .login-by-email__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .login-by-email__table {
+    grid-template-columns: 1fr;
+  }
+
+  .login-by-email__form {
+    padding: 0;
+  }
+
+  .login-by-email__links {
+    margin: 32px 0 41px;
+    gap: 30px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-by-email__form-container {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .login-by-email__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .login-by-email__sign-up {
+    display: none;
+  }
+
+  .login-by-sms {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .login-by-sms__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .login-by-sms__table {
+    grid-template-columns: 1fr;
+  }
+
+  .login-by-sms__form {
+    padding: 0;
+  }
+
+  .login-by-sms__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .login-by-sms__sign-up {
+    display: none;
+  }
+
+  .sign-up {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .sign-up__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .sign-up__table {
+    grid-template-columns: 1fr;
+  }
+
+  .sign-up__table {
+    gap: 24px;
+  }
+
+  .sign-up__form {
+    padding: 0;
+  }
+
+  .sign-up__form {
+    gap: 24px;
+  }
+
+  .sign-up__form_passwords {
+    border: none;
+  }
+
+  .sign-up__subtitle {
+    margin-bottom: 32px;
+  }
+
+  .sign-up__checkbox-container {
+    align-self: stretch;
+    max-width: none;
+  }
+
+  .sign-up__form-required {
+    margin-top: 0;
+  }
+
+  .sign-up__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .sign-up__form-button {
+    margin-top: 32px;
+  }
+
+  .sign-up-by-sms {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .sign-up-by-sms__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .sign-up-by-sms__sms-form {
+    width: 100%;
+  }
+
+  .sign-up-by-sms__form-required {
+    margin-top: 24px;
+  }
+
+  .sign-up-by-sms__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .recovery-password-by-email {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .recovery-password-by-email__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .recovery-password-by-email__table {
+    grid-template-columns: 1fr;
+  }
+
+  .recovery-password-by-email__form {
+    padding: 0;
+  }
+
+  .recovery-password-by-email__links {
+    margin: 32px 0 41px;
+    gap: 30px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recovery-password-by-email__form-required {
+    margin-top: 24px;
+  }
+
+  .recovery-password-by-email__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .recovery-password-by-email__sign-up {
+    display: none;
+  }
+
+  .recovery-password-by-phone {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .recovery-password-by-phone__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .recovery-password-by-phone__table {
+    grid-template-columns: 1fr;
+  }
+
+  .recovery-password-by-phone__form {
+    padding: 0;
+  }
+
+  .recovery-password-by-phone__links {
+    margin: 32px 0 41px;
+    gap: 30px;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recovery-password-by-phone__form-required {
+    margin-top: 24px;
+  }
+
+  .recovery-password-by-phone__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .recovery-password-by-phone__sign-up {
+    display: none;
+  }
+
+  .password-recovery-by-sms {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .password-recovery-by-sms__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .password-recovery-by-sms__sms-form {
+    width: 100%;
+  }
+
+  .password-recovery-by-sms__form-required {
+    margin-top: 24px;
+  }
+
+  .password-recovery-by-sms__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .link-sent-successfully {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .link-sent-successfully {
+    margin-bottom: 60px;
+  }
+
+  .link-sent-successfully__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .link-sent-successfully__paragraph {
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 620px;
+  }
+
+  .link-sent-successfully__button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .link-sent-successfully__button {
+    margin-top: 35px;
+    width: auto;
+  }
+
+  .password-changed-successfully {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .password-changed-successfully {
+    margin-bottom: 60px;
+  }
+
+  .password-changed-successfully__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .password-changed-successfully__paragraph {
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 450px;
+  }
+
+  .password-changed-successfully__button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
+  }
+
+  .password-changed-successfully__button {
+    margin-top: 35px;
+    width: auto;
+  }
+
+  .change-password {
+    margin-top: 32px;
+    margin-bottom: 276px;
+  }
+
+  .change-password__title {
+    margin-bottom: 32px;
+    color: #2C2C2C;
+  }
+
+  .change-password__password-form {
+    width: 100%;
+  }
+
+  .change-password__label-container {
+    margin-bottom: 24px;
+  }
+
+  .change-password__form-required {
+    margin-top: 24px;
+  }
+
+  .change-password__form-button {
+    margin-top: 42px;
+    padding: 10.5px 120px;
+    align-self: center;
   }
 }
 
@@ -4932,6 +7467,14 @@ button {
 
   .order-certificate__design-card {
     padding: 10% 0;
+  }
+
+  .login {
+    margin-top: 0;
+  }
+
+  .login__mobile-image {
+    align-self: stretch;
   }
 }
 
@@ -5867,6 +8410,10 @@ button {
   }
 
   .order-certificate__checkbox-container {
+    gap: 20px;
+  }
+
+  .order-certificate__checkbox-container {
     font-size: 13px;
     line-height: 18px;
   }
@@ -5934,6 +8481,381 @@ button {
 
   .pageNotFound__button {
     padding: 13px 0;
+    align-self: stretch;
+  }
+
+  .login {
+    margin-bottom: 60px;
+  }
+
+  .login__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .login__title {
+    padding: 0 16px;
+  }
+
+  .login__links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .login__form-container {
+    margin-top: 20px;
+  }
+
+  .login__checkbox-container {
+    gap: 20px;
+  }
+
+  .login__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .login__mobile-buttons {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .login__mobile-button {
+    padding: 15.5px 0;
+  }
+
+  .login__mobile-buttons-text {
+    display: block;
+    text-align: center;
+    font-family: "Cormorant";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .login-by-phone {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .login-by-phone__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .login-by-phone__links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .login-by-phone__form-container {
+    margin-top: 20px;
+  }
+
+  .login-by-phone__checkbox-container {
+    gap: 20px;
+  }
+
+  .login-by-phone__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .login-by-email {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .login-by-email__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .login-by-email__links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .login-by-email__form-container {
+    margin-top: 20px;
+  }
+
+  .login-by-email__checkbox-container {
+    gap: 20px;
+  }
+
+  .login-by-email__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .login-by-sms {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .login-by-sms__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .login-by-sms__paragraph {
+    margin: 34px 0;
+  }
+
+  .login-by-sms__form-required {
+    margin-top: 20px;
+  }
+
+  .login-by-sms__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .login-by-sms__repeat-sms {
+    margin-top: 34px;
+  }
+
+  .sign-up {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .sign-up__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .sign-up__table {
+    gap: 20px;
+  }
+
+  .sign-up__form {
+    gap: 20px;
+  }
+
+  .sign-up__checkbox-container {
+    gap: 20px;
+  }
+
+  .sign-up__checkbox-container {
+    margin-top: 20px;
+  }
+
+  .sign-up__form-required {
+    margin-top: 0;
+  }
+
+  .sign-up__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .sign-up__form-button {
+    margin-top: 28px;
+  }
+
+  .sign-up-by-sms {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .sign-up-by-sms__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .sign-up-by-sms__paragraph {
+    margin: 34px 0;
+  }
+
+  .sign-up-by-sms__form-required {
+    margin-top: 20px;
+  }
+
+  .sign-up-by-sms__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .sign-up-by-sms__repeat-sms {
+    margin-top: 34px;
+  }
+
+  .recovery-password-by-email {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .recovery-password-by-email__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .recovery-password-by-email__paragraph {
+    margin-top: 24px;
+  }
+
+  .recovery-password-by-email__links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .recovery-password-by-email__form-required {
+    margin-top: 20px;
+  }
+
+  .recovery-password-by-email__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .recovery-password-by-phone {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .recovery-password-by-phone__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .recovery-password-by-phone__paragraph {
+    margin-top: 24px;
+  }
+
+  .recovery-password-by-phone__links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .recovery-password-by-phone__form-required {
+    margin-top: 20px;
+  }
+
+  .recovery-password-by-phone__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .password-recovery-by-sms {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .password-recovery-by-sms__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .password-recovery-by-sms__paragraph {
+    margin: 34px 0;
+  }
+
+  .password-recovery-by-sms__form-required {
+    margin-top: 20px;
+  }
+
+  .password-recovery-by-sms__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .password-recovery-by-sms__repeat-sms {
+    margin-top: 34px;
+  }
+
+  .link-sent-successfully {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .link-sent-successfully__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .link-sent-successfully__paragraph {
+    margin-top: 34px;
+  }
+
+  .link-sent-successfully__button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .password-changed-successfully {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .password-changed-successfully__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .password-changed-successfully__paragraph {
+    margin-top: 34px;
+    max-width: none;
+  }
+
+  .password-changed-successfully__button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .change-password {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .change-password__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .change-password__paragraph {
+    margin: 34px 0;
+  }
+
+  .change-password__label-container {
+    margin-bottom: 20px;
+  }
+
+  .change-password__form-required {
+    margin-top: 20px;
+  }
+
+  .change-password__form-button {
+    margin-top: 24px;
+    padding: 15.5px 0;
     align-self: stretch;
   }
 }

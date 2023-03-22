@@ -123,79 +123,39 @@
         </div>
       </header>
       <main class="main">
-        <div class="container container_order">
-            <form class="form-order">
-              <h1 class="form-order__title">заказать украшение по своему уникальному дизайну</h1>
-              <p class="form-order__subtitle">Для создания украшение своей мечты заполните форму ниже или позвоните нашему менеджеру по телефону <a href="tel:+78002223232">8 800 222 32 32</a></p>
-              <div class="form-order__container">
-                <label class="form-order__label">
-                  <input class="form-order__input" type="text" required="1"/>
-                  <div class="form-order__placeholder">Ваше имя<span>*</span></div>
+          <section class="container login-by-phone">
+            <h1 class="login-by-phone__title">Мой аккаунт</h1>
+            <div class="login-by-phone__table">
+              <form class="login-by-phone__form">
+                <h2 class="login-by-phone__subtitle">Вход</h2>
+                <div class="login-by-phone__links">
+                  <a class="login-by-phone__link login-by-phone__link_active">Вход по номеру телефона</a>
+                  <a class="login-by-phone__link" href="loginByEmail.html">Вход по email</a>
+                </div>
+                <label class="login-by-phone__form-label">
+                  <input class="login-by-phone__form-input" type="number" required="1"/>
+                  <div class="login-by-phone__form-placeholder">Телефон<span>*</span></div>
                 </label>
-                <label class="form-order__label">
-                  <input class="form-order__input" type="number" required="1"/>
-                  <div class="form-order__placeholder">Телефон<span>*</span></div>
-                </label>
-                <label class="form-order__label">
-                  <input class="form-order__input" type="text" required="1"/>
-                  <div class="form-order__placeholder">Email</div>
-                </label>
-                <label class="form-order__label">
-                  Комментарий (опишите какое изделие Вы бы хотели)
-                  <textarea></textarea>
-                  <p class="form-order__required">Формы, обязательные к заполнению</p>
-                </label>
-            
-                <div class="form-order__add-file" style="">
-                  <label class="form-order__label-add-file" for="myfile">
-                    <p class="form-order__paragraph-add-file">Файл эскиза</p>
-                    <div class="form-order__button-add-file" type="button"></div>
-                  </label>
-                  <input class="form-order__input-add-file" type="file" id="myfile" name="myfile" multiple/>
-                  <p class="form-order__file-comment">Если есть эскиз, фотография похожего изделия прикрепите файл в jpg, pdf, png или doc формате до 5 мБ</p>
+                <div class="login-by-phone__form-container">
+                  <div class="login-by-phone__checkbox-container">
+                    <label class="checkbox-filter">
+                      <input class="checkbox-filter__invisible" type="checkbox"/>
+                      <div class="checkbox-filter__visible"></div>
+                    </label>
+                    <p>Запомнить меня</p>
+                  </div>
+                  <a class="login-by-phone__form-forgot-password" href="passwordRecoveryByEmail.html">Забыли пароль?</a>
                 </div>
-            
-                <label class="form-order__label form-order__label_seller">
-                  <input class="form-order__input" type="text" required="1"/>
-                  <div class="form-order__placeholder">ФИО Если заполняется продавцом</div>
-                </label>
-                <div class="form-order__agreement">
-                  <label class="checkbox-filter">
-                    <input class="checkbox-filter__invisible" type="checkbox"/>
-                    <div class="checkbox-filter__visible"></div>
-                  </label>
-                  <p>Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
-                </div>
-                <button class="form-order__button">Оставить  заявку</button>
-              </div>
-            </form>
-            <div class="order-slider">
-              <h1 class="order-slider__title">заказ украшения</h1>
-              <p class="order-slider__subtitle">по своему уникальному дизайну</p>
-              <div class="order-slider_slider">
-                <div>
-                  <img class="order-slider__item" src="./images/content/slider-item.png"/>
-                  <div class="order-slider__background"></div>
-                  <img class="order-slider__jewelery" src="./images/content/slider-item-element.png"/>
-                </div>
-                <div>
-                  <img class="order-slider__item" src="./images/content/slider-item2.png"/>
-                  <div class="order-slider__background"></div>
-                  <img class="order-slider__jewelery" src="./images/content/slider-item2-element.png"/>
-                </div>
-                <div>
-                  <img class="order-slider__item" src="./images/content/slider-item3.png"/>
-                  <div class="order-slider__background"></div>
-                  <img class="order-slider__jewelery" src="./images/content/slider-item3-element.png"/>
-                </div>
-                <div>
-                  <img class="order-slider__item" src="./images/content/slider-item4.png"/>
-                  <div class="order-slider__background"></div>
-                  <img class="order-slider__jewelery" src="./images/content/slider-item4-element.png"/>
-                </div>
+                <p class="login-by-phone__form-required">Формы, обязательные к заполнению</p>
+                <a class="login-by-phone__form-button" href="loginBySms.html">выслать код</a>
+              </form>
+              <div class="login-by-phone__sign-up">
+                <h2 class="login-by-phone__subtitle">Регистрация</h2>
+                <a class="login-by-phone__sign-up-button" href="signUp.html">Создать новый аккаунт</a>
+                <a class="login-by-phone__sign-up-link">Политика конфиденциальности</a>
               </div>
             </div>
-        </div>
+          </section>
       </main>
       <footer class="footer">
         <ul class="footer__photos">
