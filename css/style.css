@@ -9,6 +9,14 @@
 @font-face {
   font-family: "Cormorant";
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Cormorant-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
@@ -4702,6 +4710,7 @@ button {
     margin-bottom: 24px;
     font-size: 46px;
     line-height: 56px;
+    color: #25322C;
   }
 
   .pageNotFound__subtitle {
