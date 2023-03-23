@@ -123,39 +123,64 @@
         </div>
       </header>
       <main class="main">
-          <section class="container login-by-phone">
-            <h1 class="login-by-phone__title">Мой аккаунт</h1>
-            <div class="login-by-phone__table">
-              <form class="login-by-phone__form">
-                <h2 class="login-by-phone__subtitle">Вход</h2>
-                <div class="login-by-phone__links">
-                  <a class="login-by-phone__link login-by-phone__link_active">Вход по номеру телефона</a>
-                  <a class="login-by-phone__link" href="loginByEmail.html">Вход по email</a>
-                </div>
-                <label class="login-by-phone__form-label">
-                  <input class="login-by-phone__form-input" type="number" required="1"/>
-                  <div class="login-by-phone__form-placeholder">Телефон<span>*</span></div>
-                </label>
-                <div class="login-by-phone__form-container">
-                  <div class="login-by-phone__checkbox-container">
-                    <label class="checkbox-filter">
-                      <input class="checkbox-filter__invisible" type="checkbox"/>
-                      <div class="checkbox-filter__visible"></div>
-                    </label>
-                    <p>Запомнить меня</p>
-                  </div>
-                  <a class="login-by-phone__form-forgot-password" href="passwordRecoveryByEmail.html">Забыли пароль?</a>
-                </div>
-                <p class="login-by-phone__form-required">Формы, обязательные к заполнению</p>
-                <a class="login-by-phone__form-button" href="loginBySms.html">выслать код</a>
-              </form>
-              <div class="login-by-phone__sign-up">
-                <h2 class="login-by-phone__subtitle">Регистрация</h2>
-                <a class="login-by-phone__sign-up-button" href="signUp.html">Создать новый аккаунт</a>
-                <a class="login-by-phone__sign-up-link">Политика конфиденциальности</a>
-              </div>
-            </div>
-          </section>
+        <div class="container profile">
+          <h1 class="profile__title">Мой аккаунт</h1>
+          <div class="profile__wrapper">
+            <nav class="profile-menu">
+              <ul class="profile-menu__list">
+                <li class="profile-menu__list-item"><a href="profile.html">Профиль</a></li>
+                <li class="profile-menu__list-item"><a href="favorites.html">Избранное</a></li>
+                <li class="profile-menu__list-item"><a>заявки</a></li>
+                <li class="profile-menu__list-item"><a href="login.html">Выйти</a></li>
+              </ul>
+            </nav>
+            <section class="favorites">
+              <ul class="favorites__table">
+                <template class="template-favorite">
+                  <li>
+                    <a class="jewelry" href="product.html">
+                      <button class="jewelry__button-like">
+                        <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                        </svg>
+                      </button>
+                      <img class="jewelry__image"/>
+                      <div class="jewelry-slider">
+                      </div>
+                      <div class="jewelry__cell">
+                        <p class="jewelry__definition"></p>
+                        <div class="jewelry__description">
+                          <span class="jewelry__img"></span>
+                          <p class="jewelry__stone"></p>
+                          <p class="jewelry__specification"></p>
+                        </div>
+                        <div class="jewelry__green-container">
+                          <div class="jewelry__size">
+                            <span class="jewelry__size-icon"></span>
+                            <p class="jewelry__size-value"></p>
+                          </div>
+                          <p class="jewelry__metal"></p>
+                        </div>
+                        <div class="jewelry__bottom-container">
+                          <p class="jewelry__note"></p>
+                          <button class="jewelry__arrow"></button>
+                        </div>
+                      </div>
+                      <div class="jewelry__cell jewelry__cell_catalog">
+                        <p class="jewelry__definition"></p>
+                        <div class="jewelry__description">
+                          <span class="jewelry__img"></span>
+                          <p class="jewelry__stone"></p>
+                          <p class="jewelry__specification"></p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </template>
+              </ul>
+            </section>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <ul class="footer__photos">
@@ -349,5 +374,6 @@
       </label>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="js/favorites.js"></script>
   </body>
 </html>

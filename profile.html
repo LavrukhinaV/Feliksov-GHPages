@@ -123,39 +123,39 @@
         </div>
       </header>
       <main class="main">
-          <section class="container login-by-phone">
-            <h1 class="login-by-phone__title">Мой аккаунт</h1>
-            <div class="login-by-phone__table">
-              <form class="login-by-phone__form">
-                <h2 class="login-by-phone__subtitle">Вход</h2>
-                <div class="login-by-phone__links">
-                  <a class="login-by-phone__link login-by-phone__link_active">Вход по номеру телефона</a>
-                  <a class="login-by-phone__link" href="loginByEmail.html">Вход по email</a>
-                </div>
-                <label class="login-by-phone__form-label">
-                  <input class="login-by-phone__form-input" type="number" required="1"/>
-                  <div class="login-by-phone__form-placeholder">Телефон<span>*</span></div>
-                </label>
-                <div class="login-by-phone__form-container">
-                  <div class="login-by-phone__checkbox-container">
-                    <label class="checkbox-filter">
-                      <input class="checkbox-filter__invisible" type="checkbox"/>
-                      <div class="checkbox-filter__visible"></div>
-                    </label>
-                    <p>Запомнить меня</p>
-                  </div>
-                  <a class="login-by-phone__form-forgot-password" href="passwordRecoveryByEmail.html">Забыли пароль?</a>
-                </div>
-                <p class="login-by-phone__form-required">Формы, обязательные к заполнению</p>
-                <a class="login-by-phone__form-button" href="loginBySms.html">выслать код</a>
-              </form>
-              <div class="login-by-phone__sign-up">
-                <h2 class="login-by-phone__subtitle">Регистрация</h2>
-                <a class="login-by-phone__sign-up-button" href="signUp.html">Создать новый аккаунт</a>
-                <a class="login-by-phone__sign-up-link">Политика конфиденциальности</a>
-              </div>
-            </div>
-          </section>
+        <div class="container profile">
+          <h1 class="profile__title">Мой аккаунт</h1>
+          <div class="profile__wrapper">
+            <nav class="profile-menu">
+              <ul class="profile-menu__list">
+                <li class="profile-menu__list-item"><a href="profile.html">Профиль</a></li>
+                <li class="profile-menu__list-item"><a href="favorites.html">Избранное</a></li>
+                <li class="profile-menu__list-item"><a>заявки</a></li>
+                <li class="profile-menu__list-item"><a href="login.html">Выйти</a></li>
+              </ul>
+            </nav>
+            <section class="profile-info">
+              <ul class="profile-info__list">
+                <li class="profile-info__list-item">
+                  <h3 class="profile-info__list-title">Имя</h3>
+                  <p class="profile-info__list-value">YAROSLAV GRASSHOPPER</p>
+                  <button class="profile-info__list-button">Изменить</button>
+                </li>
+                  <li class="profile-info__list-item">
+                  <h3 class="profile-info__list-title">Телефон</h3>
+                  <p class="profile-info__list-value">+375295300375</p>
+                  <button class="profile-info__list-button">Изменить</button>
+                </li>
+                  <li class="profile-info__list-item">
+                  <h3 class="profile-info__list-title">Email</h3>
+                  <p class="profile-info__list-value">crazygrig@gmail.com</p>
+                  <button class="profile-info__list-button">Изменить</button>
+                </li>
+              </ul>
+              <a class="profile-info__button" href="changePassword.html">Сменить пароль</a>
+            </section>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <ul class="footer__photos">

@@ -182,3 +182,5 @@ document.querySelectorAll('.select').forEach(select => {
     if (!select.contains(e.target))	selectListHide()
   })
 })
+
+console.log(window.location.href)

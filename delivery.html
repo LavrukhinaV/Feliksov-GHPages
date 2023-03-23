@@ -32,8 +32,8 @@
                 </div>
               </a>
               <div class="header__buttons">
-                <button class="header__button header__button_account"></button>
-                <button class="header__button header__button_favorites"></button>
+                <a class="header__button header__button_account" href="profile.html"></a>
+                <a class="header__button header__button_favorites" href="favorites.html"></a>
               </div>
             </div>
           </div>
@@ -249,77 +249,81 @@
       </footer>
     </div>
     <div class="mobile-menu mobile-menu_invisible">
-      <div class="mobile-menu__wrapper">
+      <nav class="mobile-menu__nav">
         <div class="mobile-menu__search">
           <span class="mobile-menu__search-icon"></span>
           <input class="mobile-menu__input" placeholder="Я ищу..." type="text"/>
         </div>
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__nav-item">
-              <a class="link">
-                <p>Бутик</p>
-                <span class="mobile-menu__arrow"></span>
-              </a>
+        <ul class="mobile-menu__list mobile-menu__list_main">
+          <li class="mobile-menu__nav-item">
+            <a class="link">
+              <p>Бутик</p>
+              <span class="mobile-menu__arrow"></span>
+            </a>
+            <ul class="mobile-menu__submenu">
+              <li class="mobile-menu__submenu-item">
+                <a href="bracelets.html">Браслеты</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="necklaces.html">Колье</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="rings.html">Кольца</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="pendants.html">Подвески</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="studs.html">Пусеты </a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="earrings.html">Серьги</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="link">
+              <p>Свадебные укаршения</p>
+              <span class="mobile-menu__arrow"></span>
+            </a>
               <ul class="mobile-menu__submenu">
-                <li class="mobile-menu__submenu-item">
-                  <a href="bracelets.html">Браслеты</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="necklaces.html">Колье</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="rings.html">Кольца</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="pendants.html">Подвески</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="studs.html">Пусеты </a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="earrings.html">Серьги</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobile-menu__nav-item">
-              <a class="link">
-                <p>Свадебные укаршения</p>
-                <span class="mobile-menu__arrow"></span>
-              </a>
-               <ul class="mobile-menu__submenu">
-                <li class="mobile-menu__submenu-item">
-                  <a href="engagementRings.html">Помолвочные кольца</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="weddingRings.html">Обручальные колца</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="earrings.html">Серьги</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="necklaces.html">Колье</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="bracelets.html">Браслеты</a>
-                </li>
-                <li class="mobile-menu__submenu-item">
-                  <a href="pendants.html">Кулоны </a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobile-menu__nav-item"><a href="order.html">Индивидуальный заказ</a></li>
-            <li class="mobile-menu__nav-item"><a href="giftCertificates.html">Подарочные сертификаты</a></li>
-            <li class="mobile-menu__nav-item"><a href="about.html">О бренде</a></li>
-            <li class="mobile-menu__nav-item"><a href="services.html">Наши услуги</a></li>
-            <li class="mobile-menu__nav-item"><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="mobile-menu__account">
+              <li class="mobile-menu__submenu-item">
+                <a href="engagementRings.html">Помолвочные кольца</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="weddingRings.html">Обручальные колца</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="earrings.html">Серьги</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="necklaces.html">Колье</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="bracelets.html">Браслеты</a>
+              </li>
+              <li class="mobile-menu__submenu-item">
+                <a href="pendants.html">Кулоны </a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item"><a href="order.html">Индивидуальный заказ</a></li>
+          <li class="mobile-menu__nav-item"><a href="giftCertificates.html">Подарочные сертификаты</a></li>
+          <li class="mobile-menu__nav-item"><a href="about.html">О бренде</a></li>
+          <li class="mobile-menu__nav-item"><a href="services.html">Наши услуги</a></li>
+          <li class="mobile-menu__nav-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <a class="mobile-menu__account" href="login.html">
           <span class="mobile-menu__account-icon"></span>
           <p class="mobile-menu__account-text">Войти</p>
-        </div>
-      </div>
+        </a>
+        <ul class="mobile-menu__list mobile-menu__list_profile">
+          <li class="mobile-menu__nav-item"><a href="profile.html">Профиль</a></li>
+          <li class="mobile-menu__nav-item"><a href="favorites.html">Избранное</a></li>
+          <li class="mobile-menu__nav-item"><a href="contacts.html">Заявки</a></li>
+          <li class="mobile-menu__nav-item"><a href="login.html">Выйти</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="search-modal-window search-modal-window_invisible">
       <form class="search-modal-window__form">
