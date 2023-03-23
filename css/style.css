@@ -5503,6 +5503,44 @@ button {
   background-color: #C39947;
 }
 
+.search-modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  transition: 0.5s;
+  opacity: 1;
+  background: rgba(44, 44, 44, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  visibility: visible;
+}
+
+.search-modal-window_invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-modal-window__form {
+  margin-top: 70px;
+  padding: 15px;
+  width: 780px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-modal-window__form input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 @media (min-width: 680px) {
   .open-catalog__button:hover .open-catalog__hairpin_left {
     left: -97px;
@@ -6433,6 +6471,11 @@ button {
 
   .contacts__form-subtitle {
     max-width: none;
+  }
+
+  .search-modal-window {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
