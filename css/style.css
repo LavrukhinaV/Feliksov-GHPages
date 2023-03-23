@@ -5541,6 +5541,50 @@ button {
   line-height: 22px;
 }
 
+.delivery {
+  margin: 120px auto 345px;
+  max-width: 1620px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.delivery__container {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.delivery__title {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #2C2C2C;
+}
+
+.delivery__paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.delivery__image {
+  padding: 15%;
+  background: #EAE0D6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery__image img {
+  width: 100%;
+}
+
 @media (min-width: 680px) {
   .open-catalog__button:hover .open-catalog__hairpin_left {
     left: -97px;
@@ -5658,6 +5702,10 @@ button {
   }
 
   .login {
+    padding: 0 30px;
+  }
+
+  .delivery {
     padding: 0 30px;
   }
 }
@@ -5820,6 +5868,16 @@ button {
 
   .recovery-password-by-phone__sign-up {
     padding-left: 60px;
+  }
+
+  .delivery__container {
+    padding-right: 40px;
+  }
+
+  .delivery__image {
+    padding: 0;
+    background: none;
+    align-items: flex-start;
   }
 }
 
@@ -7316,6 +7374,25 @@ button {
     margin-top: 42px;
     padding: 10.5px 120px;
     align-self: center;
+  }
+
+  .delivery {
+    margin-top: 0;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .delivery__container {
+    margin-top: 32px;
+    padding: 0 30px;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .delivery__title {
+    text-align: center;
   }
 }
 
@@ -8900,5 +8977,9 @@ button {
     margin-top: 24px;
     padding: 15.5px 0;
     align-self: stretch;
+  }
+
+  .delivery__container {
+    padding: 0 16px;
   }
 }

@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliksov</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="page">
       <header class="header">
         <div class="header__container header__container_top">
@@ -123,81 +119,28 @@
         </div>
       </header>
       <main class="main">
-          <div class="catalog">
-            <div class="catalog__promo">
-              <h1 class="catalog__title">Кольца</h1>
-              <p class="catalog__subtitle">Красивый текст про кольца от ювелирной мастерской</p>
+          <section class="delivery">
+            <div class="delivery__container">
+              <h1 class="delivery__title">Доставка и оплата</h1>
+              <div class="delivery__paragraphs">
+                <p class="delivery__paragraph">
+                  Ювелирное Ателье Feliksov Diamonds выполняет доставку товара курьерской службой «СДЭК». Доставка для клиента в любую точку Российской Федерации совершенно бесплатна
+                </p>
+                <p class="delivery__paragraph">
+                  Кроме того, консультанты ателье готовы подобрать для вас эксклюзивное решение по оплате и доставке.Подробнее: ( contact@feliksov.ru )
+                </p>
+                <p class="delivery__paragraph">
+                  Ювелирное Ателье Feliksov Diamonds выполняет доставку товара курьерской службой «СДЭК». Доставка для клиента в любую точку Российской Федерации совершенно бесплатна
+                </p>
+                <p class="delivery__paragraph">
+                  Кроме того, консультанты ателье готовы подобрать для вас эксклюзивное решение по оплате и доставке.Подробнее: ( contact@feliksov.ru )
+                </p>
+              </div>
             </div>
-            <form class="catalog__form">
-              <ul class="catalog__filters">
-                <template class="template-filter">
-                  <li class="catalog__filter">
-                    <button class="catalog__filter-button" type="button">
-                      <p class="catalog__filter-title">Камень</p>
-                      <span class="catalog__filter-arrow"/>
-                    </button>
-                    <ul class="catalog__filter-options">
-                    </ul>
-                  </li>
-                </template>
-                <template class="template-filter-option">
-                  <li class="catalog__filter-option">
-                    <label class="checkbox-filter">
-                      <input class="checkbox-filter__invisible" type="checkbox"/>
-                      <div class="checkbox-filter__visible"></div>
-                      <p class="catalog__filter-option-value">Жёлтый бриллиант</p>
-                    </label>
-                  </li>
-                </template>
-              </ul>
-              <button class="catalog__button-reset" type="button">очистить все</button>
-              <button class="catalog__open-filter" type="button">
-                <p>Фильтры</p>
-                <span />
-              </button>
-            </form>
-            <section class="catalog__elements">
-              <template class="template-jewelry">
-                <a class="jewelry" href="product.html">
-                  <button class="jewelry__button-like">
-                    <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
-                    </svg>
-                  </button>
-                  <img class="jewelry__image"/>
-                  <div class="jewelry-slider">
-                  </div>
-                  <div class="jewelry__cell">
-                    <p class="jewelry__definition"></p>
-                    <div class="jewelry__description">
-                      <span class="jewelry__img"></span>
-                      <p class="jewelry__stone"></p>
-                      <p class="jewelry__specification"></p>
-                    </div>
-                    <div class="jewelry__green-container">
-                      <div class="jewelry__size">
-                        <span class="jewelry__size-icon"></span>
-                        <p class="jewelry__size-value"></p>
-                      </div>
-                      <p class="jewelry__metal"></p>
-                    </div>
-                    <div class="jewelry__bottom-container">
-                      <p class="jewelry__note"></p>
-                      <button class="jewelry__arrow"></button>
-                    </div>
-                  </div>
-                  <div class="jewelry__cell jewelry__cell_catalog">
-                    <p class="jewelry__definition"></p>
-                    <div class="jewelry__description">
-                      <span class="jewelry__img"></span>
-                      <p class="jewelry__stone"></p>
-                      <p class="jewelry__specification"></p>
-                    </div>
-                  </div>
-                </a>
-              </template>
-            </section>
-          </div>
+            <div class="delivery__image">
+              <img src="./images/content/girl-with-beads.png" alt="Девушка с бусами"/>
+            </div>
+          </section>
       </main>
       <footer class="footer">
         <ul class="footer__photos">
@@ -378,34 +321,6 @@
         </div>
       </div>
     </div>
-    <div class="mobile-filters mobile-filters_invisible">
-      <div class="mobile-filters__wrapper">
-        <h3 class="mobile-filters__title">Фильтры </h3>
-        <form class="mobile-filters__form">
-          <ul class="mobile-filters__list">
-            <template class="template-mobile-filters">
-              <li class="mobile-filters__filter">
-                <div class="mobile-filters__filter-title">
-                  <p class="mobile-filters__filter-title-text"></p>
-                  <span class="mobile-filters__arrow"></span>
-                </div>
-                <ul class="mobile-filters__submenu">
-                </ul>
-              </li>
-            </template>
-            <template class="template-mobile-filter-option">
-              <li class="catalog__filter-option">
-                <label class="checkbox-filter">
-                  <input class="checkbox-filter__invisible" type="checkbox"/>
-                  <div class="checkbox-filter__visible"></div>
-                  <p class="catalog__filter-option-value"></p>
-                </label>
-              </li>
-            </template>
-          </ul>
-        </form>
-      </div>
-    </div>
     <div class="search-modal-window search-modal-window_invisible">
       <form class="search-modal-window__form">
         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -415,6 +330,6 @@
       </label>
     </div>
     <script src="js/main.min.js"></script>
-    <script src="js/catalog.js"></script>
+	</script>
   </body>
 </html>
