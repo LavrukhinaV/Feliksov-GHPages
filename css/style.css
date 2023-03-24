@@ -138,6 +138,13 @@ a {
   cursor: pointer;
 }
 
+a[href^=tel] {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 /* Slider */
 
 .slick-slider {
@@ -1623,7 +1630,7 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 4;
   transition: left 0.5s;
 }
 
@@ -2063,12 +2070,12 @@ button {
 }
 
 .catalog__elements {
-  margin: 0 auto 444px;
-  max-width: 1620px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 180px 20px;
+  margin: 0 auto 444px;
+  max-width: 1620px;
+  width: 100%;
 }
 
 .jewelry__cell_catalog {
@@ -2093,7 +2100,7 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 4;
   transition: left 0.5s;
 }
 
@@ -2112,7 +2119,7 @@ button {
 }
 
 .mobile-filters__title {
-  padding: 30px 30px;
+  padding: 33px 30px;
   font-weight: 400;
 }
 
@@ -5542,7 +5549,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 3;
+  z-index: 4;
   transition: 0.5s;
   opacity: 1;
   background: rgba(44, 44, 44, 0.6);
@@ -5715,6 +5722,50 @@ button {
 
 .profile-menu__list-item a {
   color: #000000;
+}
+
+.search {
+  margin: 70px auto 0;
+}
+
+.search__title {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E2C9AA;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #2C2C2C;
+  text-transform: uppercase;
+}
+
+.search__form {
+  display: none;
+}
+
+.search__input {
+  font-family: "Cormorant";
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.search__input::-moz-placeholder {
+  color: #555555;
+}
+
+.search__input::placeholder {
+  color: #555555;
+}
+
+.search__filters {
+  padding: 0 !important;
+}
+
+.search__elements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 180px 20px;
+  margin-bottom: 130px;
 }
 
 @media (min-width: 680px) {
@@ -6021,7 +6072,7 @@ button {
 
   .header_fixed {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100vw;
   }
 
@@ -6482,9 +6533,12 @@ button {
   }
 
   .catalog__elements {
-    margin-bottom: 200px;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px 20px;
+  }
+
+  .catalog__elements {
+    margin-bottom: 200px;
   }
 
   .jewelry__cell_catalog {
@@ -6684,6 +6738,28 @@ button {
 
   .profile-menu {
     display: none;
+  }
+
+  .search__title {
+    margin-bottom: 70px;
+    padding: 0;
+    border-bottom: none;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .search__form {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid #555555;
+  }
+
+  .search__elements {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 20px;
   }
 }
 
@@ -7563,6 +7639,10 @@ button {
   .profile-info__button {
     margin-left: 50px;
   }
+
+  .search {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -8291,8 +8371,11 @@ button {
 
   .catalog__elements {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
     gap: 20px;
+  }
+
+  .catalog__elements {
+    padding: 0 16px;
   }
 
   .jewelry__cell_catalog {
@@ -8305,7 +8388,7 @@ button {
   }
 
   .mobile-filters__title {
-    padding: 30px 16px 18px;
+    padding: 30px 16px 30px;
   }
 
   .mobile-filters__form {
@@ -9180,5 +9263,39 @@ button {
   .favorites__table {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
+  }
+
+  .search {
+    margin-top: 30px;
+  }
+
+  .search__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .search__form {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .search__form-icon {
+    width: 17px;
+    height: 14px;
+  }
+
+  .search__input {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .search__elements {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .search__elements {
+    margin-bottom: 60px;
   }
 }
