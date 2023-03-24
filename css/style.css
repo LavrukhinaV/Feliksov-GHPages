@@ -17,14 +17,6 @@
 @font-face {
   font-family: "Cormorant";
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Cormorant";
-  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("../fonts/Cormorant-Medium.woff") format("woff");
@@ -248,12 +240,7 @@ a[href^=tel] {
 html,
 body {
   height: 100%;
-  font-family: "Cormorant", "Tenor Sans", "Open Sans", Arial, sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
+  font-family: "Cormorant", "Tenor Sans", "Open Sans", serif;
 }
 
 .page {
@@ -440,7 +427,6 @@ button {
 }
 
 .header__container_bottom {
-  padding: 16.5px 0;
   border-width: 0.5px 0px;
   border-style: solid;
   border-color: rgba(226, 226, 226, 0.7);
@@ -607,6 +593,7 @@ button {
 }
 
 .header__menu-item {
+  padding: 16.5px;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
@@ -625,9 +612,9 @@ button {
 .header__menu-item_menu-open::after {
   content: "";
   position: absolute;
-  width: 200%;
-  bottom: -15.5px;
-  left: -50%;
+  width: 100%;
+  bottom: 5px;
+  left: 0%;
   height: 1px;
   background-color: #D5D5D5;
 }
@@ -1769,6 +1756,7 @@ button {
 
 .about {
   margin: 84px auto 330px;
+  max-width: 1620px;
   font-family: "Tenor Sans";
   color: #2C2C2C;
   display: flex;
@@ -1926,6 +1914,7 @@ button {
 
 .services {
   margin: 35px auto 227px;
+  max-width: 1620px;
   display: flex;
   align-items: center;
   flex-direction: column;
