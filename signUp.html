@@ -133,7 +133,7 @@
                   <div class="sign-up__form-placeholder">Фамилия Имя Отчество<span>*</span></div>
                 </label>
                 <label class="sign-up__form-label">
-                  <input class="sign-up__form-input" type="email" required="1"/>
+                  <input class="sign-up__form-input" type="email | text" required="1"/>
                   <div class="sign-up__form-placeholder">Email<span>*</span></div>
                 </label>
                 <label class="sign-up__form-label">
@@ -144,15 +144,25 @@
           
               <div class="sign-up__form sign-up__form_passwords">
                 <div>
-                  <label class="sign-up__form-label">
-                    <input class="sign-up__form-input" type="text" required="1"/>
+                  <label class="sign-up__form-label sign-up__form-label_password">
+                    <input class="sign-up__form-input sign-up__form-input_password" type="password" required="1"/>
                     <div class="sign-up__form-placeholder">Пароль<span>*</span></div>
+                    <button class="button-show-password" type="button">
+                      <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.44068 2.18634C6.47069 3.24239 4.39545 5.19012 2 8.02115C9.81139 15.8471 14.1868 16.792 22 8.02115C19.6787 5.39573 17.6626 3.5375 15.7853 2.43999M8.44068 2.18634C10.913 0.860986 13.2196 0.940034 15.7853 2.43999M8.44068 2.18634C4.48588 12.7256 20.4181 10.8438 15.7853 2.43999" stroke="#A8A8A8" stroke-width="2"/>
+                      </svg>
+                    </button>
                   </label>
                   <p class="sign-up__form-password-note">пароль должен быть не менее 8 символов</p>
                 </div>
-                <label class="sign-up__form-label">
-                  <input class="sign-up__form-input" type="text" required="1"/>
+                <label class="sign-up__form-label sign-up__form-label_password">
+                  <input class="sign-up__form-input sign-up__form-input_password" type="password" required="1"/>
                   <div class="sign-up__form-placeholder">Подтверждение пароля<span>*</span></div>
+                  <button class="button-show-password" type="button">
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.44068 2.18634C6.47069 3.24239 4.39545 5.19012 2 8.02115C9.81139 15.8471 14.1868 16.792 22 8.02115C19.6787 5.39573 17.6626 3.5375 15.7853 2.43999M8.44068 2.18634C10.913 0.860986 13.2196 0.940034 15.7853 2.43999M8.44068 2.18634C4.48588 12.7256 20.4181 10.8438 15.7853 2.43999" stroke="#A8A8A8" stroke-width="2"/>
+                    </svg>
+                  </button>
                 </label>
                 <p class="sign-up__form-required">Формы, обязательные к заполнению</p>
               </div>

@@ -420,6 +420,15 @@ button {
   display: flex;
 }
 
+.button-show-password {
+  position: absolute;
+  right: 12px;
+}
+
+.button-show-password_password-shown svg path {
+  stroke: #000000;
+}
+
 .header__container_top {
   padding: 17px 0;
 }
@@ -1399,6 +1408,10 @@ button {
   line-height: 16px;
 }
 
+.form-order__label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .form-order__label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -1439,6 +1452,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.form-order__input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .form-order__input:invalid + .form-order__placeholder {
@@ -2895,6 +2913,10 @@ button {
   line-height: 16px;
 }
 
+.contacts__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .contacts__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -2909,6 +2931,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.contacts__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .contacts__form-placeholder {
@@ -3085,6 +3112,10 @@ button {
   line-height: 16px;
 }
 
+.order-certificate__label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .order-certificate__label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -3099,6 +3130,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.order-certificate__input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .order-certificate__input:invalid + .order-certificate__placeholder {
@@ -3627,6 +3663,10 @@ button {
   line-height: 16px;
 }
 
+.login__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .login__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -3641,6 +3681,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.login__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .login__form-placeholder {
@@ -3865,6 +3910,10 @@ button {
   line-height: 16px;
 }
 
+.login-by-phone__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .login-by-phone__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -3879,6 +3928,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.login-by-phone__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .login-by-phone__form-placeholder {
@@ -4076,6 +4130,10 @@ button {
   line-height: 16px;
 }
 
+.login-by-email__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .login-by-email__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -4094,6 +4152,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.login-by-email__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .login-by-email__form-placeholder {
@@ -4279,6 +4342,10 @@ button {
   line-height: 16px;
 }
 
+.login-by-sms__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .login-by-sms__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -4293,6 +4360,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.login-by-sms__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .login-by-sms__form-placeholder {
@@ -4466,6 +4538,10 @@ button {
   line-height: 16px;
 }
 
+.sign-up__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .sign-up__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -4480,6 +4556,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.sign-up__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .sign-up__form-placeholder {
@@ -4624,6 +4705,10 @@ button {
   line-height: 16px;
 }
 
+.sign-up-by-sms__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .sign-up-by-sms__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -4638,6 +4723,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.sign-up-by-sms__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .sign-up-by-sms__form-placeholder {
@@ -4808,6 +4898,10 @@ button {
   line-height: 16px;
 }
 
+.recovery-password-by-email__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .recovery-password-by-email__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -4822,6 +4916,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.recovery-password-by-email__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .recovery-password-by-email__form-placeholder {
@@ -5007,6 +5106,10 @@ button {
   line-height: 16px;
 }
 
+.recovery-password-by-phone__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .recovery-password-by-phone__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -5021,6 +5124,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.recovery-password-by-phone__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .recovery-password-by-phone__form-placeholder {
@@ -5179,6 +5287,10 @@ button {
   line-height: 16px;
 }
 
+.password-recovery-by-sms__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .password-recovery-by-sms__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -5193,6 +5305,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.password-recovery-by-sms__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .password-recovery-by-sms__form-placeholder {
@@ -5465,6 +5582,10 @@ button {
   line-height: 16px;
 }
 
+.change-password__form-label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
 .change-password__form-label textarea {
   margin-top: 7px;
   min-height: 98px;
@@ -5479,6 +5600,11 @@ button {
   padding-bottom: 9px;
   border-radius: 0;
   color: #555555;
+}
+
+.change-password__form-input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
 }
 
 .change-password__form-placeholder {
@@ -5741,6 +5867,10 @@ button {
 
 .search__form {
   display: none;
+}
+
+.search__form input {
+  width: 100%;
 }
 
 .search__input {
