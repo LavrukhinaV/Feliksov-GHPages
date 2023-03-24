@@ -1,3 +1,4 @@
+// Инициализация календаря
 const inputWithArrow = document.querySelector('.order-certificate__date-picker-input')
 
 let dp = new AirDatepicker('#airdatepicker', {

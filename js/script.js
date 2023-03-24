@@ -13,16 +13,15 @@ $(function() {
       }
     ]
   })
-})
+});
 
 $(function() {
   $('.main-slider').slick({
     dots: true,
-    // fade: true,
     arrows: false,
     speed: 1000,
   })
-})
+});
 
 $(function() {
   $('.jewelry-slider').slick({
@@ -30,8 +29,9 @@ $(function() {
     fade: true,
     arrows : false,
   })
-})
+});
 
+// Ограничение ввода в input type number
 document.querySelectorAll('input[type="number"]').forEach(input => {
   input.addEventListener("keypress", (e) => {
     e = e || window.event;
@@ -41,22 +41,7 @@ document.querySelectorAll('input[type="number"]').forEach(input => {
     if (!charStr.match(/^[0-9]+$/))
       e.preventDefault();
   })
-})
-
-
-// const inputAddFile = document.querySelector('.form-order__input-add-file');
-// const filesCounter = document.querySelector('.form-order__paragraph-add-file')
-// const buttonDeleteFiles = document.querySelector('.form-order__button-add-file')
-
-// inputAddFile.onchange = (e) =>{
-//   if(e.target.value) {
-//     filesCounter.textContent = `Выбрано файлов ${e.target.files.length}`
-//     buttonDeleteFiles.classList.add('form-order__button-add-file_transform')
-//   } else {
-//     filesCounter.textContent = 'Файл эскиза'
-//     buttonDeleteFiles.classList.remove('form-order__button-add-file_transform')
-//   }
-// }
+});
 
 // Установка фиксированного header при scroll Y > 70
 const header = document.querySelector('.header');
@@ -78,14 +63,14 @@ const mobileMenu = document.querySelector('.mobile-menu');
 openMobileMenuButton.addEventListener('click', function(e) {
   mobileMenu.classList.remove('mobile-menu_invisible');
   document.querySelector('.page').classList.add('page_is-menu-open');
-})
+});
 
 mobileMenu.addEventListener('click', function(e) {
   if(e.target.classList.contains('mobile-menu')) {
     mobileMenu.classList.add('mobile-menu_invisible');
     document.querySelector('.page').classList.remove('page_is-menu-open');
   }
-})
+});
 
 // Раскрытие и закрытие элементов мобильного меню
 let mobileMenuLinks = document.querySelectorAll('.link');
@@ -98,24 +83,24 @@ for (i=0; i<mobileMenuLinks.length; i++) {
     subMenu.classList.toggle('mobile-menu__submenu_visible');
     arrow.classList.toggle('mobile-menu__arrow_menu-open');
   })
-}
+};
 
 // Открытие и закрытие выпадающего меню в header
 const buttonsOpenBoutique = document.querySelector('.header__menu-item_open-boutique');
-const boutiqueMenu = document.querySelector('.header__boutique')
+const boutiqueMenu = document.querySelector('.header__boutique');
 
 buttonsOpenBoutique.addEventListener('click', function() {
   boutiqueMenu.classList.toggle('header__boutique_visible');
   buttonsOpenBoutique.classList.toggle('header__menu-item_menu-open');
-})
+});
 
 const buttonsOpenWeddingJewelery = document.querySelector('.header__menu-item_open-wedding-jewelery');
-const weddingJewelerMenu = document.querySelector('.header__jewelery')
+const weddingJewelerMenu = document.querySelector('.header__jewelery');
 
 buttonsOpenWeddingJewelery.addEventListener('click', function() {
   weddingJewelerMenu.classList.toggle('header__jewelery_visible');
   buttonsOpenWeddingJewelery.classList.toggle('header__menu-item_menu-open');
-})
+});
 
 // Закрытие выпадающих меню в header по клику по overlay
 document.addEventListener('click', ({target}) => {
@@ -138,13 +123,13 @@ const searchModalWindow = document.querySelector('.search-modal-window');
 
 openSearchModalWindow.addEventListener('click', function(e) {
   searchModalWindow.classList.remove('search-modal-window_invisible');
-})
+});
 
 searchModalWindow.addEventListener('click', function(e) {
   if(e.target.classList.contains('search-modal-window')) {
     searchModalWindow.classList.add('search-modal-window_invisible');
   }
-})
+});
 
 //Выбриаем все выпадающие списки на странице
 document.querySelectorAll('.select').forEach(select => {
@@ -158,7 +143,7 @@ document.querySelectorAll('.select').forEach(select => {
 	selectCurrent.addEventListener('click', () => {
 		selectList.classList.toggle('select__list--show')
     selectCurrent.classList.toggle('select__current_open')
-	})
+	});
 
 	//обходим элементы списка
 	selectItem.forEach(item =>{
@@ -181,7 +166,7 @@ document.querySelectorAll('.select').forEach(select => {
 			//скрываем выпадающий список
 			selectListHide() 
 		})
-	})
+	});
 	
 	// функция закрытия выпадающего списка
 	let selectListHide = () => {
@@ -192,22 +177,22 @@ document.querySelectorAll('.select').forEach(select => {
 	document.addEventListener('mouseup', (e) =>{
     if (!select.contains(e.target))	selectListHide()
   })
-})
+});
 
 //Редирект на страницу поиска при отправке формы
 document.querySelector('.search-modal-window__form').addEventListener('submit', (e)=> {
-  e.preventDefault()
-  window.location.href= "search.html"
-})
+  e.preventDefault();
+  window.location.href= "search.html";
+});
 
 document.querySelector('.mobile-menu__search').addEventListener('submit', (e)=> {
-  e.preventDefault()
-  window.location.href= "search.html"
-})
+  e.preventDefault();
+  window.location.href= "search.html";
+});
 
 // Показать, скрыть пароль
 function togglePassInput(button, e) {
-  const input = e.target.closest("label").querySelector('input')
+  const input = e.target.closest("label").querySelector('input');
 
   if(input.type == "password") {
     input.type = "text";
@@ -216,7 +201,7 @@ function togglePassInput(button, e) {
     input.type = "password";
     button.classList.remove("button-show-password_password-shown");
   }
-}
+};
 
 const buttonsTypePassword = document.querySelectorAll('.button-show-password');
 
@@ -224,4 +209,4 @@ buttonsTypePassword.forEach(button => {
   button.addEventListener('click', function(e) {
     togglePassInput(button, e)
   })
-})
+});

@@ -1,8 +1,8 @@
 $(window).on("load resize", function(){
-  var width = $(document).width();
+  const width = $(document).width();
   
   if (width > 1200) {
-    $('.product-card__photos-slider').slick('unslick');
+    $('.product-card__photos-slider').filter('.slick-initialized').slick('unslick');
   } else {
     $('.product-card__photos-slider').not('.slick-initialized').slick({  
       dots: true,

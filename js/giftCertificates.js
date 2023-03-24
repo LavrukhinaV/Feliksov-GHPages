@@ -22,7 +22,7 @@ const sumContainer = document.querySelector('.certificate__sum')
 
 
 $(window).on("load resize", function(){
-  var width = $(document).width();
+  const width = $(document).width();
   
   if (width <= 680) {
     designContainer.append(buttonContainer )

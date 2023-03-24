@@ -248,7 +248,7 @@ a[href^=tel] {
 html,
 body {
   height: 100%;
-  font-family: "Cormorant", "Open Sans", "Tenor Sans", Arial, sans-serif;
+  font-family: "Cormorant", "Tenor Sans", "Open Sans", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -528,7 +528,7 @@ button {
 }
 
 .header__drop-down-menu-subtitle {
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-size: 16px;
   line-height: 140%;
   color: #595959;
@@ -907,7 +907,7 @@ button {
 }
 
 .go-to-catalog__subtitle {
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   margin-left: 50%;
   font-size: 20px;
   line-height: 27px;
@@ -1257,7 +1257,7 @@ button {
 }
 
 .get-sertificate__subtitle {
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-size: 18px;
   line-height: 21px;
   color: #9F9F9F;
@@ -1355,7 +1355,7 @@ button {
 }
 
 .our-services__table-subtitle {
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -1574,7 +1574,7 @@ button {
   margin-bottom: 24px;
   padding: 0 16px;
   display: none;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1768,12 +1768,42 @@ button {
 }
 
 .about {
-  margin: 40px auto 330px;
+  margin: 84px auto 330px;
   font-family: "Tenor Sans";
   color: #2C2C2C;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about__logo-container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Costigue";
+  color: #2C2C2C;
+}
+
+.about__logo-container svg {
+  width: 126px;
+  height: 106px;
+}
+
+.about__logo-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 65px;
+  line-height: 70px;
+  letter-spacing: 0.35em;
+  font-weight: 400;
+}
+
+.about__logo-subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.6em;
+  font-weight: 400;
 }
 
 .about__paragraph {
@@ -3628,7 +3658,7 @@ button {
   display: flex;
   gap: 33px;
   align-self: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -3875,7 +3905,7 @@ button {
   display: flex;
   gap: 33px;
   align-self: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -4094,7 +4124,7 @@ button {
   display: flex;
   gap: 33px;
   align-self: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -4850,7 +4880,7 @@ button {
 .recovery-password-by-email__paragraph {
   margin-top: 30px;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -4863,7 +4893,7 @@ button {
   display: flex;
   gap: 33px;
   align-self: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -5058,7 +5088,7 @@ button {
 .recovery-password-by-phone__paragraph {
   margin-top: 30px;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -5071,7 +5101,7 @@ button {
   display: flex;
   gap: 33px;
   align-self: center;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -5733,7 +5763,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: "Open Sans";
+  font-family: "Tenor Sans";
   font-size: 20px;
   line-height: 27px;
   text-transform: uppercase;
@@ -5753,6 +5783,7 @@ button {
 
 .profile-info {
   padding: 40px 0 0 75px !important;
+  font-family: "Tenor Sans";
 }
 
 .profile-info__list {
@@ -5772,7 +5803,6 @@ button {
 
 .profile-info__list-title {
   grid-area: title;
-  font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -5785,7 +5815,6 @@ button {
 }
 
 .profile-info__list-value {
-  font-family: "Open Sans";
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -5793,14 +5822,12 @@ button {
 }
 
 .profile-info__list-button {
-  font-family: "Tenor Sans";
   font-size: 10px;
   line-height: 12px;
   color: #BBBBBB;
 }
 
 .profile-info__button {
-  font-family: "Tenor Sans";
   font-size: 13px;
   line-height: 15px;
   color: #BBBBBB;
@@ -6585,9 +6612,29 @@ button {
     width: calc(100vw - 60px);
   }
 
-  .about__logo {
+  .about {
+    margin: 35px 0 90px;
+  }
+
+  .about__logo-container svg {
+    width: 60px;
+    height: 48px;
+  }
+
+  .about__logo-container {
     margin-bottom: 29px;
-    width: 231px;
+  }
+
+  .about__logo-title {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .about__logo-subtitle {
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .about__container {
@@ -6946,10 +6993,6 @@ button {
     gap: 20px;
     font-size: 10px;
     line-height: 14px;
-  }
-
-  .about {
-    margin: 35px 0 90px;
   }
 
   .about__paragraph {
@@ -8378,7 +8421,7 @@ button {
     padding: 0;
   }
 
-  .about__logo {
+  .about__logo-container {
     margin-bottom: 14px;
   }
 
