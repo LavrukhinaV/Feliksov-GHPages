@@ -416,6 +416,12 @@ button {
   stroke: #000000;
 }
 
+.header_fixed {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+}
+
 .header__container_top {
   padding: 17px 0;
 }
@@ -430,6 +436,7 @@ button {
   border-width: 0.5px 0px;
   border-style: solid;
   border-color: rgba(226, 226, 226, 0.7);
+  background: #FFFFFF;
 }
 
 .header__boutique {
@@ -520,17 +527,6 @@ button {
   color: #595959;
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.header__logo svg {
-  max-width: 49px;
-  max-height: 28px;
-}
-
 .header__logo-title {
   font-family: "Costigue";
   font-weight: 400;
@@ -617,6 +613,10 @@ button {
   left: 0%;
   height: 1px;
   background-color: #D5D5D5;
+}
+
+.header_fixed .header__container_top {
+  display: none;
 }
 
 .footer {
@@ -797,7 +797,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
   letter-spacing: 0.075em;
   font-weight: 400;
   font-size: 100px;
@@ -805,6 +805,13 @@ button {
   color: #FFFFFF;
   width: 100%;
   text-align: center;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.promo__title._active {
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .open-catalog {
@@ -824,11 +831,22 @@ button {
   color: #1B1919;
   max-width: 879px;
   text-align: center;
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
+}
+
+.open-catalog__title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .open-catalog__button {
   position: relative;
   display: flex;
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.6s;
 }
 
 .open-catalog__button a {
@@ -846,6 +864,11 @@ button {
 .open-catalog__button:hover a {
   border: 1px solid #D6C7B5;
   color: #DFB583;
+}
+
+.open-catalog__button._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .open-catalog__hairpin {
@@ -891,6 +914,14 @@ button {
   position: absolute;
   z-index: 1;
   top: 36%;
+  transform: translate(200%, 0);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.go-to-catalog__title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .go-to-catalog__subtitle {
@@ -904,6 +935,14 @@ button {
   color: #FFFFFF;
   max-width: 452px;
   position: absolute;
+  transform: translate(200%, 0);
+  opacity: 0;
+  transition: all 1s ease 0.4s;
+}
+
+.go-to-catalog__subtitle._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .go-to-catalog__button {
@@ -1014,6 +1053,14 @@ button {
   font-size: 46px;
   line-height: 56px;
   text-transform: uppercase;
+  transform: translate(0, -120%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.jewelery__title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .jewelery__container {
@@ -1061,7 +1108,7 @@ button {
   top: 0;
   right: 18px;
   z-index: 2;
-  transition: opacity 0.5s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 .jewelry__button-like:hover svg {
@@ -1241,6 +1288,14 @@ button {
   text-transform: uppercase;
   color: #25322C;
   max-width: 377px;
+  transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+.get-sertificate__title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .get-sertificate__subtitle {
@@ -1250,11 +1305,22 @@ button {
   color: #9F9F9F;
   margin-bottom: 89px;
   max-width: 452px;
+  transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 1.2s ease 0.3s;
+}
+
+.get-sertificate__subtitle._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .get-sertificate__button {
   position: relative;
   display: flex;
+  transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 1.2s ease 0.6s;
 }
 
 .get-sertificate__button a {
@@ -1273,6 +1339,11 @@ button {
 .get-sertificate__button:hover a {
   border: 1px solid #D6C7B5;
   color: #DFB583;
+}
+
+.get-sertificate__button._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .get-sertificate__hairpin {
@@ -1315,6 +1386,14 @@ button {
   line-height: 56px;
   text-transform: uppercase;
   color: #000000;
+  transform: translate(0, -120%);
+  opacity: 0;
+  transition: all 1s ease 0.9s;
+}
+
+.our-services__title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .our-services__table {
@@ -1329,6 +1408,17 @@ button {
   align-items: center;
 }
 
+.our-services__icon {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1.2s ease 1s;
+}
+
+.our-services__icon._active {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .our-services__table-title {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1339,6 +1429,14 @@ button {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  opacity: 0;
+  transform: translate(0, 120%);
+  transition: all 1s ease 1s;
+}
+
+.our-services__table-title._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .our-services__table-subtitle {
@@ -1348,6 +1446,14 @@ button {
   line-height: 140%;
   text-align: center;
   color: #595959;
+  opacity: 0;
+  transform: translate(0, 120%);
+  transition: all 1s ease 1.2s;
+}
+
+.our-services__table-subtitle._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .form-order {
@@ -6216,12 +6322,6 @@ button {
     flex-direction: column-reverse;
   }
 
-  .header_fixed {
-    position: fixed;
-    z-index: 3;
-    width: 100vw;
-  }
-
   .header__container_top {
     display: none;
   }
@@ -6240,16 +6340,6 @@ button {
 
   .header__jewelery {
     display: none;
-  }
-
-  .header__logo {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .header__logo svg {
-    max-width: 26px;
-    max-height: 20px;
   }
 
   .header__logo-title :last-child {
@@ -8128,6 +8218,11 @@ button {
     margin-top: 70px;
     font-size: 36px;
     line-height: 44px;
+    transform: translate(0, 120%);
+  }
+
+  .promo__title._active {
+    transform: translate(0, 0);
   }
 
   .open-catalog {

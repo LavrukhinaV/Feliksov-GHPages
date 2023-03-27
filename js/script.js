@@ -31,6 +31,47 @@ $(function() {
   })
 });
 
+// Анимация
+
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0) {
+  window.addEventListener("scroll", animOnScroll);
+
+  function animOnScroll(params) {
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
+        animItem.classList.add("_active")
+      } else {
+        if(!animItem.classList.contains('_anim-no-hide')) {
+          animItem.classList.remove("_active")
+        }
+      }
+    }
+  }
+
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+  }
+
+  setTimeout(() => {
+    animOnScroll()
+  }, 300)
+}
+
 // Ограничение ввода в input type number
 document.querySelectorAll('input[type="number"]').forEach(input => {
   input.addEventListener("keypress", (e) => {
@@ -49,7 +90,7 @@ let scroll = 0
 
 window.addEventListener('scroll', function(e) {
   scroll = window.scrollY;
-  if(scroll > 70) {
+  if(scroll > 54) {
     header.classList.add('header_fixed')
   } else {
     header.classList.remove('header_fixed')
