@@ -7,22 +7,6 @@
 }
 
 @font-face {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../fonts/Cormorant-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/Cormorant-Medium.woff") format("woff");
-}
-
-@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -36,14 +20,6 @@
   font-weight: 300;
   font-display: swap;
   src: url("../fonts/open-sans-light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Costigue";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/Costigue.woff") format("woff");
 }
 
 html {
@@ -241,6 +217,11 @@ html,
 body {
   height: 100%;
   font-family: "Cormorant", "Tenor Sans", "Open Sans", serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 .page {
@@ -531,19 +512,6 @@ button {
   color: #595959;
 }
 
-.header__logo-title {
-  font-family: "Costigue";
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.135em;
-  color: #2C2C2C;
-  white-space: nowrap;
-  text-transform: uppercase;
-  display: flex;
-  gap: 14px;
-}
-
 .header__nav {
   display: flex;
   align-items: center;
@@ -659,19 +627,6 @@ button {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer__logo-title {
-  font-family: "Costigue";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  letter-spacing: 0.075em;
-  color: #FFFFFF;
-  white-space: nowrap;
 }
 
 .footer__addresses {
@@ -1393,7 +1348,6 @@ button {
   transform: translate(0, -120%);
   opacity: 0;
   transition: all 0.8s ease;
-  transition-delay: 0.6s;
 }
 
 .our-services__title._active {
@@ -1416,7 +1370,7 @@ button {
 .our-services__icon {
   opacity: 0;
   transform: scale(0);
-  transition: all 1.2s ease 1s;
+  transition: all 1s ease 0.4s;
 }
 
 .our-services__icon._active {
@@ -1437,7 +1391,7 @@ button {
   transform: translate(0, 120%);
   opacity: 0;
   transition: all 0.8s ease;
-  transition-delay: 1s;
+  transition-delay: 0.6s;
 }
 
 .our-services__table-title._active {
@@ -1455,7 +1409,7 @@ button {
   transform: translate(0, 120%);
   opacity: 0;
   transition: all 0.8s ease;
-  transition-delay: 1.2s;
+  transition-delay: 0.8s;
 }
 
 .our-services__table-subtitle._active {
@@ -2826,16 +2780,10 @@ button {
 }
 
 .certificate__design-card {
-  padding: 20% 0;
-  border-radius: 33.3px;
+  padding: 18% 0;
+  border-radius: 33px;
   display: flex;
-  font-family: "Costigue";
-  font-size: 30px;
-  line-height: 36px;
-  letter-spacing: 0.25em;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
 }
 
@@ -2849,7 +2797,6 @@ button {
 
 .certificate__design-card_white {
   background: linear-gradient(113.42deg, rgba(240, 240, 240, 0.8) -24.87%, #F0F0F0 48.63%, rgba(240, 240, 240, 0.8) 142.84%);
-  color: #555555;
 }
 
 .certificate__design-card_white svg path {
@@ -2857,12 +2804,8 @@ button {
 }
 
 .certificate__design-card svg {
-  margin-bottom: 20px;
-}
-
-.certificate__design-card p:nth-of-type(2) {
-  font-size: 14px;
-  line-height: 20px;
+  max-width: 236px;
+  max-height: 175px;
 }
 
 .certificate__design-filter {
@@ -3574,16 +3517,10 @@ button {
 
 .order-certificate__design-card {
   margin-bottom: 45px;
-  padding: 20% 0;
-  border-radius: 33.3px;
+  padding: 18% 0;
+  border-radius: 33px;
   display: flex;
-  font-family: "Costigue";
-  font-size: 30px;
-  line-height: 36px;
-  letter-spacing: 0.25em;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
 }
 
@@ -3597,7 +3534,6 @@ button {
 
 .order-certificate__design-card_white {
   background: linear-gradient(113.42deg, rgba(240, 240, 240, 0.8) -24.87%, #F0F0F0 48.63%, rgba(240, 240, 240, 0.8) 142.84%);
-  color: #555555;
 }
 
 .order-certificate__design-card_white svg path {
@@ -3605,12 +3541,8 @@ button {
 }
 
 .order-certificate__design-card svg {
-  margin-bottom: 20px;
-}
-
-.order-certificate__design-card p:nth-of-type(2) {
-  font-size: 14px;
-  line-height: 20px;
+  max-width: 236px;
+  max-height: 175px;
 }
 
 .order-certificate__payment-sum {
@@ -6349,19 +6281,6 @@ button {
     display: none;
   }
 
-  .header__logo-title :last-child {
-    font-size: 6px;
-    line-height: 10px;
-  }
-
-  .header__logo-title {
-    font-size: 14px;
-    line-height: 19px;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
-  }
-
   .header__button {
     width: 25px;
     height: 25px;
@@ -6402,11 +6321,6 @@ button {
   .footer__logo svg {
     max-width: 259px;
     max-height: 22px;
-  }
-
-  .footer__logo-title {
-    font-size: 18px;
-    line-height: 22px;
   }
 
   .footer__addresses {
@@ -7194,14 +7108,9 @@ button {
     gap: 30px;
   }
 
-  .certificate__design-card {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .certificate__design-card p:nth-of-type(2) {
-    font-size: 10px;
-    line-height: 14px;
+  .certificate__design-card svg {
+    max-width: 102px;
+    max-height: 75px;
   }
 
   .certificate__design-filter {
@@ -7367,17 +7276,12 @@ button {
   }
 
   .order-certificate__design-card {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .order-certificate__design-card p:nth-of-type(2) {
-    font-size: 10px;
-    line-height: 14px;
-  }
-
-  .order-certificate__design-card {
     margin-bottom: 0;
+  }
+
+  .order-certificate__design-card svg {
+    max-width: 102px;
+    max-height: 75px;
   }
 
   .order-certificate__payment-container {
@@ -8096,10 +8000,6 @@ button {
     gap: 18px;
   }
 
-  .certificate__design-card {
-    padding: 10% 0;
-  }
-
   .certificate__design-filter {
     font-size: 6px;
     line-height: 6px;
@@ -8108,10 +8008,6 @@ button {
   .certificate__design-filter-label svg {
     max-width: 26px;
     max-height: 26px;
-  }
-
-  .order-certificate__design-card {
-    padding: 10% 0;
   }
 
   .login {
@@ -8885,14 +8781,11 @@ button {
 
   .certificate__design-card {
     margin-bottom: 24px;
-    padding: 20% 0;
-    font-size: 30px;
-    line-height: 36px;
   }
 
-  .certificate__design-card p:nth-of-type(2) {
-    font-size: 14px;
-    line-height: 20px;
+  .certificate__design-card svg {
+    max-width: 150px;
+    max-height: 88px;
   }
 
   .certificate__design-filter {
@@ -9063,14 +8956,11 @@ button {
 
   .order-certificate__design-card {
     margin-bottom: 24px;
-    padding: 20% 0;
-    font-size: 30px;
-    line-height: 36px;
   }
 
-  .order-certificate__design-card p:nth-of-type(2) {
-    font-size: 14px;
-    line-height: 20px;
+  .order-certificate__design-card svg {
+    max-width: 150px;
+    max-height: 88px;
   }
 
   .order-certificate__payment-container {
