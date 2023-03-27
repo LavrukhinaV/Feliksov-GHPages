@@ -664,11 +664,6 @@ button {
   gap: 20px;
 }
 
-.footer__logo svg {
-  max-width: 40px;
-  max-height: 35px;
-}
-
 .footer__logo-title {
   font-family: "Costigue";
   font-weight: 400;
@@ -810,7 +805,7 @@ button {
   width: 100%;
   text-align: center;
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.8s ease;
 }
 
 .promo__title._active {
@@ -837,7 +832,8 @@ button {
   text-align: center;
   transform: translate(0, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease;
+  transition-delay: 0.2s;
 }
 
 .open-catalog__title._active {
@@ -850,7 +846,8 @@ button {
   display: flex;
   transform: translate(0, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0.4s;
+  transition: all 0.8s ease;
+  transition-delay: 0.4s;
 }
 
 .open-catalog__button a {
@@ -918,9 +915,9 @@ button {
   position: absolute;
   z-index: 1;
   top: 36%;
-  transform: translate(200%, 0);
+  transform: translate(120%, 0);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.8s ease;
 }
 
 .go-to-catalog__title._active {
@@ -939,9 +936,10 @@ button {
   color: #FFFFFF;
   max-width: 452px;
   position: absolute;
-  transform: translate(200%, 0);
+  transform: translate(120%, 0);
   opacity: 0;
-  transition: all 1s ease 0.4s;
+  transition: all 0.8s ease;
+  transition-delay: 0.4s;
 }
 
 .go-to-catalog__subtitle._active {
@@ -1059,7 +1057,7 @@ button {
   text-transform: uppercase;
   transform: translate(0, -120%);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.8s ease;
 }
 
 .jewelery__title._active {
@@ -1294,7 +1292,7 @@ button {
   max-width: 377px;
   transform: translate(-120%, 0);
   opacity: 0;
-  transition: all 1.2s ease 0s;
+  transition: all 0.8s ease;
 }
 
 .get-sertificate__title._active {
@@ -1311,7 +1309,8 @@ button {
   max-width: 452px;
   transform: translate(-120%, 0);
   opacity: 0;
-  transition: all 1.2s ease 0.3s;
+  transition: all 0.8s ease;
+  transition-delay: 0.3s;
 }
 
 .get-sertificate__subtitle._active {
@@ -1324,7 +1323,8 @@ button {
   display: flex;
   transform: translate(-120%, 0);
   opacity: 0;
-  transition: all 1.2s ease 0.6s;
+  transition: all 0.8s ease;
+  transition-delay: 0.6s;
 }
 
 .get-sertificate__button a {
@@ -1392,7 +1392,8 @@ button {
   color: #000000;
   transform: translate(0, -120%);
   opacity: 0;
-  transition: all 1s ease 0.9s;
+  transition: all 0.8s ease;
+  transition-delay: 0.6s;
 }
 
 .our-services__title._active {
@@ -1433,9 +1434,10 @@ button {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  opacity: 0;
   transform: translate(0, 120%);
-  transition: all 1s ease 1s;
+  opacity: 0;
+  transition: all 0.8s ease;
+  transition-delay: 1s;
 }
 
 .our-services__table-title._active {
@@ -1450,9 +1452,10 @@ button {
   line-height: 140%;
   text-align: center;
   color: #595959;
-  opacity: 0;
   transform: translate(0, 120%);
-  transition: all 1s ease 1.2s;
+  opacity: 0;
+  transition: all 0.8s ease;
+  transition-delay: 1.2s;
 }
 
 .our-services__table-subtitle._active {
@@ -1764,7 +1767,7 @@ button {
 }
 
 .mobile-menu__search {
-  padding: 33px 30px;
+  padding: 18.5px 30px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1876,16 +1879,6 @@ button {
 
 .about__logo-container {
   margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Costigue";
-  color: #2C2C2C;
-}
-
-.about__logo-container svg {
-  width: 126px;
-  height: 106px;
 }
 
 .about__logo-title {
@@ -6407,8 +6400,8 @@ button {
   }
 
   .footer__logo svg {
-    max-width: 25px;
-    max-height: 20px;
+    max-width: 259px;
+    max-height: 22px;
   }
 
   .footer__logo-title {
@@ -6710,8 +6703,8 @@ button {
   }
 
   .about__logo-container svg {
-    width: 60px;
-    height: 48px;
+    max-width: 231px;
+    max-height: 134px;
   }
 
   .about__logo-container {
@@ -7095,6 +7088,10 @@ button {
     gap: 20px;
     font-size: 10px;
     line-height: 14px;
+  }
+
+  .mobile-menu__search {
+    padding: 29px 30px;
   }
 
   .about__paragraph {
@@ -8016,6 +8013,10 @@ button {
     line-height: 9px;
   }
 
+  .about__title {
+    top: 25%;
+  }
+
   .services {
     padding: 0;
   }
@@ -8512,7 +8513,7 @@ button {
   }
 
   .mobile-menu__search {
-    padding: 30px 16px 27px;
+    padding: 23.5px 16px;
   }
 
   .mobile-menu__list_main {
