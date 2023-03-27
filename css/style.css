@@ -263,6 +263,10 @@ body {
   width: 100%;
 }
 
+.main_header_fixed {
+  padding-top: 187px;
+}
+
 .container {
   max-width: 1620px;
   margin: 0 auto;
@@ -833,7 +837,7 @@ button {
   text-align: center;
   transform: translate(0, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0.4s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .open-catalog__title._active {
@@ -846,7 +850,7 @@ button {
   display: flex;
   transform: translate(0, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0.4s;
 }
 
 .open-catalog__button a {
@@ -6317,9 +6321,19 @@ button {
 }
 
 @media (max-width: 1200px) {
+  .main {
+    padding-top: 62px;
+  }
+
   .container_order {
     padding: 32px 30px 60px;
     flex-direction: column-reverse;
+  }
+
+  .header {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
   }
 
   .header__container_top {
@@ -8100,6 +8114,10 @@ button {
 }
 
 @media (max-width: 680px) {
+  .main {
+    padding-top: 52px;
+  }
+
   .container {
     padding: 0 16px;
   }

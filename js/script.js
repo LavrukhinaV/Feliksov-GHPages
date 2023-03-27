@@ -38,7 +38,7 @@ const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
   window.addEventListener("scroll", animOnScroll);
 
-  function animOnScroll(params) {
+  function animOnScroll() {
     for (let index = 0; index < animItems.length; index++) {
       const animItem = animItems[index];
       const animItemHeight = animItem.offsetHeight;
@@ -84,16 +84,22 @@ document.querySelectorAll('input[type="number"]').forEach(input => {
   })
 });
 
-// Установка фиксированного header при scroll Y > 70
+// Установка фиксированного header при scroll Y
 const header = document.querySelector('.header');
+const main = document.querySelector('.main');
 let scroll = 0
 
 window.addEventListener('scroll', function(e) {
+
   scroll = window.scrollY;
-  if(scroll > 54) {
-    header.classList.add('header_fixed')
-  } else {
-    header.classList.remove('header_fixed')
+  if(window.innerWidth > 1200) {
+    if(scroll > 54) {
+      header.classList.add('header_fixed');
+      main.classList.add('main_header_fixed');
+    } else {
+      header.classList.remove('header_fixed');
+      main.classList.remove('main_header_fixed');
+    }
   }
 });
 
