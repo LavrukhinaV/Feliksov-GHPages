@@ -6322,7 +6322,7 @@ button {
 
 @media (max-width: 1200px) {
   .main {
-    padding-top: 62px;
+    padding-top: 57px;
   }
 
   .container_order {
@@ -7034,6 +7034,10 @@ button {
 }
 
 @media (max-width: 1024px) {
+  .main {
+    padding-top: 77px;
+  }
+
   .profile {
     margin-top: 60px;
     margin-bottom: 120px;
@@ -7043,6 +7047,11 @@ button {
   .profile__title {
     font-size: 36px;
     line-height: 44px;
+  }
+
+  .header__logo {
+    max-width: 90px;
+    max-height: 68px;
   }
 
   .main-slider {
@@ -8115,7 +8124,7 @@ button {
 
 @media (max-width: 680px) {
   .main {
-    padding-top: 52px;
+    padding-top: 67px;
   }
 
   .container {
