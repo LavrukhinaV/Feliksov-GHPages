@@ -16,43 +16,57 @@ const filtersElements = [
     title: "Металл",
     options: ["Белое золото", "Розовое золото", "Серебро", "Платина"]
   },
+  {
+    title: "Коллекция",
+    options: ["Регулярная коллекция", "Свадебная коллекция"]
+  },
 ];
 
 const filterTemplate = document.querySelector(".template-filter").content;
 const filterOptionTemplate = document.querySelector(".template-filter-option").content;
 const filterList = document.querySelector(".catalog__filters");
 
-filtersElements.forEach(function(element) {
-  const filterElement = filterTemplate.cloneNode(true);
-
-  filterElement.querySelector('.catalog__filter-title').textContent = element.title;
-
-  element.options.forEach(option => {
-    const filterOption = filterOptionTemplate.cloneNode(true);
-    filterOption.querySelector('.catalog__filter-option-value').textContent = option;
-    filterElement.querySelector('.catalog__filter-options').append(filterOption);
-  })
-
-  filterList.append(filterElement);
-});
-
 const mobileFilterTemplate = document.querySelector(".template-mobile-filters").content;
 const mobileFilterOptionTemplate = document.querySelector(".template-mobile-filter-option").content;
 const mobileFilterList = document.querySelector(".mobile-filters__list");
 
-filtersElements.forEach(function(element) {
-  const filterElement = mobileFilterTemplate.cloneNode(true);
+function addFilters(arr, templateFilter, templateFilterOption, filterList) {
+  arr.forEach(function(element) {
+    const filterElement = templateFilter.cloneNode(true);
+    filterElement.querySelector('.catalog__filter-title').textContent = element.title;
+  
+    element.options.forEach(option => {
+      const filterOption = templateFilterOption.cloneNode(true);
+      filterOption.querySelector('.catalog__filter-option-value').textContent = option;
+      filterElement.querySelector('.catalog__filter-options').append(filterOption);
+    })
+  
+    filterList.append(filterElement);
+  });
+}
 
-  filterElement.querySelector('.mobile-filters__filter-title-text').textContent = element.title;
+function addMobileFilters(arr, templateFilter, templateFilterOption, filterList) {
+  arr.forEach(function(element) {
+    const filterElement = templateFilter.cloneNode(true);
+    filterElement.querySelector('.mobile-filters__filter-title-text').textContent = element.title;
+  
+    element.options.forEach(option => {
+      const filterOption = templateFilterOption.cloneNode(true);
+      filterOption.querySelector('.catalog__filter-option-value').textContent = option;
+      filterElement.querySelector('.mobile-filters__submenu').append(filterOption);
+    })
+  
+    filterList.append(filterElement);
+  });
+}
 
-  element.options.forEach(option => {
-    const filterOption = mobileFilterOptionTemplate.cloneNode(true);
-    filterOption.querySelector('.catalog__filter-option-value').textContent = option;
-    filterElement.querySelector('.mobile-filters__submenu').append(filterOption);
-  })
-
-  mobileFilterList.append(filterElement);
-});
+if (window.location.pathname == "/search.html") {
+  addFilters(filtersElements, filterTemplate, filterOptionTemplate, filterList);
+  addMobileFilters(filtersElements, mobileFilterTemplate, mobileFilterOptionTemplate, mobileFilterList);
+} else {
+  addFilters(filtersElements.slice(0, -1), filterTemplate, filterOptionTemplate, filterList);
+  addMobileFilters(filtersElements.slice(0, -1), mobileFilterTemplate, mobileFilterOptionTemplate, mobileFilterList);
+}
 
 // Открытие и закрытие массива из выпадающих фильтров
 let buttonsOpenFilter = document.querySelectorAll('.catalog__filter-button');
@@ -89,7 +103,6 @@ document.addEventListener('click', ({target}) => {
     });
   }
 });
-
 
 // Открытие и закрытие мобильных фильтров
 const openMobileFilters = document.querySelector('.catalog__open-filter');

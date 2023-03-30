@@ -122,39 +122,60 @@
         </div>
       </header>
       <main class="main">
-        <div class="container profile">
-          <h1 class="profile__title">Мой аккаунт</h1>
-          <div class="profile__wrapper">
-            <nav class="profile-menu">
-              <ul class="profile-menu__list">
-                <li class="profile-menu__list-item"><a href="profile.html">Профиль</a></li>
-                <li class="profile-menu__list-item"><a href="favorites.html">Избранное</a></li>
-                <li class="profile-menu__list-item"><a>заявки</a></li>
-                <li class="profile-menu__list-item"><a href="login.html">Выйти</a></li>
-              </ul>
-            </nav>
-            <section class="profile-info">
-              <ul class="profile-info__list">
-                <li class="profile-info__list-item">
-                  <h3 class="profile-info__list-title">Имя</h3>
-                  <p class="profile-info__list-value">YAROSLAV GRASSHOPPER</p>
-                  <button class="profile-info__list-button">Изменить</button>
-                </li>
-                  <li class="profile-info__list-item">
-                  <h3 class="profile-info__list-title">Телефон</h3>
-                  <p class="profile-info__list-value">+375295300375</p>
-                  <button class="profile-info__list-button">Изменить</button>
-                </li>
-                  <li class="profile-info__list-item">
-                  <h3 class="profile-info__list-title">Email</h3>
-                  <p class="profile-info__list-value">crazygrig@gmail.com</p>
-                  <button class="profile-info__list-button">Изменить</button>
-                </li>
-              </ul>
-              <a class="profile-info__button" href="changePassword.html">Сменить пароль</a>
-            </section>
-          </div>
-        </div>
+        <section class="care-and-repair">
+          <h1 class="care-and-repair__title">Уход и ремонт</h1>
+          <p class="care-and-repair__subtitle">
+            Реставрация и ремонт фамильных драгоценностей. Изделия старинных времен, как правило, изготавливались не из драгоценных металлов. В большей степени это были имитирующие сплавы, соответственно и уход за ними отличается.
+          </p>
+          <img class="care-and-repair__image" src="./images/content/сare-and-repair.png" alt="Уход и ремонт">
+          
+          <form class="feedbackForm">
+            <h2 class="feedbackForm__title">Обратная связь</h2>
+            <p class="feedbackForm__subtitle">
+              Максимум внимания к мелочам в нашем сервисе. Поэтому посещение бутика осуществляется по предварительной записи. Свяжитесь с нашим менеджером, чтобы записаться на посещение или примерку.  
+            </p>
+            <div class="feedbackForm__container">
+              <label class="feedbackForm__label">
+                <input class="feedbackForm__input" type="text" required="1"/>
+                <div class="feedbackForm__placeholder">Ваше имя<span>*</span></div>
+              </label>
+              <label class="feedbackForm__label">
+                <input class="feedbackForm__input" type="number" required="1"/>
+                <div class="feedbackForm__placeholder">Телефон<span>*</span></div>
+              </label>
+              <label class="feedbackForm__label">
+                Комментарий
+                <textarea></textarea>
+                <p class="feedbackForm__required">Формы, обязательные к заполнению</p>
+              </label>
+            </div>
+            <div class="feedbackForm__radio-filter">
+              <h3 class="feedbackForm__radio-title">Где с вами связаться?</h3>
+              <div class="feedbackForm__radio-container">
+                <label class="feedbackForm__radio-label">
+                  <input class="feedbackForm__radio-invisible" name="communication method" type="radio" value="WhatsApp" checked></input>
+                  <p class="feedbackForm__radio-visible">WhatsApp</p>
+                </label>
+                <label class="feedbackForm__radio-label">
+                  <input class="feedbackForm__radio-invisible" name="communication method" type="radio" value="Telegram"></input>
+                  <p class="feedbackForm__radio-visible">Telegram</p>
+                </label>
+                <label class="feedbackForm__radio-label">
+                  <input class="feedbackForm__radio-invisible" name="communication method" type="radio" value="SMS"></input>
+                  <p class="feedbackForm__radio-visible">SMS</p>
+                </label>
+              </div>
+            </div>
+            <div class="feedbackForm__agreement">
+              <label class="checkbox-filter">
+                <input class="checkbox-filter__invisible" type="checkbox"/>
+                <div class="checkbox-filter__visible"></div>
+              </label>
+              <p>Нажимая кнопку «ОСТАВИТЬ ЗАЯВКУ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *</p>
+            </div>
+            <button class="feedbackForm__button">Свяжитесь со мной</button>
+          </form>
+        </section>
       </main>
       <footer class="footer">
         <ul class="footer__photos">

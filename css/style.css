@@ -1888,17 +1888,18 @@ button {
   top: 47%;
   left: 5%;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 200%;
+  letter-spacing: 0.16em;
   max-width: 452px;
 }
 
 .about__order-button {
-  padding: 23.5px 72.5px;
+  padding: 23.5px 68px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #1B1919;
   border-radius: 3px;
   position: absolute;
-  top: 60%;
+  bottom: 27%;
   left: 5%;
   font-size: 20px;
   line-height: 23px;
@@ -1911,23 +1912,25 @@ button {
   margin-top: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-rows: 1fr auto 1fr auto;
+  grid-template-areas: "text regular-image" "text regular-link" "wedding-image advantages" "wedding-link advantages";
+  -moz-column-gap: 60px;
+  column-gap: 60px;
   font-size: 20px;
   line-height: 200%;
   letter-spacing: 0.16em;
   color: #000000;
 }
 
-.about__table-item {
-  display: flex;
-  flex-direction: column;
-}
-
 .about__table-text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   margin-bottom: 92px;
   display: flex;
   flex-direction: column;
   gap: 4em;
+  grid-area: text;
 }
 
 .about__image-container {
@@ -1935,6 +1938,18 @@ button {
   width: 100%;
   padding-top: 100%;
   position: relative;
+}
+
+.about__image-container_wedding-collection {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: wedding-image;
+}
+
+.about__image-container_regular-collection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: regular-image;
 }
 
 .about__table-image {
@@ -1948,7 +1963,7 @@ button {
 }
 
 .about__table-button {
-  align-self: center;
+  justify-self: center;
   padding-top: 14px;
   padding-bottom: 14px;
   width: 90%;
@@ -1960,8 +1975,24 @@ button {
   text-align: center;
 }
 
+.about__table-button_regular-collection {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  margin-bottom: 57px;
+  grid-area: regular-link;
+}
+
+.about__table-button_wedding-collection {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: wedding-link;
+}
+
 .about__table-advantages {
-  margin-top: 57px;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: advantages;
 }
 
 .about__table-advantage {
@@ -2002,7 +2033,7 @@ button {
 }
 
 .services__list-container {
-  padding-top: 30%;
+  padding-top: 25%;
   padding-left: 18%;
   border: 0.5px solid #CFCFCF;
   border-right: none;
@@ -2012,6 +2043,7 @@ button {
 }
 
 .services__list-title {
+  max-width: 373px;
   font-family: "Cormorant";
   font-weight: 400;
   font-size: 40px;
@@ -2039,6 +2071,7 @@ button {
   border: 1px solid #1B1919;
   border-radius: 3px;
   max-width: 400px;
+  text-align: center;
 }
 
 .catalog {
@@ -2942,179 +2975,6 @@ button {
 .contacts__address-subtitle_big {
   font-size: 18px;
   line-height: 21px;
-}
-
-.contacts__form {
-  padding: 30px 100px;
-  border: 0.5px solid #A5A5A5;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-}
-
-.contacts__form-title {
-  margin-bottom: 30px;
-  font-family: "Cormorant";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.contacts__form-subtitle {
-  margin-bottom: 50px;
-  max-width: 579px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.contacts__form-label {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  color: #757575;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.contacts__form-label_password {
-  border-bottom: 1px solid #CACACA;
-}
-
-.contacts__form-label textarea {
-  margin-top: 7px;
-  min-height: 98px;
-  border: 1px solid #E4E4E4;
-  resize: none;
-  color: #555555;
-}
-
-.contacts__form-input {
-  width: 100%;
-  border-bottom: 1px solid #CACACA;
-  padding-bottom: 9px;
-  border-radius: 0;
-  color: #555555;
-}
-
-.contacts__form-input_password {
-  border-bottom: none;
-  width: calc(100% - 40px);
-}
-
-.contacts__form-placeholder {
-  z-index: 1;
-  left: 0;
-  cursor: text;
-  position: absolute;
-  bottom: 9px;
-  width: 100%;
-  display: none;
-}
-
-.contacts__form-placeholder span {
-  color: #FE0000;
-}
-
-.contacts__form-input:invalid + .contacts__form-placeholder {
-  display: inline;
-}
-
-.contacts__form-required {
-  margin-top: 20px;
-  margin-left: 35px;
-  font-size: 13px;
-  line-height: 15px;
-  color: #7B7B7B;
-  position: relative;
-}
-
-.contacts__form-required::after {
-  left: -35px;
-  position: absolute;
-  content: "*";
-  color: #FE0000;
-  font-size: 24px;
-  line-height: 16px;
-}
-
-.contacts__form-container {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contacts__form-radio-filter {
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.contacts__form-radio-title {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #555555;
-}
-
-.contacts__form-radio-container {
-  display: flex;
-}
-
-.contacts__form-radio-invisible {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-}
-
-.contacts__form-radio-invisible:checked + .contacts__form-radio-visible {
-  border: 1px solid #DBC18E;
-  border-radius: 32px;
-  color: #252525;
-}
-
-.contacts__form-radio-invisible:not(:checked) + .contacts__form-radio-visible {
-  border: none;
-}
-
-.contacts__form-radio-visible {
-  padding: 8px 12px;
-  font-size: 13px;
-  line-height: 15px;
-  color: #C4BBB6;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.contacts__agreement {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  font-size: 13px;
-  line-height: 15px;
-  color: #7B7B7B;
-}
-
-.contacts__form-button {
-  margin-top: 66px;
-  padding: 14.5px 200px;
-  border: 1px solid #C39947;
-  align-self: center;
-  font-family: "Cormorant";
-  color: #C39947;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.contacts__form-button:hover {
-  background: #C39947;
-  color: #FFFFFF;
 }
 
 .contacts__map {
@@ -5777,8 +5637,8 @@ button {
 
 .delivery__title {
   font-weight: 400;
-  font-size: 46px;
-  line-height: 56px;
+  font-size: 40px;
+  line-height: 49px;
   text-transform: uppercase;
   color: #2C2C2C;
 }
@@ -5787,10 +5647,15 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: "Tenor Sans";
-  font-size: 20px;
-  line-height: 27px;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2C2C2C;
+}
+
+.delivery__paragraphs a {
+  color: #2C2C2C;
+  -webkit-text-decoration: underline #2C2C2C;
+  text-decoration: underline #2C2C2C;
 }
 
 .delivery__image {
@@ -5906,6 +5771,7 @@ button {
 }
 
 .search__title {
+  display: none;
   padding-bottom: 6px;
   border-bottom: 1px solid #E2C9AA;
   font-family: "Cormorant";
@@ -5917,25 +5783,32 @@ button {
 }
 
 .search__form {
-  display: none;
+  border-bottom: 1px solid #E2C9AA;
+  padding-bottom: 6px;
 }
 
 .search__form input {
   width: 100%;
 }
 
+.search__form-icon {
+  display: none;
+}
+
 .search__input {
   font-family: "Cormorant";
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #2C2C2C;
 }
 
 .search__input::-moz-placeholder {
-  color: #555555;
+  color: #2C2C2C;
 }
 
 .search__input::placeholder {
-  color: #555555;
+  color: #2C2C2C;
 }
 
 .search__filters {
@@ -5947,6 +5820,275 @@ button {
   grid-template-columns: repeat(4, 1fr);
   gap: 180px 20px;
   margin-bottom: 130px;
+}
+
+.feedbackForm {
+  padding: 30px 100px;
+  border: 0.5px solid #A5A5A5;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedbackForm__title {
+  margin-bottom: 30px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedbackForm__subtitle {
+  margin-bottom: 50px;
+  max-width: 579px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.feedbackForm__label {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.feedbackForm__label_password {
+  border-bottom: 1px solid #CACACA;
+}
+
+.feedbackForm__label textarea {
+  margin-top: 7px;
+  min-height: 98px;
+  border: 1px solid #E4E4E4;
+  resize: none;
+  color: #555555;
+}
+
+.feedbackForm__input {
+  width: 100%;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 9px;
+  border-radius: 0;
+  color: #555555;
+}
+
+.feedbackForm__input_password {
+  border-bottom: none;
+  width: calc(100% - 40px);
+}
+
+.feedbackForm__placeholder {
+  z-index: 1;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  display: none;
+}
+
+.feedbackForm__placeholder span {
+  color: #FE0000;
+}
+
+.feedbackForm__input:invalid + .feedbackForm__placeholder {
+  display: inline;
+}
+
+.feedbackForm__required {
+  margin-top: 20px;
+  margin-left: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+  position: relative;
+}
+
+.feedbackForm__required::after {
+  left: -35px;
+  position: absolute;
+  content: "*";
+  color: #FE0000;
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.feedbackForm__container {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedbackForm__radio-filter {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feedbackForm__radio-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.feedbackForm__radio-container {
+  display: flex;
+}
+
+.feedbackForm__radio-invisible {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.feedbackForm__radio-invisible:checked + .feedbackForm__radio-visible {
+  border: 1px solid #DBC18E;
+  border-radius: 32px;
+  color: #252525;
+}
+
+.feedbackForm__radio-invisible:not(:checked) + .feedbackForm_radio-visible {
+  border: none;
+}
+
+.feedbackForm__radio-visible {
+  padding: 8px 12px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #C4BBB6;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.feedbackForm__agreement {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7B7B7B;
+}
+
+.feedbackForm__button {
+  margin-top: 66px;
+  padding: 14.5px 200px;
+  border: 1px solid #C39947;
+  align-self: center;
+  font-family: "Cormorant";
+  color: #C39947;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.feedbackForm__button:hover {
+  background: #C39947;
+  color: #FFFFFF;
+}
+
+.care-and-repair {
+  margin: 84px auto 89px;
+  max-width: 1620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Tenor Sans";
+  color: #2C2C2C;
+}
+
+.care-and-repair__title {
+  margin-bottom: 40px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.care-and-repair__subtitle {
+  margin-bottom: 40px;
+  max-width: 1069px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.care-and-repair__image {
+  margin-bottom: 80px;
+}
+
+.gift-selection {
+  margin: 84px auto 89px;
+  max-width: 1620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Tenor Sans";
+  color: #2C2C2C;
+}
+
+.gift-selection__title {
+  margin-bottom: 40px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.gift-selection__subtitle {
+  margin-bottom: 40px;
+  max-width: 1069px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.gift-selection__image {
+  margin-bottom: 80px;
+}
+
+.jewelry-personalization {
+  margin: 84px auto 89px;
+  max-width: 1620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Tenor Sans";
+  color: #2C2C2C;
+}
+
+.jewelry-personalization__title {
+  margin-bottom: 40px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.jewelry-personalization__subtitle {
+  margin-bottom: 40px;
+  max-width: 1069px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.jewelry-personalization__image {
+  margin-bottom: 80px;
 }
 
 @media (min-width: 680px) {
@@ -6072,6 +6214,18 @@ button {
   .delivery {
     padding: 0 30px;
   }
+
+  .care-and-repair {
+    padding: 0 30px;
+  }
+
+  .gift-selection {
+    padding: 0 30px;
+  }
+
+  .jewelry-personalization {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -6089,6 +6243,19 @@ button {
 
   .product-card__delivery {
     padding: 30px 40px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .about__subtitle {
+    max-width: 240px;
+  }
+
+  .about__order-button {
+    position: static;
+    align-self: center;
+    padding: 15.5px 98px;
+    margin-top: 20px;
   }
 }
 
@@ -6113,17 +6280,6 @@ button {
 
   .get-sertificate__button a {
     padding: 23.5px 30px;
-  }
-
-  .about__subtitle {
-    max-width: 240px;
-  }
-
-  .about__order-button {
-    position: static;
-    align-self: center;
-    padding: 15.5px 98px;
-    margin-top: 20px;
   }
 
   .certificate {
@@ -6856,15 +7012,6 @@ button {
     grid-column-start: 2;
   }
 
-  .contacts__form {
-    padding: 0 30px;
-    border: none;
-  }
-
-  .contacts__form-subtitle {
-    max-width: none;
-  }
-
   .search-modal-window {
     opacity: 0;
     visibility: hidden;
@@ -6918,6 +7065,7 @@ button {
   }
 
   .search__title {
+    display: block;
     margin-bottom: 70px;
     padding: 0;
     border-bottom: none;
@@ -6930,13 +7078,69 @@ button {
   .search__form {
     display: flex;
     gap: 10px;
-    padding-bottom: 6px;
     border-bottom: 0.5px solid #555555;
+  }
+
+  .search__form-icon {
+    display: block;
+  }
+
+  .search__input {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .search__input::-moz-placeholder {
+    font-size: 20px;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  .search__input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+    color: #555555;
   }
 
   .search__elements {
     grid-template-columns: repeat(3, 1fr);
     gap: 100px 20px;
+  }
+
+  .feedbackForm {
+    padding: 0 30px;
+    border: none;
+  }
+
+  .feedbackForm__subtitle {
+    max-width: none;
+  }
+
+  .care-and-repair {
+    margin: 30px 0 64px;
+    padding: 0;
+  }
+
+  .care-and-repair__subtitle {
+    padding: 0 30px;
+  }
+
+  .gift-selection {
+    margin: 30px 0 64px;
+    padding: 0;
+  }
+
+  .gift-selection__subtitle {
+    padding: 0 30px;
+  }
+
+  .jewelry-personalization {
+    margin: 30px 0 64px;
+    padding: 0;
+  }
+
+  .jewelry-personalization__subtitle {
+    padding: 0 30px;
   }
 }
 
@@ -7029,7 +7233,8 @@ button {
   .about__table {
     margin-top: 50px;
     font-size: 14px;
-    gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
   }
 
   .about__table-text {
@@ -7042,6 +7247,10 @@ button {
 
   .about__table-button {
     width: 100%;
+  }
+
+  .about__table-button_regular-collection {
+    margin-bottom: 50px;
   }
 
   .services__list-title {
@@ -7163,33 +7372,6 @@ button {
   .contacts__address-subtitle_big {
     font-size: 10px;
     line-height: 14px;
-  }
-
-  .contacts__form-title {
-    margin-bottom: 10px;
-  }
-
-  .contacts__form-subtitle {
-    margin-bottom: 20px;
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  .contacts__form-radio-filter {
-    margin-bottom: 35px;
-    gap: 10px;
-    align-self: center;
-  }
-
-  .contacts__agreement {
-    gap: 20px;
-    font-size: 10px;
-    line-height: 14px;
-  }
-
-  .contacts__form-button {
-    margin-top: 30px;
-    padding: 10.5px 90px;
   }
 
   .order-certificate {
@@ -7819,6 +8001,84 @@ button {
   .search {
     margin-top: 60px;
   }
+
+  .feedbackForm__title {
+    margin-bottom: 10px;
+  }
+
+  .feedbackForm__subtitle {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .feedbackForm__radio-filter {
+    margin-bottom: 35px;
+    gap: 10px;
+    align-self: center;
+  }
+
+  .feedbackForm__agreement {
+    gap: 20px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .feedbackForm__button {
+    margin-top: 30px;
+    padding: 10.5px 90px;
+  }
+
+  .care-and-repair__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .care-and-repair__subtitle {
+    margin-bottom: 50px;
+    max-width: 449px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .care-and-repair__image {
+    margin-bottom: 20px;
+  }
+
+  .gift-selection__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .gift-selection__subtitle {
+    margin-bottom: 50px;
+    max-width: 449px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .gift-selection__image {
+    margin-bottom: 20px;
+  }
+
+  .jewelry-personalization__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .jewelry-personalization__subtitle {
+    margin-bottom: 50px;
+    max-width: 449px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .jewelry-personalization__image {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -7919,6 +8179,27 @@ button {
 
   .about__title {
     top: 25%;
+  }
+
+  .about__title {
+    position: static;
+    max-width: none;
+    align-self: center;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about__subtitle {
+    padding-left: 16px;
+    padding-right: 16px;
+    position: static;
+    max-width: none;
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .services {
@@ -8444,27 +8725,6 @@ button {
     margin-left: 0;
   }
 
-  .about__title {
-    position: static;
-    max-width: none;
-    align-self: center;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .about__subtitle {
-    padding-left: 16px;
-    padding-right: 16px;
-    position: static;
-    max-width: none;
-    align-self: center;
-    text-align: center;
-    font-size: 14px;
-    line-height: 19px;
-  }
-
   .about__order-button {
     padding: 13px 0;
     align-self: stretch;
@@ -8475,33 +8735,65 @@ button {
   .about__table {
     margin-top: 120px;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "wedding-image" "text" "wedding-link" "regular-image" "advantages" "regular-link";
     font-size: 14px;
     line-height: 19px;
-    gap: 120px;
-  }
-
-  .about__table-item {
-    display: grid;
-    grid-template-areas: "image" "text" "button";
-    justify-items: center;
   }
 
   .about__table-text {
     padding: 0 16px;
     margin-bottom: 32px;
     text-align: center;
-    grid-area: text;
     gap: 2em;
   }
 
   .about__image-container {
     margin-bottom: 32px;
-    grid-area: image;
   }
 
   .about__table-button {
     width: calc(100% - 32px);
-    grid-area: button;
+  }
+
+  .about__table-button_regular-collection {
+    margin-bottom: 0;
+  }
+
+  .about__table-button_wedding-collection {
+    margin-bottom: 120px;
+  }
+
+  .about__table-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .about__image-container_wedding-collection {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .about__image-container_regular-collection {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .about__table-button_regular-collection {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+
+  .about__table-button_wedding-collection {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .about__table-advantages {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
   }
 
   .about__table-advantages {
@@ -8845,37 +9137,6 @@ button {
   .contacts__address-subtitle_big {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .contacts__form {
-    padding: 0 16px;
-  }
-
-  .contacts__form-title {
-    font-size: 24px;
-    line-height: 26px;
-    margin-bottom: 24px;
-  }
-
-  .contacts__form-subtitle {
-    margin-bottom: 24px;
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  .contacts__form-radio-filter {
-    margin-bottom: 24px;
-    align-self: stretch;
-  }
-
-  .contacts__form-radio-container {
-    align-self: center;
-  }
-
-  .contacts__form-button {
-    margin-top: 24px;
-    padding: 15.5px 0;
-    align-self: stretch;
   }
 
   .contacts__map::after {
@@ -9380,21 +9641,6 @@ button {
     width: 100%;
   }
 
-  .about__table-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  .about__image-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .about__table-button {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
   .product-card__title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
@@ -9465,6 +9711,16 @@ button {
     line-height: 15px;
   }
 
+  .search__input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .search__input::placeholder {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
   .search__elements {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -9472,5 +9728,84 @@ button {
 
   .search__elements {
     margin-bottom: 60px;
+  }
+
+  .feedbackForm {
+    padding: 0 16px;
+  }
+
+  .feedbackForm__title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  .feedbackForm__subtitle {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .feedbackForm__radio-filter {
+    margin-bottom: 24px;
+    align-self: stretch;
+  }
+
+  .feedbackForm__radio-container {
+    align-self: center;
+  }
+
+  .feedbackForm__button {
+    margin-top: 24px;
+    padding: 15.5px 0;
+    align-self: stretch;
+  }
+
+  .care-and-repair {
+    margin: 24px 0 184px;
+  }
+
+  .care-and-repair__subtitle {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    max-width: none;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .care-and-repair__image {
+    margin-bottom: 34px;
+  }
+
+  .gift-selection {
+    margin: 24px 0 184px;
+  }
+
+  .gift-selection__subtitle {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    max-width: none;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .gift-selection__image {
+    margin-bottom: 34px;
+  }
+
+  .jewelry-personalization {
+    margin: 24px 0 184px;
+  }
+
+  .jewelry-personalization__subtitle {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    max-width: none;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .jewelry-personalization__image {
+    margin-bottom: 34px;
   }
 }
