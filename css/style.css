@@ -2923,6 +2923,7 @@ button {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
 }
 
@@ -6012,6 +6013,7 @@ button {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
 }
 
@@ -6044,6 +6046,7 @@ button {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
 }
 
@@ -6076,6 +6079,7 @@ button {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
 }
 
@@ -6986,6 +6990,10 @@ button {
     padding: 0;
   }
 
+  .contacts__title {
+    padding: 0 30px;
+  }
+
   .contacts__subtitle {
     padding: 0 30px;
   }
@@ -7121,6 +7129,10 @@ button {
     padding: 0;
   }
 
+  .care-and-repair__title {
+    padding: 0 30px;
+  }
+
   .care-and-repair__subtitle {
     padding: 0 30px;
   }
@@ -7130,6 +7142,10 @@ button {
     padding: 0;
   }
 
+  .gift-selection__title {
+    padding: 0 30px;
+  }
+
   .gift-selection__subtitle {
     padding: 0 30px;
   }
@@ -7137,6 +7153,10 @@ button {
   .jewelry-personalization {
     margin: 30px 0 64px;
     padding: 0;
+  }
+
+  .jewelry-personalization__title {
+    padding: 0 30px;
   }
 
   .jewelry-personalization__subtitle {
@@ -9096,6 +9116,10 @@ button {
     margin: 24px 0 184px;
   }
 
+  .contacts__title {
+    padding: 0 16px;
+  }
+
   .contacts__subtitle {
     margin-bottom: 24px;
     padding: 0 16px;
@@ -9765,6 +9789,10 @@ button {
     margin: 24px 0 184px;
   }
 
+  .care-and-repair__title {
+    padding: 0 16px;
+  }
+
   .care-and-repair__subtitle {
     margin-bottom: 24px;
     padding: 0 16px;
@@ -9781,6 +9809,10 @@ button {
     margin: 24px 0 184px;
   }
 
+  .gift-selection__title {
+    padding: 0 16px;
+  }
+
   .gift-selection__subtitle {
     margin-bottom: 24px;
     padding: 0 16px;
@@ -9795,6 +9827,10 @@ button {
 
   .jewelry-personalization {
     margin: 24px 0 184px;
+  }
+
+  .jewelry-personalization__title {
+    padding: 0 16px;
   }
 
   .jewelry-personalization__subtitle {
