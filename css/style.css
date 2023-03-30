@@ -2837,6 +2837,7 @@ button {
 }
 
 .certificate__design-card svg {
+  width: 100%;
   max-width: 236px;
   max-height: 175px;
 }
