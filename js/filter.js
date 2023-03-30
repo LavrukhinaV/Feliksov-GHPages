@@ -60,7 +60,10 @@ function addMobileFilters(arr, templateFilter, templateFilterOption, filterList)
   });
 }
 
-if (window.location.pathname == "/search.html") {
+// При нахождении на странице писка, добавить дополнительный фильтр по коллекциям
+const locationPathname = window.location.toString().split('/').filter(x => x.length > 0).pop();
+
+if (locationPathname == "search.html") {
   addFilters(filtersElements, filterTemplate, filterOptionTemplate, filterList);
   addMobileFilters(filtersElements, mobileFilterTemplate, mobileFilterOptionTemplate, mobileFilterList);
 } else {
