@@ -2386,6 +2386,11 @@ button {
   color: #2C2C2C;
 }
 
+.product-card__description_order {
+  margin-bottom: 0;
+  grid-area: auto;
+}
+
 .product-card__description-wrapper {
   margin-bottom: 30px;
   display: flex;
@@ -2463,6 +2468,8 @@ button {
   background: #004C41;
   border-radius: 3px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .product-card__description-button:hover {
@@ -2996,7 +3003,7 @@ button {
   z-index: 1;
 }
 
-.order-certificate {
+.order {
   padding-top: 84px !important;
   padding-bottom: 264px !important;
   font-family: "Tenor Sans";
@@ -3006,18 +3013,18 @@ button {
   gap: 60px;
 }
 
-.order-certificate__forms {
+.order__forms {
   padding: 40px 100px;
   border: 0.5px solid #A5A5A5;
 }
 
-.order-certificate__login {
+.order__login {
   margin-bottom: 52px;
   display: flex;
   flex-direction: column;
 }
 
-.order-certificate__title {
+.order__title {
   margin-bottom: 40px;
   font-family: "Cormorant";
   font-weight: 400;
@@ -3028,7 +3035,7 @@ button {
   color: #000000;
 }
 
-.order-certificate__label {
+.order__label {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -3039,11 +3046,11 @@ button {
   line-height: 16px;
 }
 
-.order-certificate__label_password {
+.order__label_password {
   border-bottom: 1px solid #CACACA;
 }
 
-.order-certificate__label textarea {
+.order__label textarea {
   margin-top: 7px;
   min-height: 98px;
   border: 1px solid #E4E4E4;
@@ -3051,7 +3058,7 @@ button {
   color: #555555;
 }
 
-.order-certificate__input {
+.order__input {
   width: 100%;
   border-bottom: 1px solid #CACACA;
   padding-bottom: 9px;
@@ -3059,16 +3066,16 @@ button {
   color: #555555;
 }
 
-.order-certificate__input_password {
+.order__input_password {
   border-bottom: none;
   width: calc(100% - 40px);
 }
 
-.order-certificate__input:invalid + .order-certificate__placeholder {
+.order__input:invalid + .order__placeholder {
   display: inline;
 }
 
-.order-certificate__placeholder {
+.order__placeholder {
   z-index: 1;
   left: 0;
   cursor: text;
@@ -3078,11 +3085,11 @@ button {
   display: none;
 }
 
-.order-certificate__placeholder span {
+.order__placeholder span {
   color: #FE0000;
 }
 
-.order-certificate__required {
+.order__required {
   margin-top: 20px;
   margin-left: 35px;
   font-size: 13px;
@@ -3091,7 +3098,7 @@ button {
   position: relative;
 }
 
-.order-certificate__required::after {
+.order__required::after {
   left: -35px;
   position: absolute;
   content: "*";
@@ -3100,17 +3107,17 @@ button {
   line-height: 16px;
 }
 
-.order-certificate__password-container {
+.order__password-container {
   margin-top: 10px;
 }
 
-.order-certificate__link {
+.order__link {
   font-size: 14px;
   line-height: 22px;
   color: #555555;
 }
 
-.order-certificate__button-login {
+.order__button-login {
   margin-top: 20px;
   padding: 14.5px 0;
   border: 1px solid #C39947;
@@ -3122,24 +3129,24 @@ button {
   transition: 0.5s;
 }
 
-.order-certificate__button-login:hover {
+.order__button-login:hover {
   background: #C39947;
   color: #FFFFFF;
 }
 
-.order-certificate__contact-details {
+.order__contact-details {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
 }
 
-.order-certificate__recipient-contact-details {
+.order__recipient-contact-details {
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 
-.order-certificate__checkbox-container {
+.order__checkbox-container {
   display: flex;
   align-items: center;
   gap: 35px;
@@ -3148,14 +3155,14 @@ button {
   color: #7B7B7B;
 }
 
-.order-certificate__date-picker {
+.order__date-picker {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 65px;
 }
 
-.order-certificate__date-picker-label {
+.order__date-picker-label {
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -3164,11 +3171,11 @@ button {
   line-height: 16px;
 }
 
-.order-certificate__date-picker-input {
+.order__date-picker-input {
   position: relative;
 }
 
-.order-certificate__date-picker-input::before {
+.order__date-picker-input::before {
   content: "";
   position: absolute;
   right: 0;
@@ -3181,11 +3188,11 @@ button {
   background-image: url(../images/arrow-filter-open.svg);
 }
 
-.order-certificate__date-picker-input_open::before {
+.order__date-picker-input_open::before {
   transform: rotateX(0) translateY(0);
 }
 
-.order-certificate__date-picker-input input {
+.order__date-picker-input input {
   padding: 7px 0 10px;
   border-bottom: 1px solid #CACACA;
   border-radius: 0;
@@ -3198,37 +3205,37 @@ button {
   cursor: pointer;
 }
 
-.order-certificate__calendar {
+.order__calendar {
   position: absolute !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-.order-certificate__calendar .air-datepicker--content {
+.order__calendar .air-datepicker--content {
   padding: 0 20px 30px;
 }
 
-.order-certificate__calendar .air-datepicker--pointer {
+.order__calendar .air-datepicker--pointer {
   display: none;
 }
 
-.order-certificate__calendar .air-datepicker-nav {
+.order__calendar .air-datepicker-nav {
   border-bottom: none;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.order-certificate__calendar .air-datepicker-nav--action svg {
+.order__calendar .air-datepicker-nav--action svg {
   width: 11px;
   height: 11px;
 }
 
-.order-certificate__calendar .air-datepicker-nav--action svg path {
+.order__calendar .air-datepicker-nav--action svg path {
   stroke: none;
   fill: #464646;
 }
 
-.order-certificate__calendar .air-datepicker-nav--title {
+.order__calendar .air-datepicker-nav--title {
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 20px;
@@ -3237,7 +3244,7 @@ button {
   color: #464646;
 }
 
-.order-certificate__calendar .air-datepicker-nav--title i {
+.order__calendar .air-datepicker-nav--title i {
   margin-right: 25px;
   font-family: "Cormorant";
   font-weight: 500;
@@ -3248,7 +3255,7 @@ button {
   position: relative;
 }
 
-.order-certificate__calendar .air-datepicker-nav--title i::after {
+.order__calendar .air-datepicker-nav--title i::after {
   content: "";
   position: absolute;
   width: 11px;
@@ -3260,12 +3267,12 @@ button {
   background-size: contain;
 }
 
-.order-certificate__calendar .air-datepicker-body--day-names {
+.order__calendar .air-datepicker-body--day-names {
   border-bottom: 0.5px solid #CCCCCC;
   padding-bottom: 6px;
 }
 
-.order-certificate__calendar .air-datepicker-body--day-name {
+.order__calendar .air-datepicker-body--day-name {
   color: #000000;
   font-family: "Cormorant";
   font-weight: 500;
@@ -3273,7 +3280,7 @@ button {
   line-height: 19px;
 }
 
-.order-certificate__calendar .air-datepicker-cell {
+.order__calendar .air-datepicker-cell {
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 12px;
@@ -3282,13 +3289,13 @@ button {
   color: #000000;
 }
 
-.order-certificate__calendar .air-datepicker-cell.-current- {
+.order__calendar .air-datepicker-cell.-current- {
   color: #000000 !important;
   position: relative;
   border-radius: 0;
 }
 
-.order-certificate__calendar .air-datepicker-cell.-current-::after {
+.order__calendar .air-datepicker-cell.-current-::after {
   position: absolute;
   content: "";
   height: 0.5px;
@@ -3297,32 +3304,32 @@ button {
   bottom: 5px;
 }
 
-.order-certificate__calendar .air-datepicker-cell.-focus-,
-.order-certificate__calendar .air-datepicker-cell.-selected- {
+.order__calendar .air-datepicker-cell.-focus-,
+.order__calendar .air-datepicker-cell.-selected- {
   background: #BBBBBB !important;
 }
 
-.order-certificate__select {
+.order__select {
   font-size: 15px;
   line-height: 16px;
   color: #757575;
 }
 
-.order-certificate__select-container {
+.order__select-container {
   display: flex;
   flex-direction: column;
   gap: 17px;
   justify-content: space-between;
 }
 
-.order-certificate__payment {
+.order__payment {
   padding: 84px 130px 110px;
   border: 0.5px solid #A5A5A5;
   display: flex;
   flex-direction: column;
 }
 
-.order-certificate__button-payment {
+.order__button-payment {
   margin: 45px 0 58px;
   padding: 15.5px 0;
   background-color: #E9EBEA;
@@ -3335,25 +3342,25 @@ button {
   transition: background-color 0.5s;
 }
 
-.order-certificate__button-payment:hover {
+.order__button-payment:hover {
   padding: 14.5px 0;
   background-color: transparent;
   border: 0.5px solid #2C2C2C;
 }
 
-.order-certificate__payment-paragraph {
+.order__payment-paragraph {
   font-size: 13px;
   line-height: 15px;
   color: #7B7B7B;
 }
 
-.order-certificate__payment-paragraph a {
+.order__payment-paragraph a {
   color: #7B7B7B;
   -webkit-text-decoration: underline #7B7B7B;
   text-decoration: underline #7B7B7B;
 }
 
-.order-certificate__design-type {
+.order__design-type {
   margin-bottom: 27px;
   align-self: baseline;
   padding: 8.5px 35px;
@@ -3364,20 +3371,20 @@ button {
   background: #F0F0F0;
 }
 
-.order-certificate__design-type_green {
+.order__design-type_green {
   background: #25322C;
 }
 
-.order-certificate__design-type_desert {
+.order__design-type_desert {
   background: linear-gradient(113.42deg, rgba(226, 201, 170, 0.8) -24.87%, #E2C9AA 48.63%, rgba(226, 201, 170, 0.8) 142.84%);
 }
 
-.order-certificate__design-type_white {
+.order__design-type_white {
   background: linear-gradient(113.42deg, rgba(240, 240, 240, 0.8) -24.87%, #F0F0F0 48.63%, rgba(240, 240, 240, 0.8) 142.84%);
   color: #555555;
 }
 
-.order-certificate__design-card {
+.order__design-card {
   margin-bottom: 45px;
   padding: 18% 0;
   border-radius: 33px;
@@ -3386,28 +3393,28 @@ button {
   color: #FFFFFF;
 }
 
-.order-certificate__design-card_green {
+.order__design-card_green {
   background: linear-gradient(113.42deg, rgba(37, 50, 44, 0.8) -24.87%, #25322C 48.63%, rgba(37, 50, 44, 0.8) 142.84%);
 }
 
-.order-certificate__design-card_desert {
+.order__design-card_desert {
   background: linear-gradient(113.42deg, rgba(226, 201, 170, 0.8) -24.87%, #E2C9AA 48.63%, rgba(226, 201, 170, 0.8) 142.84%);
 }
 
-.order-certificate__design-card_white {
+.order__design-card_white {
   background: linear-gradient(113.42deg, rgba(240, 240, 240, 0.8) -24.87%, #F0F0F0 48.63%, rgba(240, 240, 240, 0.8) 142.84%);
 }
 
-.order-certificate__design-card_white svg path {
+.order__design-card_white svg path {
   fill: #2C2C2C;
 }
 
-.order-certificate__design-card svg {
+.order__design-card svg {
   max-width: 236px;
   max-height: 175px;
 }
 
-.order-certificate__payment-sum {
+.order__payment-sum {
   margin-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -3416,7 +3423,7 @@ button {
   color: #555555;
 }
 
-.order-certificate__payment-sum input {
+.order__payment-sum input {
   font-family: "Tenor Sans";
   font-style: normal;
   font-weight: 400;
@@ -3426,7 +3433,7 @@ button {
   text-align: center;
 }
 
-.order-certificate__payment-sum div {
+.order__payment-sum div {
   padding: 7px 6px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -6096,6 +6103,152 @@ button {
   margin-bottom: 80px;
 }
 
+.requests {
+  font-family: "Open Sans";
+  padding-left: 160px;
+  width: 100%;
+}
+
+.requests__table {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.requests__request {
+  display: grid;
+  grid-template-columns: minmax(min-content, 390px) 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.requests__info-container {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.requests__info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.requests__info li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.requests__info-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.requests__info-subtitle {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.requests__info-subtitle_address {
+  font-family: "Tenor Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #2C2C2C;
+}
+
+.requests__button {
+  padding: 14.5px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #C39947;
+  font-family: "Cormorant";
+  max-width: 578px;
+  width: 100%;
+  border: 1px solid #C39947;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.requests__button:hover {
+  color: #FFFFFF;
+  background-color: #C39947;
+}
+
+.order {
+  max-width: 1620px;
+  margin: 0 auto;
+}
+
+.order_jewelery {
+  align-items: stretch;
+}
+
+.order__submit-button {
+  margin-top: 52px;
+  padding: 23.5px 0;
+  font-family: "Cormorant";
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #004C41;
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.order__submit-button:hover {
+  padding: 22.5px 0;
+  background: none;
+  border: 1px solid #2C2C2C;
+  color: #004C41;
+}
+
+.order__image {
+  margin-bottom: 30px;
+  grid-area: image;
+}
+
+.order .slick-slider {
+  width: calc(50vw - 230px);
+  max-width: 578px !important;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto 30px;
+}
+
+.order .slick-dots {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+}
+
+.order .slick-dots li {
+  display: flex;
+}
+
+.order .slick-dots li button {
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  background: #D9D9D9;
+  border-radius: 50%;
+}
+
+.order .slick-dots .slick-active button {
+  background: #006557;
+}
+
+.profile-info__list-item > .product-card__description-wrapper_order {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+}
+
 @media (min-width: 680px) {
   .open-catalog__button:hover .open-catalog__hairpin_left {
     left: -97px;
@@ -6231,6 +6384,14 @@ button {
   .jewelry-personalization {
     padding: 0 30px;
   }
+
+  .order {
+    padding: 0 30px;
+  }
+
+  .order .slick-slider {
+    width: calc(50vw - 300px);
+  }
 }
 
 @media (max-width: 1600px) {
@@ -6248,6 +6409,10 @@ button {
 
   .product-card__delivery {
     padding: 30px 40px;
+  }
+
+  .order .slick-slider {
+    width: calc(50vw - 140px);
   }
 }
 
@@ -6299,15 +6464,15 @@ button {
     padding: 33px 55px;
   }
 
-  .order-certificate {
+  .order {
     gap: 30px;
   }
 
-  .order-certificate__forms {
+  .order__forms {
     padding: 17px 44px;
   }
 
-  .order-certificate__payment {
+  .order__payment {
     padding: 33px 55px;
   }
 
@@ -6403,6 +6568,14 @@ button {
     padding: 0;
     background: none;
     align-items: flex-start;
+  }
+
+  .requests {
+    padding-left: 75px;
+  }
+
+  .order .slick-slider {
+    width: calc(50vw - 125px);
   }
 }
 
@@ -7030,41 +7203,6 @@ button {
     padding: 0 !important;
   }
 
-  .product-card__title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-
-  .product-card__photos {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-  }
-
-  .product-card__description {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-  }
-
-  .product-card__form {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-
-  .product-card__recommended-products {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-
-  .profile-info__list-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-
   .favorites {
     padding: 0 !important;
   }
@@ -7162,6 +7300,160 @@ button {
 
   .jewelry-personalization__subtitle {
     padding: 0 30px;
+  }
+
+  .requests {
+    padding-left: 0;
+  }
+
+  .requests__request {
+    gap: 52px;
+  }
+
+  .requests__info-container {
+    gap: 26px;
+  }
+
+  .order_jewelery {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .order__forms_jewelery {
+    border: none;
+  }
+
+  .order__submit-button {
+    max-width: 500px;
+    margin: 52px auto 0;
+  }
+
+  .order .slick-slider {
+    width: calc(50vw - 45px);
+  }
+
+  .order .slick-dots {
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .product-card__description_order {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 1fr;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    grid-template-areas: "image title" "image table" "image description";
+  }
+
+  .product-card__description_order > .product-card__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description_order > .product-card__description {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .product-card__description_order > .profile-info__list-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+  .order__image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description-wrapper_order {
+    display: flex;
+    grid-area: title;
+  }
+
+  .product-card__description-wrapper_order h2 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #C39947;
+  }
+
+  .product-card__description-wrapper_order button {
+    display: none;
+  }
+
+  .product-card__description-table_order {
+    grid-area: table;
+  }
+
+  .product-card__description-list_order {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: description;
+  }
+
+  .product-card__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .product-card__photos {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+
+  .product-card__form {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .product-card__recommended-products {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .profile-info__list-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .product-card__description-wrapper_order {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .product-card__description_order > .product-card__description-wrapper_order {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description-table_order {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+
+  .product-card__description-list_order {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+
+  .product-card__description_order > .product-card__description-list_order {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
 }
 
@@ -7395,78 +7687,78 @@ button {
     line-height: 14px;
   }
 
-  .order-certificate {
+  .order {
     padding-top: 25px !important;
     padding-bottom: 110px !important;
     grid-template-columns: 1fr;
     gap: 100px;
   }
 
-  .order-certificate__forms {
+  .order__forms {
     padding: 0;
     border: none;
   }
 
-  .order-certificate__login {
+  .order__login {
     margin-bottom: 65px;
   }
 
-  .order-certificate__title {
+  .order__title {
     margin-bottom: 26px;
     line-height: 26px;
     color: #555555;
   }
 
-  .order-certificate__required {
+  .order__required {
     margin-top: 0;
   }
 
-  .order-certificate__password-container {
+  .order__password-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
-  .order-certificate__button-login {
+  .order__button-login {
     padding: 10.5px 0;
     margin-top: 30px;
     margin-right: 90px;
     margin-left: 90px;
   }
 
-  .order-certificate__contact-details {
+  .order__contact-details {
     margin-bottom: 44px;
   }
 
-  .order-certificate__recipient-contact-details {
+  .order__recipient-contact-details {
     margin-bottom: 27px;
   }
 
-  .order-certificate__checkbox-container {
+  .order__checkbox-container {
     gap: 20px;
     font-size: 10px;
     line-height: 14px;
   }
 
-  .order-certificate__date-picker {
+  .order__date-picker {
     gap: 30px;
   }
 
-  .order-certificate__payment {
+  .order__payment {
     padding: 0;
     border: none;
   }
 
-  .order-certificate__button-payment:hover {
+  .order__button-payment:hover {
     padding: 9.5px 0;
   }
 
-  .order-certificate__button-payment {
+  .order__button-payment {
     padding: 10.5px 0;
     margin: 40px 90px 16px;
   }
 
-  .order-certificate__payment-paragraph {
+  .order__payment-paragraph {
     font-size: 11px;
     line-height: 13px;
     text-align: center;
@@ -7474,30 +7766,30 @@ button {
     max-width: 521px;
   }
 
-  .order-certificate__design-type {
+  .order__design-type {
     margin-bottom: 16px;
   }
 
-  .order-certificate__design-card {
+  .order__design-card {
     margin-bottom: 0;
   }
 
-  .order-certificate__design-card svg {
+  .order__design-card svg {
     max-width: 102px;
     max-height: 75px;
   }
 
-  .order-certificate__payment-container {
+  .order__payment-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
-  .order-certificate__payment-wrapper {
+  .order__payment-wrapper {
     align-self: center;
   }
 
-  .order-certificate__payment-sum {
+  .order__payment-sum {
     margin-bottom: 25px;
   }
 
@@ -8100,6 +8392,10 @@ button {
   .jewelry-personalization__image {
     margin-bottom: 20px;
   }
+
+  .requests__request {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 890px) {
@@ -8184,6 +8480,16 @@ button {
   .product-card__form-button {
     padding: 10.5px 0;
     align-self: end;
+  }
+
+  .order__submit-button {
+    padding: 10.5px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .order__submit-button:hover {
+    padding: 9.5px 0;
   }
 }
 
@@ -9178,87 +9484,87 @@ button {
     left: 50%;
   }
 
-  .order-certificate {
+  .order {
     gap: 65px;
   }
 
-  .order-certificate__login {
+  .order__login {
     margin-bottom: 50px;
   }
 
-  .order-certificate__title {
+  .order__title {
     margin-bottom: 34px;
     text-transform: none;
   }
 
-  .order-certificate__password-container {
+  .order__password-container {
     flex-direction: column;
     gap: 30px;
   }
 
-  .order-certificate__button-login {
+  .order__button-login {
     margin: 30px 0 0;
     padding: 14.5px 0;
   }
 
-  .order-certificate__contact-details {
+  .order__contact-details {
     margin-bottom: 50px;
   }
 
-  .order-certificate__recipient-contact-details {
+  .order__recipient-contact-details {
     margin-bottom: 50px;
   }
 
-  .order-certificate__checkbox-container {
+  .order__checkbox-container {
     gap: 20px;
   }
 
-  .order-certificate__checkbox-container {
+  .order__checkbox-container {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .order-certificate__date-picker {
+  .order__date-picker {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .order-certificate__button-payment:hover {
+  .order__button-payment:hover {
     padding: 14.5px 0;
   }
 
-  .order-certificate__button-payment {
+  .order__button-payment {
     padding: 15.5px 0;
     margin: 25px 0 0;
   }
 
-  .order-certificate__payment-paragraph {
+  .order__payment-paragraph {
     display: none;
   }
 
-  .order-certificate__design-type {
+  .order__design-type {
     margin-bottom: 10px;
   }
 
-  .order-certificate__design-card {
+  .order__design-card {
     margin-bottom: 24px;
   }
 
-  .order-certificate__design-card svg {
+  .order__design-card svg {
     max-width: 150px;
     max-height: 88px;
   }
 
-  .order-certificate__payment-container {
+  .order__payment-container {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .order-certificate__payment-sum {
+  .order__payment-sum {
     gap: 18px;
   }
 
-  .order-certificate__payment-sum input {
+  .order__payment-sum input {
     text-align: start;
   }
 
@@ -9666,41 +9972,6 @@ button {
     width: 100%;
   }
 
-  .product-card__title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-
-  .product-card__photos {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-  }
-
-  .product-card__description {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .product-card__form {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-
-  .product-card__recommended-products {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-
-  .profile-info__list-title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-
   .profile-info__button {
     margin: 0;
     align-self: center;
@@ -9844,5 +10115,169 @@ button {
 
   .jewelry-personalization__image {
     margin-bottom: 34px;
+  }
+
+  .requests__request {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .requests__info li {
+    gap: 10px;
+  }
+
+  .requests__info li:nth-of-type(2n) {
+    justify-self: end;
+  }
+
+  .requests__info li:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .requests__info {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .requests__info-title {
+    color: #2C2C2C;
+  }
+
+  .requests__info-subtitle {
+    font-family: "Tenor Sans";
+    line-height: 23px;
+    color: #2C2C2C;
+  }
+
+  .order {
+    padding: 0;
+  }
+
+  .order__forms_jewelery {
+    padding: 0 15px;
+  }
+
+  .order__submit-button {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 0;
+  }
+
+  .order__submit-button:hover {
+    padding: 13px 0;
+  }
+
+  .order .slick-slider {
+    max-width: 100vw !important;
+    width: 100vw !important;
+  }
+
+  .product-card__description_order {
+    margin-bottom: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    grid-template-areas: "image" "title" "table" "description";
+  }
+
+  .product-card__description_order > .product-card__title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description_order > .product-card__description {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description_order > .profile-info__list-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description_order > .order__image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description-wrapper_order {
+    padding: 0 15px;
+  }
+
+  .product-card__description-table_order {
+    padding: 0 15px !important;
+  }
+
+  .product-card__title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__photos {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__form {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__recommended-products {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .profile-info__list-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description-wrapper_order {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description_order > .product-card__description-wrapper_order {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .product-card__description_order > .product-card__description-table_order {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description-list_order {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description_order > .product-card__description-list_order {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .product-card__description-list_order {
+    padding: 0 15px !important;
   }
 }

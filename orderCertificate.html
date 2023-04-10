@@ -122,36 +122,36 @@
         </div>
       </header>
       <main class="main">
-        <div class="container order-certificate">
-          <section class="order-certificate__forms">
-            <form class="order-certificate__login">
-              <h2 class="order-certificate__title">Авторизация</h2>
-              <label class="order-certificate__label">
-                <input class="order-certificate__input" type="text" required="1"/>
-                <div class="order-certificate__placeholder">Ваше имя<span>*</span></div>
+        <div class="container order">
+          <section class="order__forms">
+            <form class="order__login">
+              <h2 class="order__title">Авторизация</h2>
+              <label class="order__label">
+                <input class="order__input" type="text" required="1"/>
+                <div class="order__placeholder">Ваше имя<span>*</span></div>
               </label>
-              <label class="order-certificate__label">
-                <input class="order-certificate__input" type="number" required="1"/>
-                <div class="order-certificate__placeholder">Телефон<span>*</span></div>
+              <label class="order__label">
+                <input class="order__input" type="number" required="1"/>
+                <div class="order__placeholder">Телефон<span>*</span></div>
               </label>
-              <div class="order-certificate__password-container">
-                <a class="order-certificate__link" href="#">Забыли пароль?</a>
-                <p class="order-certificate__required">Формы, обязательные к заполнению</p>
+              <div class="order__password-container">
+                <a class="order__link" href="#">Забыли пароль?</a>
+                <p class="order__required">Формы, обязательные к заполнению</p>
               </div>
-              <button class="order-certificate__button-login" type="submit">Войти</button>
+              <button class="order__button-login" type="submit">Войти</button>
             </form>
-            <form class="order-certificate__data">
-              <div class="order-certificate__contact-details">
-                <h2 class="order-certificate__title">Контактные данные</h2>
-                <label class="order-certificate__label">
-                  <input class="order-certificate__input" type="text" required="1"/>
-                  <div class="order-certificate__placeholder">Ваше имя<span>*</span></div>
+            <form class="order__data">
+              <div class="order__contact-details">
+                <h2 class="order__title">Контактные данные</h2>
+                <label class="order__label">
+                  <input class="order__input" type="text" required="1"/>
+                  <div class="order__placeholder">Ваше имя<span>*</span></div>
                 </label>
-                <label class="order-certificate__label">
-                  <input class="order-certificate__input" type="number" required="1"/>
-                  <div class="order-certificate__placeholder">Телефон<span>*</span></div>
+                <label class="order__label">
+                  <input class="order__input" type="number" required="1"/>
+                  <div class="order__placeholder">Телефон<span>*</span></div>
                 </label>
-                <div class="order-certificate__checkbox-container">
+                <div class="order__checkbox-container">
                   <label class="checkbox-filter">
                     <input class="checkbox-filter__invisible" type="checkbox"/>
                     <div class="checkbox-filter__visible"></div>
@@ -159,39 +159,39 @@
                   <p>Получатель карты другой человек</p>
                 </div>
               </div>
-              <div class="order-certificate__recipient-contact-details">
-                <h2 class="order-certificate__title">Контактные данные получателя</h2>
-                <label class="order-certificate__label">
-                  <input class="order-certificate__input" type="text" required="1"/>
-                  <div class="order-certificate__placeholder">Имя получателя<span>*</span></div>
+              <div class="order__recipient-contact-details">
+                <h2 class="order__title">Контактные данные получателя</h2>
+                <label class="order__label">
+                  <input class="order__input" type="text" required="1"/>
+                  <div class="order__placeholder">Имя получателя<span>*</span></div>
                 </label>
-                <label class="order-certificate__label">
-                  <input class="order-certificate__input" type="number" required="1"/>
-                  <div class="order-certificate__placeholder">Телефон получателя<span>*</span></div>
+                <label class="order__label">
+                  <input class="order__input" type="number" required="1"/>
+                  <div class="order__placeholder">Телефон получателя<span>*</span></div>
                 </label>
-                <label class="order-certificate__label">
+                <label class="order__label">
                   Ваше поздравление для получателя
                   <textarea></textarea>
                 </label>
               </div>
-              <div class="order-certificate__time-details">
-                <h2 class="order-certificate__title">Когда вручить сертификат</h2>
-                <div class="order-certificate__checkbox-container">
+              <div class="order__time-details">
+                <h2 class="order__title">Когда вручить сертификат</h2>
+                <div class="order__checkbox-container">
                   <label class="checkbox-filter">
                     <input class="checkbox-filter__invisible" type="checkbox"/>
                     <div class="checkbox-filter__visible"></div>
                   </label>
                   <p>Прямо сейчас</p>
                 </div>
-                <div class="order-certificate__date-picker">
-                  <label class="order-certificate__date-picker-label">
+                <div class="order__date-picker">
+                  <label class="order__date-picker-label">
                     Удобная дата
-                    <div class="order-certificate__date-picker-input">
+                    <div class="order__date-picker-input">
                       <input id="airdatepicker" readonly></input>
                     </div>
                   </label>
-                  <div class="select order-certificate__select">
-                    <div class="order-certificate__select-container">
+                  <div class="select order__select">
+                    <div class="order__select-container">
                       Удобное время
                       <input class="select__input" type="hidden" name="naumber" value="11:00-14:00"></input>
                       <button class="select__current" type="button">11:00-14:00</button>
@@ -207,10 +207,10 @@
               </div>
             </form>
           </section>
-          <form class="order-certificate__payment">
-            <div  class="order-certificate__design-type order-certificate__design-type_green">Emerald green</div>
-            <div class="order-certificate__payment-container">
-              <div class="order-certificate__design-card order-certificate__design-card_green">
+          <form class="order__payment">
+            <div  class="order__design-type order__design-type_green">Emerald green</div>
+            <div class="order__payment-container">
+              <div class="order__design-card order__design-card_green">
                 <svg viewBox="0 0 482 249" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.0800781 198H7.14808V172.312H37.3201V171.172H7.14808V145.94H23.2601C29.4921 146.092 36.7121 146.776 40.3601 147.84L39.6001 144.8H0.0800781V198Z" fill="#FFFFFF"/>
                   <path d="M65.1254 198H106.925L107.685 194.96C104.037 196.024 96.8174 196.708 90.5854 196.86H72.1934V172.236H102.365V171.096H72.1934V145.94H89.0654C95.2974 146.092 102.517 146.776 106.165 147.84L105.405 144.8H65.1254V198Z" fill="#FFFFFF"/>
@@ -233,15 +233,15 @@
                   <path d="M343.131 248.384C347.019 248.384 350.667 246.968 350.595 243.776C350.595 240.848 347.955 239.792 344.355 238.568C341.307 237.536 338.643 236.36 338.643 234.152C338.643 232.616 340.131 231.104 342.747 231.104C345.843 231.104 348.027 232.232 349.779 233.528L349.539 232.16C347.619 231.344 346.059 230.816 343.323 230.816C338.643 230.816 336.867 232.688 336.867 235.232C336.867 238.376 340.131 239.84 343.251 240.848C346.875 242 348.531 243.104 348.531 245.048C348.531 246.824 346.251 248.096 343.683 248.096C340.707 248.096 338.619 246.968 336.867 245.672L337.107 247.04C339.003 247.856 340.539 248.384 343.131 248.384Z" fill="#FFFFFF"/>
                 </svg>
               </div>
-              <div class="order-certificate__payment-wrapper">
-                <label class="order-certificate__payment-sum">
+              <div class="order__payment-wrapper">
+                <label class="order__payment-sum">
                   К оплате
                   <div>
                     <input value="50 000" type="text" readonly></input>
                     <span>руб</span>
                   </div>
                 </label>
-                <div class="order-certificate__checkbox-container">
+                <div class="order__checkbox-container">
                   <label class="checkbox-filter">
                     <input class="checkbox-filter__invisible" type="checkbox"/>
                     <div class="checkbox-filter__visible"></div>
@@ -250,8 +250,8 @@
                 </div>
               </div>
             </div>
-            <button class="order-certificate__button-payment" type="submit">Перейти к оплате</button>
-            <p class="order-certificate__payment-paragraph">Отправляя заказ, Вы соглашаетесь на обработку персональных данных согласно <a href="#">Политике конфиденциальности</a> и <a href="#">Регламентом использования подарочных карт</a></p>
+            <button class="order__button-payment" type="submit">Перейти к оплате</button>
+            <p class="order__payment-paragraph">Отправляя заказ, Вы соглашаетесь на обработку персональных данных согласно <a href="#">Политике конфиденциальности</a> и <a href="#">Регламентом использования подарочных карт</a></p>
           </form>
         </div>
       </main>
@@ -448,7 +448,7 @@
         <ul class="mobile-menu__list mobile-menu__list_profile">
           <li class="mobile-menu__nav-item"><a href="profile.html">Профиль</a></li>
           <li class="mobile-menu__nav-item"><a href="favorites.html">Избранное</a></li>
-          <li class="mobile-menu__nav-item"><a href="contacts.html">Заявки</a></li>
+          <li class="mobile-menu__nav-item"><a href="requests.html">Заявки</a></li>
           <li class="mobile-menu__nav-item"><a href="login.html">Выйти</a></li>
         </ul>
       </nav>

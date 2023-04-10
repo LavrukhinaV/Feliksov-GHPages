@@ -122,54 +122,77 @@
         </div>
       </header>
       <main class="main">
-          <section class="services">
-            <h1 class="services__title">наши услуги</h1>
-            <ul class="services__list">
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">уход и ремонт</h2>
-                  <p class="services__list-text">
-                    Мы предоставляем бесплатную, чистку, полировку и уменьшение размера изделий в течение всего гарантийного периода .
-                  </p>
-                  <a class="services__list-button" href="careAndRepair.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image1.png" alt="Услуги по уходу и ремонту"/>
-              </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Доставка</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Проверенные за годы работы транспортные компании высокого уровня безопасности обеспечивают уверенность, что изделие будет доставлено до получателя в срок в целости и сохранности. 
-                  </div>
-                  <a class="services__list-button" href="delivery.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image2.png" alt="Услуги по доставке"/>
-              </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Подбор подарка</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Выбор подарка для особенных людей или особенных событий - это процесс, в котором требуется знание деталей  ювелирной сферы. Наши высококвалифицированные менеджеры помогут определиться с металлом и камнями в изделии, исходя из большого опыта в индустрии и вашего запроса как в готовых коллекциях, так и создании неповторимого украшения. А также помогут оформить вашу уникальную идею в четкую задачу для наших художников и ювелиров.
-                  </div>
-                  <a class="services__list-button" href="giftSelection.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image3.png" alt="Подбор подарка"/>
-              </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Персонализация украшений</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Любое украшение мы можем сделать уникальным: нанести гравировку владельца или пожелания от того, кто дарит, чтобы ваш подарок стал особенным, неповторимым и остался в сердце хозяина на всю жизнь.
-                  </div>
-                  <a class="services__list-button" href="jewelryPersonalization.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image4.png" alt="Персонализация украшений"/>
-              </li>
-            </ul>
-          </section>
+        <div class="container profile">
+          <h1 class="profile__title">Мой аккаунт</h1>
+          <div class="profile__wrapper">
+            <nav class="profile-menu">
+              <ul class="profile-menu__list">
+                <li class="profile-menu__list-item"><a href="profile.html">Профиль</a></li>
+                <li class="profile-menu__list-item"><a href="favorites.html">Избранное</a></li>
+                <li class="profile-menu__list-item"><a href="requests.html">заявки</a></li>
+                <li class="profile-menu__list-item"><a href="login.html">Выйти</a></li>
+              </ul>
+            </nav>
+            <section class="requests">
+              <ul class="requests__table">
+                  <li class="requests__request">
+                    <a class="jewelry" href="product.html">
+                      <button class="jewelry__button-like">
+                        <svg class="svg" width="20" height="20" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                        </svg>
+                      </button>
+                      <img class="jewelry__image" src="./images/content/catalog-items.png"/>
+                      <div class="jewelry-slider">
+                        <img src="./images/content/image 107.png"/>
+                        <img src="./images/content/image 108.png"/>
+                        <img src="./images/content/image 107.png"/>
+                      </div>
+                      <div class="jewelry__cell">
+                        <p class="jewelry__definition">Красивое кольцо с какими-то 1111 </p>
+                        <div class="jewelry__description">
+                          <span class="jewelry__img"></span>
+                          <p class="jewelry__stone"></p>
+                          <p class="jewelry__specification">ст 11.97</p>
+                        </div>
+                        <div class="jewelry__green-container">
+                          <div class="jewelry__size">
+                            <span class="jewelry__size-icon"></span>
+                            <p class="jewelry__size-value">16.5</p>
+                          </div>
+                          <p class="jewelry__metal">Белое золото</p>
+                        </div>
+                        <div class="jewelry__bottom-container">
+                          <p class="jewelry__note">exclusive</p>
+                          <button class="jewelry__arrow"></button>
+                        </div>
+                      </div>
+                      <div class="jewelry__cell jewelry__cell_catalog">
+                        <p class="jewelry__definition">Красивое кольцо с какими-то 1111 </p>
+                      </div>
+                    </a>
+                    <div class="requests__info-container">
+                      <ul class="requests__info">
+                        <li>
+                          <h3 class="requests__info-title">Дата примерки</h3>
+                          <p class="requests__info-subtitle">15.05.2022</p>
+                        </li>
+                        <li>
+                          <h3 class="requests__info-title">Время примерки</h3>
+                          <p class="requests__info-subtitle">15-00-17.00</p>
+                        </li>
+                        <li>
+                          <h3 class="requests__info-title">Адрес</h3>
+                          <p class="requests__info-subtitle requests__info-subtitle_address">ТЦ Коламбус, малый, Галерея обуви, улица Красного Маяка 2Б, 3 этаж</p>
+                        </li>
+                      </ul>
+                      <button class="requests__button">отменить заявку</button>
+                    </div>
+                  </li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <ul class="footer__photos">

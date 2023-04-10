@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
@@ -122,54 +122,139 @@
         </div>
       </header>
       <main class="main">
-          <section class="services">
-            <h1 class="services__title">наши услуги</h1>
-            <ul class="services__list">
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">уход и ремонт</h2>
-                  <p class="services__list-text">
-                    Мы предоставляем бесплатную, чистку, полировку и уменьшение размера изделий в течение всего гарантийного периода .
-                  </p>
-                  <a class="services__list-button" href="careAndRepair.html">подбробнее</a>
+        <div class="order order_jewelery">
+          <section class="order__forms order__forms_jewelery">
+            <form class="order__login">
+              <h2 class="order__title">Авторизация</h2>
+              <label class="order__label">
+                <input class="order__input" type="text" required="1"/>
+                <div class="order__placeholder">Ваше имя<span>*</span></div>
+              </label>
+              <label class="order__label">
+                <input class="order__input" type="number" required="1"/>
+                <div class="order__placeholder">Телефон<span>*</span></div>
+              </label>
+              <div class="order__password-container">
+                <a class="order__link" href="#">Забыли пароль?</a>
+                <p class="order__required">Формы, обязательные к заполнению</p>
+              </div>
+              <button class="order__button-login" type="submit">Войти</button>
+            </form>
+            <form class="order__data">
+              <div class="order__contact-details">
+                <h2 class="order__title">Контактные данные</h2>
+                <label class="order__label">
+                  <input class="order__input" type="text" required="1"/>
+                  <div class="order__placeholder">Ваше имя<span>*</span></div>
+                </label>
+                <label class="order__label">
+                  <input class="order__input" type="number" required="1"/>
+                  <div class="order__placeholder">Телефон<span>*</span></div>
+                </label>
+                <div class="order__checkbox-container">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                  </label>
+                  <p>Получатель карты другой человек</p>
                 </div>
-                <img src="./images/content/services-page-image1.png" alt="Услуги по уходу и ремонту"/>
-              </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Доставка</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Проверенные за годы работы транспортные компании высокого уровня безопасности обеспечивают уверенность, что изделие будет доставлено до получателя в срок в целости и сохранности. 
+              </div>
+              <div class="order__recipient-contact-details">
+                <h2 class="order__title">Контактные данные получателя</h2>
+                <label class="order__label">
+                  <input class="order__input" type="text" required="1"/>
+                  <div class="order__placeholder">Имя получателя<span>*</span></div>
+                </label>
+                <label class="order__label">
+                  <input class="order__input" type="number" required="1"/>
+                  <div class="order__placeholder">Телефон получателя<span>*</span></div>
+                </label>
+                <label class="order__label">
+                  Ваше поздравление для получателя
+                  <textarea></textarea>
+                </label>
+              </div>
+              <div class="order__time-details">
+                <h2 class="order__title">Когда вручить сертификат</h2>
+                <div class="order__checkbox-container">
+                  <label class="checkbox-filter">
+                    <input class="checkbox-filter__invisible" type="checkbox"/>
+                    <div class="checkbox-filter__visible"></div>
+                  </label>
+                  <p>Прямо сейчас</p>
+                </div>
+                <div class="order__date-picker">
+                  <label class="order__date-picker-label">
+                    Удобная дата
+                    <div class="order__date-picker-input">
+                      <input id="airdatepicker" readonly></input>
+                    </div>
+                  </label>
+                  <div class="select order__select">
+                    <div class="order__select-container">
+                      Удобное время
+                      <input class="select__input" type="hidden" name="naumber" value="11:00-14:00"></input>
+                      <button class="select__current" type="button">11:00-14:00</button>
+                    </div>
+                    <div class="select__list">
+                      <button class="select__item" data-value="11:00-14:00г" type="button">11:00-14:00</button>
+                      <button class="select__item" data-value="14:00-18:00" type="button">14:00-18:00</button>
+                      <button class="select__item" data-value="18:00-20:00" type="button">18:00-20:00</button>
+                      <button class="select__item" data-value="20:00-22:00" type="button">20:00-22:00</button>
+                    </div>
                   </div>
-                  <a class="services__list-button" href="delivery.html">подбробнее</a>
                 </div>
-                <img src="./images/content/services-page-image2.png" alt="Услуги по доставке"/>
+              </div>
+            </form>
+            <a class="order__submit-button" href="orderJewelry.html">Оставить заявку</a>
+          </section>
+          <section class="product-card__description product-card__description_order">
+            <div class="product-card__description-wrapper product-card__description-wrapper_order">
+              <h2 class="product-card__description-title">Браслет с бриллиантами</h2>
+              <button class="product-card__description-like">
+                <svg class="svg" width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.171 4.35559L17.5 4.64301L17.829 4.35559C19.6995 2.72133 22.2971 1.56405 24.9562 1.48584C27.6015 1.40804 30.1922 2.35429 32.1966 4.86424C34.3447 7.57862 34.0826 12.2498 31.491 17.1299C28.9051 21.9432 24.1199 26.7169 17.5 29.5529C10.8793 26.7165 6.09564 21.9428 3.55098 17.1318L3.55099 17.1318L3.54906 17.1282C0.917188 12.2491 0.655686 7.57808 2.80338 4.86421C4.80784 2.35428 7.39849 1.40804 10.0438 1.48584C12.7029 1.56405 15.3005 2.72133 17.171 4.35559Z" stroke="#E5B77D"/>
+                </svg>
+              </button>
+            </div>
+            <div class="order__image">
+              <img src="./images/content/product-image1.png" alt="Изображение товара"/>
+              <img src="./images/content/product-image2.png" alt="Изображение товара"/>
+              <img src="./images/content/product-image3.png" alt="Изображение товара"/>
+            </div>
+            <ul class="product-card__description-table product-card__description-table_order">
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Цвет золота</h3>
+                <p class="product-card__description-table-value">Белое золото, 750 пробы </p>
               </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Подбор подарка</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Выбор подарка для особенных людей или особенных событий - это процесс, в котором требуется знание деталей  ювелирной сферы. Наши высококвалифицированные менеджеры помогут определиться с металлом и камнями в изделии, исходя из большого опыта в индустрии и вашего запроса как в готовых коллекциях, так и создании неповторимого украшения. А также помогут оформить вашу уникальную идею в четкую задачу для наших художников и ювелиров.
-                  </div>
-                  <a class="services__list-button" href="giftSelection.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image3.png" alt="Подбор подарка"/>
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Вес</h3>
+                <p class="product-card__description-table-value">6,31</p>
               </li>
-              <li class="services__list-item">
-                <div class="services__list-container">
-                  <h2 class="services__list-title">Персонализация украшений</h2>
-                  <div class="services__list-text">
-                    <p>
-                      Любое украшение мы можем сделать уникальным: нанести гравировку владельца или пожелания от того, кто дарит, чтобы ваш подарок стал особенным, неповторимым и остался в сердце хозяина на всю жизнь.
-                  </div>
-                  <a class="services__list-button" href="jewelryPersonalization.html">подбробнее</a>
-                </div>
-                <img src="./images/content/services-page-image4.png" alt="Персонализация украшений"/>
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Камень</h3>
+                <p class="product-card__description-table-value">Бриллианты</p>
+              </li>
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Количество камней</h3>
+                <p class="product-card__description-table-value">54</p>
+              </li>
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Размер</h3>
+                <p class="product-card__description-table-value">14,15,16,17,18,19,20,21,22</p>
+              </li>
+              <li class="product-card__description-table-item">
+                <h3 class="product-card__description-table-title">Артикул</h3>
+                <p class="product-card__description-table-value">БР 10002</p>
               </li>
             </ul>
+            <ul class="product-card__description-list product-card__description-list_order">
+              <li class="product-card__description-list-item">Белое золото 750 пробы 25</li>
+              <li class="product-card__description-list-item">25 бриллиантов ф 2,5 мм общим весом 1,500 ct;</li>
+              <li class="product-card__description-list-item">29 бриллиантов ф 2,5 мм общим весом 1,740 ct;</li>
+            </ul>
           </section>
+        </div>
       </main>
       <footer class="footer">
         <ul class="footer__photos">
