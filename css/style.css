@@ -1068,6 +1068,10 @@ button {
   transition: all 0.5s ease;
 }
 
+.jewelry__button-like_active svg {
+  fill: #E5B77D;
+}
+
 .jewelry__button-like:hover svg {
   fill: #E5B77D;
 }
@@ -2372,6 +2376,10 @@ button {
   right: 20px;
 }
 
+.product-card__photos-like_active svg {
+  fill: #E5B77D;
+}
+
 .product-card__photos-like:hover .svg {
   fill: #E5B77D;
 }
@@ -2405,6 +2413,10 @@ button {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.product-card__description-like_active svg {
+  fill: #E5B77D;
 }
 
 .product-card__description-like:hover svg {

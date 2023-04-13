@@ -102,3 +102,27 @@ recommendedProduct.forEach(function(element) {
 
   recommendedProductList.append(productElement)
 });
+
+const buttonLike = document.querySelector('.product-card__description-like');
+const buttonInSlider = document.querySelector('.product-card__photos-like');
+
+buttonLike.addEventListener('click', () => {
+  buttonLike.classList.toggle('product-card__description-like_active')
+})
+buttonInSlider.addEventListener('click', () => {
+  buttonInSlider.classList.toggle('product-card__photos-like_active')
+})
+
+const elements = document.querySelectorAll(".jewelry");
+
+elements.forEach(function(element) {
+  const likeButton = element.querySelector('.jewelry__button-like');
+
+  element.addEventListener('click', (e) => {
+    if(e.target.closest('.jewelry__button-like')) {
+      likeButton.classList.toggle('jewelry__button-like_active')
+    } else {
+      window.location.href = 'product.html'
+    }
+  })
+})

@@ -144,3 +144,17 @@ jewelery.forEach(function(element) {
 
   jewelryElements.append(jewelryElement)
 })
+
+const elements = document.querySelectorAll(".jewelry");
+
+elements.forEach(function(element) {
+  const likeButton = element.querySelector('.jewelry__button-like');
+
+  element.addEventListener('click', (e) => {
+    if(e.target.closest('.jewelry__button-like')) {
+      likeButton.classList.toggle('jewelry__button-like_active')
+    } else {
+      window.location.href = 'product.html'
+    }
+  })
+})
